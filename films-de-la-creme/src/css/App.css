@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px; }
+
+div.home nav {
+  text-align: center; }
+  div.home nav ul {
+    list-style: none;
+    display: inline-flex;
+    padding-left: 0px; }
+    div.home nav ul li {
+      padding-right: 6rem;
+      padding-top: 2rem; }
+    div.home nav ul li#logo {
+      padding-top: 0rem; }
+    div.home nav ul li#last {
+      padding-right: 0rem; }
+    div.home nav ul img {
+      width: 90px;
+      height: 90px; }

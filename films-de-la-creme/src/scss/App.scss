@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+  
+div.home {
+    nav {
+      text-align: center;
+      
+      ul {
+        list-style: none;
+        display: inline-flex;
+        padding-left: 0px;
+  
+        li {
+          padding-right: 6rem;
+          padding-top: 2rem;
+        }
+  
+        li#logo {
+          padding-top:0rem;
+        }
+  
+        li#last {
+          padding-right: 0rem;
+        }
+  
+        img {
+          width: 90px;
+          height: 90px;
+          // padding-right: 6rem;
+        }
+      }
+    }
+  }
