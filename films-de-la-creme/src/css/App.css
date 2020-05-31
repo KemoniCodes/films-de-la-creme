@@ -3,6 +3,12 @@
   margin: 0px;
   padding: 0px; }
 
+div#container {
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: 1440px 1440px; }
+
 div.home nav {
   text-align: center; }
   div.home nav ul {
@@ -11,9 +17,12 @@ div.home nav {
     padding-left: 0px; }
     div.home nav ul li {
       padding-right: 6rem;
-      padding-top: 2rem; }
+      padding-top: 2rem;
+      color: #d6dfe3;
+      font-size: 1.4rem;
+      letter-spacing: 1.2px; }
     div.home nav ul li#logo {
-      padding-top: 0rem; }
+      padding-top: 0.5rem; }
     div.home nav ul li#last {
       padding-right: 0rem; }
     div.home nav ul img {
