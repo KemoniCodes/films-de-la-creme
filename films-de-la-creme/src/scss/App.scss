@@ -26,6 +26,8 @@ div.home {
           padding-right: 6rem;
           padding-top: 2rem;
           color: #d6dfe3;
+          font-family: 'Lato', sans-serif;
+          font-weight: 300;
           font-size: 1.4rem;
           letter-spacing: 1.2px;
         }
@@ -45,4 +47,38 @@ div.home {
         }
       }
     }
+  div.now-playing-details {  
+    position: absolute;
+    width: 60vw;
+    right: 32%;
+    top: 45%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #E0E6EA;
+   
+    
+    h1.title {
+      font-size: 3.5rem;
+      font-weight: 300;
+
+      span.date {
+        font-style: italic;
+      }
+    }
+
+    h2 {
+      font-weight: 300;
+      font-size: 1.4rem;
+      margin-top: .2rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-family: 'Roboto', sans-serif;
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+    }
+  }
+   
   }

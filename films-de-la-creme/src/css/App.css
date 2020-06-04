@@ -19,6 +19,8 @@ div.home nav {
       padding-right: 6rem;
       padding-top: 2rem;
       color: #d6dfe3;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
       font-size: 1.4rem;
       letter-spacing: 1.2px; }
     div.home nav ul li#logo {
@@ -28,3 +30,27 @@ div.home nav {
     div.home nav ul img {
       width: 90px;
       height: 90px; }
+
+div.home div.now-playing-details {
+  position: absolute;
+  width: 60vw;
+  right: 32%;
+  top: 45%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #E0E6EA; }
+  div.home div.now-playing-details h1.title {
+    font-size: 3.5rem;
+    font-weight: 300; }
+    div.home div.now-playing-details h1.title span.date {
+      font-style: italic; }
+  div.home div.now-playing-details h2 {
+    font-weight: 300;
+    font-size: 1.4rem;
+    margin-top: .2rem;
+    text-transform: uppercase; }
+  div.home div.now-playing-details p {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem; }
