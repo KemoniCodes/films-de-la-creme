@@ -17,7 +17,7 @@ class Home extends React.Component {
     }
 
     render() {
-
+        // let items = this.state.movie.map
         return (
 
             <div className="home">
