@@ -6,6 +6,7 @@
   "dependencies": {
     "@babel/core": "7.9.0",
     "@babel/plugin-transform-react-jsx": "^7.9.4",
+    "@brainhubeu/react-carousel": "^1.18.2",
     "@svgr/webpack": "4.3.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -72,7 +73,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "http://localhost:3000",
   "browserslist": {
     "production": [
       ">0.2%",

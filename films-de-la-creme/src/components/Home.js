@@ -1,25 +1,13 @@
-import React from 'react'
+import React, { Component } from 'react'
 import '../css/App.css'
+import Slideshow from './Slideshow'
 
 
 
 class Home extends React.Component {
-    state = {
-        loading: true,
-        movie: []
-    }
-
-    async componentDidMount() {
-        let url = "https://api.themoviedb.org/3/movie/now_playing?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&page=1";
-        let response = await fetch(url);
-        let data = await response.json();
-        this.setState({ movie: data.results[4], loading: false })
-    }
-
     render() {
         // let items = this.state.movie.map
         return (
-
             <div className="home">
                 <nav>
                     <ul>
@@ -34,15 +22,12 @@ class Home extends React.Component {
                         <li id="last">LOG OUT</li>
                     </ul>
                 </nav>
-
-                <div className="now-playing-details">
-                    <h1 className="title">{this.state.movie.title} <span className="date"> ({this.state.movie.release_date}) </span> </h1>
-                    <h2>{this.state.movie.vote_average}/10 {this.state.movie.vote_count} reviews</h2>
-
-                    <p>{this.state.movie.overview}</p>
-                </div>
-
+                <Slideshow />
             </div >
+
+
+
+
 
         )
     }

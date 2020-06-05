@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="icon" href="../../flask-server/food-and-restaurant.png" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+    rel="stylesheet">
 
   <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -28,13 +28,12 @@
   <script>window.token = "{{flask_token}}"</script>
 </head>
 
-<body>
+<body id="container">
 
-  <div id="container"
-    style="background-image: url('{{image ['images'] ['base_url'] }}{{image ['images'] ['poster_sizes'] [4] }}{{ data ['results'] [3] ['poster_path'] }}')">
-    <div id="root">
+  <div id="root">
 
-    </div>
+
+
   </div>
 
 

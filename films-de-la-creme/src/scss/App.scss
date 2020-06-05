@@ -4,17 +4,19 @@
     padding: 0px;
 }
 
-div#container {
+body#container {
   height: 100vh;
   width: 100vw;
   background-repeat: no-repeat;
-  background-size: 1440px 1440px;
+  background-size: 1440px 750px;
 }
 
 
   
 div.home {
-    nav {
+  background-color: #222D33;
+    
+  nav {
       text-align: center;
       
       ul {
@@ -27,7 +29,7 @@ div.home {
           padding-top: 2rem;
           color: #d6dfe3;
           font-family: 'Lato', sans-serif;
-          font-weight: 300;
+          font-weight: 400;
           font-size: 1.4rem;
           letter-spacing: 1.2px;
         }
@@ -47,32 +49,61 @@ div.home {
         }
       }
     }
+   
+}
+
+
+div.Slideshow {
+  margin-top: 2rem;
+  height: 100vh;
+
+ 
+
+    .BrainhubCarousel__track {
+      height: 100vh;
+    }
+  
+
+
   div.now-playing-details {  
-    position: absolute;
-    width: 60vw;
-    right: 32%;
-    top: 45%;
+    height: 100vh;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     color: #E0E6EA;
+    
+    // transform: translate(-50%, -50%);
+
+    div.details {
+      position: absolute;
+      width: 60vw;
+      right: 32%;
+      top: 45%;
+    }
+
+    img {
+      height: 100vh;
+      width: 80vw;
+      height: 132vh;
+    }
+  }
    
     
     h1.title {
       font-size: 3.5rem;
-      font-weight: 300;
-
+      font-weight: 400;
+  
       span.date {
         font-style: italic;
       }
     }
-
+  
     h2 {
       font-weight: 300;
       font-size: 1.4rem;
       margin-top: .2rem;
       text-transform: uppercase;
     }
-
+  
     p {
       font-family: 'Roboto', sans-serif;
       margin-top: 1rem;
@@ -80,5 +111,6 @@ div.home {
       line-height: 1.5rem;
     }
   }
-   
-  }
+
+
+
