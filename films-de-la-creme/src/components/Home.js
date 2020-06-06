@@ -3,10 +3,8 @@ import '../css/App.css'
 import Slideshow from './Slideshow'
 
 
-
 class Home extends React.Component {
     render() {
-        // let items = this.state.movie.map
         return (
             <div className="home">
                 <nav>
@@ -24,9 +22,6 @@ class Home extends React.Component {
                 </nav>
                 <Slideshow />
             </div >
-
-
-
 
 
         )

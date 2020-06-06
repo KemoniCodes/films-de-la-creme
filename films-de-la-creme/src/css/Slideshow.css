@@ -6,7 +6,8 @@ div.Slideshow {
   div.Slideshow .BrainhubCarouselItem {
     height: 100vh; }
   div.Slideshow .BrainhubCarousel__dots {
-    background-color: #222D33; }
+    background-color: #222D33;
+    padding: 1rem; }
     div.Slideshow .BrainhubCarousel__dots .BrainhubCarousel__dot {
       background-color: #222D33; }
       div.Slideshow .BrainhubCarousel__dots .BrainhubCarousel__dot::before {

@@ -40,6 +40,7 @@ class Slideshow extends React.Component {
                     {this.state.movie.map((movie, bg, i) => {
 
                         return (
+
                             <div className="now-playing-details">
 
                                 <div className="details">
@@ -55,7 +56,12 @@ class Slideshow extends React.Component {
 
                                 </div>
 
+
+
                             </div>
+
+
+
                         )
 
                     }
