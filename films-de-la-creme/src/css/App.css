@@ -3,12 +3,6 @@
   margin: 0px;
   padding: 0px; }
 
-body#container {
-  height: 100vh;
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-size: 1440px 750px; }
-
 div.home {
   background-color: #222D33; }
   div.home nav {
@@ -20,7 +14,7 @@ div.home {
       div.home nav ul li {
         padding-right: 6rem;
         padding-top: 2rem;
-        color: #d6dfe3;
+        color: #99AFBB;
         font-family: 'Lato', sans-serif;
         font-weight: 400;
         font-size: 1.4rem;
@@ -32,38 +26,3 @@ div.home {
       div.home nav ul img {
         width: 90px;
         height: 90px; }
-
-div.Slideshow {
-  margin-top: 2rem;
-  height: 100vh; }
-  div.Slideshow .BrainhubCarousel__track {
-    height: 100vh; }
-  div.Slideshow div.now-playing-details {
-    height: 100vh;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    color: #E0E6EA; }
-    div.Slideshow div.now-playing-details div.details {
-      position: absolute;
-      width: 60vw;
-      right: 32%;
-      top: 45%; }
-    div.Slideshow div.now-playing-details img {
-      height: 100vh;
-      width: 80vw;
-      height: 132vh; }
-  div.Slideshow h1.title {
-    font-size: 3.5rem;
-    font-weight: 400; }
-    div.Slideshow h1.title span.date {
-      font-style: italic; }
-  div.Slideshow h2 {
-    font-weight: 300;
-    font-size: 1.4rem;
-    margin-top: .2rem;
-    text-transform: uppercase; }
-  div.Slideshow p {
-    font-family: 'Roboto', sans-serif;
-    margin-top: 1rem;
-    font-size: 1.1rem;
-    line-height: 1.5rem; }

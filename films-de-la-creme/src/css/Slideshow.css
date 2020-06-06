@@ -1,0 +1,53 @@
+div.Slideshow {
+  margin-top: 2rem;
+  height: 100vh; }
+  div.Slideshow .BrainhubCarousel__track {
+    height: 100vh; }
+  div.Slideshow .BrainhubCarouselItem {
+    height: 100vh; }
+  div.Slideshow .BrainhubCarousel__dots {
+    background-color: #222D33; }
+    div.Slideshow .BrainhubCarousel__dots .BrainhubCarousel__dot {
+      background-color: #222D33; }
+      div.Slideshow .BrainhubCarousel__dots .BrainhubCarousel__dot::before {
+        background-color: #99AFBB; }
+  div.Slideshow div.now-playing-details {
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #E0E6EA; }
+    div.Slideshow div.now-playing-details div.details {
+      position: absolute;
+      width: 60vw;
+      right: 28%;
+      top: 30%;
+      bottom: 8%;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 1rem;
+      border: 2px;
+      border-radius: 2rem; }
+    div.Slideshow div.now-playing-details div.image img {
+      height: 100vh;
+      width: 90vw;
+      border-radius: 1rem; }
+  div.Slideshow h1.title {
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: 1.2px; }
+    div.Slideshow h1.title span.date {
+      font-style: italic; }
+  div.Slideshow h2 {
+    font-weight: 300;
+    font-size: 2.2rem;
+    margin-top: .2rem;
+    text-transform: uppercase;
+    color: #99afbb;
+    letter-spacing: 1.2px; }
+    div.Slideshow h2 span {
+      padding-left: .2rem; }
+  div.Slideshow p {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    letter-spacing: 1.2px; }

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/App.css'
+import '../css/Slideshow.css'
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 
@@ -8,7 +8,7 @@ class Slideshow extends React.Component {
     state = {
         loading: true,
         movie: [],
-        bg: []
+        bg: ''
     }
 
     async componentDidMount() {
@@ -18,58 +18,63 @@ class Slideshow extends React.Component {
         let res = await fetch(config);
         let data = await response.json();
         let image = await res.json();
-        this.setState({ movie: data.results[4], loading: false })
-        this.setState({ bg: image.images.base_url + image.images.backdrop_sizes[2] + data.results[4].poster_path })
+        this.setState({ movie: data.results, loading: false })
+        this.setState({ bg: image.images.base_url + image.images.backdrop_sizes[2] })
     }
 
-    // id = "container"
-    // style = "background-image: url('{{image ['images'] ['base_url'] }}{{image ['images'] ['backdrop_sizes'] [2] }}{{ data ['results'] [4] ['poster_path'] }}')"
+
+
     render() {
 
         return (
 
+            <div className="Slideshow" >
 
-            <div className="Slideshow">
                 <Carousel
                     infinite
                     dots
+                    autoPlay={4000}
+                    animationSpeed={2000}
                 >
-                    <div className="now-playing-details">
-                     
-                        <div className="details">
-                            <h1 className="title">{this.state.movie.title} <span className="date"> ({this.state.movie.release_date}) </span> </h1>
-                            <h2>{this.state.movie.vote_average}/10    <span>{this.state.movie.vote_count} reviews </span></h2>
 
-                            <p>{this.state.movie.overview}</p>
-                        </div>
+                    {this.state.movie.map((movie, bg, i) => {
 
-                        <div className="image">
-                            <img src={this.state.bg} alt="" />
-                        </div>
+                        return (
+                            <div className="now-playing-details">
 
-                    </div>
+                                <div className="details">
+                                    <h2>Latest</h2>
+                                    <h1 className="title"> {movie.title} <span className="date"> ({movie.release_date}) </span> </h1>
+                                    <h2>{movie.vote_average}/10    <span>{movie.vote_count} reviews </span></h2>
 
-                    <div className="now-playing-details">
-                      
-                        <div className="details">
-                            <h1 className="title">{this.state.movie.title} <span className="date"> ({this.state.movie.release_date}) </span> </h1>
-                            <h2>{this.state.movie.vote_average}/10    <span>{this.state.movie.vote_count} reviews </span></h2>
+                                    <p>{movie.overview}</p>
+                                </div>
 
-                            <p>{this.state.movie.overview}</p>
-                        </div>
+                                < div className="image" >
+                                    <img src={this.state.bg + movie.poster_path} alt="" />
 
-                        <div className="image">
-                            <img src={this.state.bg} alt="" />
-                        </div>
+                                </div>
+
+                            </div>
+                        )
+
+                    }
+
+                    )
+                    }
 
 
-                    </div>
                 </Carousel >
             </div >
 
 
+
         )
+
+
+
     }
+
 }
 
 export default Slideshow
