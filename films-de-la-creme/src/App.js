@@ -4,6 +4,10 @@ import Home from './components/Home';
 
 
 function App() {
+  useEffect(() => {
+    fetch('/')
+
+  }, [])
   return (
     <div className="App">
       <Home />
