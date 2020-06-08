@@ -5,7 +5,7 @@ import requests
 
 # tmdb.API_KEY = '57a856481fc55fc8549e5927b0aaa154'
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='/static/react', static_url_path='/')
 
 @app.route("/", methods = ['POST','GET'])
 def my_index():
