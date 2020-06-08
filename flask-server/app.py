@@ -1,10 +1,9 @@
 from flask import (Flask, render_template)
 from flask import render_template, request, redirect, flash, url_for, jsonify
-import tmdbsimple as tmdb
 import os
 import requests
 
-tmdb.API_KEY = '57a856481fc55fc8549e5927b0aaa154'
+# tmdb.API_KEY = '57a856481fc55fc8549e5927b0aaa154'
 
 app = Flask(__name__)
 
