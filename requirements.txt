@@ -2,7 +2,5 @@ gunicorn
 Flask
 Flask-Session
 psycopg2-binary
-SQLAlchemy
 werkzeug==0.16.0
 Requests
-gunicorn
