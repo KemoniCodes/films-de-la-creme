@@ -1,0 +1,19 @@
+{
+  "name": "films-de-la-creme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KemoniCodes/films-de-la-creme.git"
+  },
+  "author": "Kemoonie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KemoniCodes/films-de-la-creme/issues"
+  },
+  "homepage": "https://github.com/KemoniCodes/films-de-la-creme#readme"
+}
