@@ -1,11 +1,17 @@
 from flask import (Flask, render_template)
 from flask import render_template, request, redirect, flash, url_for, jsonify
 import os
+import urllib3
 import requests
 
 # tmdb.API_KEY = '57a856481fc55fc8549e5927b0aaa154'
 
 app = Flask(__name__, static_folder='/static/react', static_url_path='/')
+__name__ == "__main__" 
+
+if not os.getenv("DATABASE_URL"):
+    raise RuntimeError("DATABASE_URL is not set")
+
 
 @app.route("/", methods = ['POST','GET'])
 def my_index():
