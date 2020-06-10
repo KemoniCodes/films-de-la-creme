@@ -13,6 +13,8 @@ div.Footer {
     padding-right: 1.3rem;
     color: #99AFBB;
     list-style: none; }
+    div.Footer li#img {
+      padding-right: 0px; }
     div.Footer li img {
       padding: 1rem;
       margin-top: 2rem; }

@@ -19,6 +19,10 @@ div.Footer {
         color: $tertiary-color;
         list-style: none;
 
+            &#img {
+                padding-right:0px;
+            }
+
         img {
             padding: 1rem;
             margin-top: 2rem;

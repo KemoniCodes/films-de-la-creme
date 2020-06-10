@@ -7,7 +7,7 @@ class Footer extends React.Component {
             <div className="Footer">
                 <li>Designed & Developed by Kemoni 💘</li>
                 <li>COPYRIGHT © 2020 Films De La Créme</li>
-                <li><img src={require("../img/tmdb.png")} /></li>
+                <li id="img"><img src={require("../img/tmdb.png")} /></li>
             </div >
         )
     }
