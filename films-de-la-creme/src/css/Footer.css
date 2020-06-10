@@ -1,0 +1,18 @@
+div.Footer {
+  margin-top: 4rem;
+  display: flex;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  padding: 2rem;
+  padding-bottom: .5rem;
+  justify-content: center;
+  bottom: 0;
+  width: 100%; }
+  div.Footer li {
+    padding-right: 1.3rem;
+    color: #99AFBB;
+    list-style: none; }
+    div.Footer li img {
+      padding: 1rem;
+      margin-top: 2rem; }

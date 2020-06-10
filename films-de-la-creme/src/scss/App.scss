@@ -29,6 +29,20 @@ div.home {
         list-style: none;
         display: inline-flex;
         padding-left: 0px;
+
+        a {
+          text-decoration: none;
+        }
+
+        li:hover {
+          color: $secondary-color;
+        }
+
+        a:visited {
+          text-decoration: none;
+        }
+
+
   
         li {
           padding-right: 6rem;

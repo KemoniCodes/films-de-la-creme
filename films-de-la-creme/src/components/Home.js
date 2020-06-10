@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import '../css/App.css'
 import Slideshow from './Slideshow'
+import Footer from './Footer'
 
 
 class Home extends React.Component {
@@ -9,11 +10,13 @@ class Home extends React.Component {
             <div className="home">
                 <nav>
                     <ul>
-                        <li>HOME</li>
+                        <a href="/"><li >HOME</li></a>
                         <li>MOVIES</li>
                         <li>TV SHOWS</li>
                         <li id="logo">
-                            <img src={require("../img/food-and-restaurant.png")} alt="" />
+                            <a href="/">
+                                <img src={require("../img/food-and-restaurant.png")} alt="" />
+                            </a>
                         </li>
                         <li>SEARCH</li>
                         <li>PROFILE</li>
@@ -21,8 +24,8 @@ class Home extends React.Component {
                     </ul>
                 </nav>
                 <Slideshow />
+                <Footer />
             </div >
-
 
         )
     }
