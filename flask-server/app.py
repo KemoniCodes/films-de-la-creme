@@ -6,8 +6,7 @@ import requests
 
 # tmdb.API_KEY = '57a856481fc55fc8549e5927b0aaa154'
 
-app = Flask(__name__, static_folder='/static/react', static_url_path='/')
-__name__ == "__main__" 
+app = Flask(__name__)
 
 if not os.getenv("DATABASE_URL"):
     raise RuntimeError("DATABASE_URL is not set")
