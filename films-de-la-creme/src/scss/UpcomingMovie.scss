@@ -2,7 +2,7 @@ $primary-color: #222D33;
 $secondary-color: #E0E6EA;
 $tertiary-color: #99AFBB;
 
-div.Popular {
+div.Upcoming {
     margin-top: 0rem;
     padding: 2rem;
 
@@ -17,6 +17,13 @@ div.Popular {
             text-decoration: underline;
             padding-left: 1rem;
         }
+    }
+
+    .BrainhubCarousel {
+        margin: 1rem;
+        padding: 1rem;
+        padding-left: 0.9rem;
+        margin-left: 0rem;
     }
     
     .BrainhubCarousel__arrows {
@@ -48,6 +55,7 @@ div.Popular {
                 font-family: 'Lato', sans-serif;
                 font-weight: 200;
                 color: $tertiary-color; 
+                padding-bottom: .3rem
             }
         }
         

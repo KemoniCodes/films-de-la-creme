@@ -3,7 +3,7 @@ import '../css/PopularMovie.css'
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 
-class PopularMovie extends React.Component {
+class TrendingMovie extends React.Component {
     state = {
         loading: true,
         movie: [],
@@ -11,7 +11,7 @@ class PopularMovie extends React.Component {
     }
 
     async componentDidMount() {
-        let url = "https://api.themoviedb.org/3/movie/popular?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&page=1";
+        let url = "https://api.themoviedb.org/3/trending/movie/week?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US";
         let response = await fetch(url);
         let data = await response.json();
         this.setState({ movie: data.results, loading: false })
@@ -24,7 +24,7 @@ class PopularMovie extends React.Component {
     render() {
         return (
             <div className="Popular">
-                <h1>Popular Movies <span>Explore All</span></h1>
+                <h1>Trending Movies <span>Explore All</span></h1>
 
                 <Carousel
                     slidesPerPage={5}
@@ -59,4 +59,4 @@ class PopularMovie extends React.Component {
     }
 }
 
-export default PopularMovie
+export default TrendingMovie

@@ -1,31 +1,37 @@
-div.Popular {
+div.Upcoming {
   margin-top: 0rem;
   padding: 2rem; }
-  div.Popular h1 {
+  div.Upcoming h1 {
     font-family: 'Lato', sans-serif;
     font-weight: 200;
     color: #E0E6EA; }
-    div.Popular h1 span {
+    div.Upcoming h1 span {
       font-size: 1rem;
       color: #99AFBB;
       text-decoration: underline;
       padding-left: 1rem; }
-  div.Popular .BrainhubCarousel__arrows {
+  div.Upcoming .BrainhubCarousel {
+    margin: 1rem;
+    padding: 1rem;
+    padding-left: 0.9rem;
+    margin-left: 0rem; }
+  div.Upcoming .BrainhubCarousel__arrows {
     background-color: #222D33; }
-    div.Popular .BrainhubCarousel__arrows:hover {
+    div.Upcoming .BrainhubCarousel__arrows:hover {
       background-color: #222D33; }
-    div.Popular .BrainhubCarousel__arrows span:hover {
+    div.Upcoming .BrainhubCarousel__arrows span:hover {
       border-color: #99AFBB;
       background-color: #222D33; }
-  div.Popular div.popular-details div.details {
+  div.Upcoming div.popular-details div.details {
     padding-top: 1rem; }
-    div.Popular div.popular-details div.details h2 {
+    div.Upcoming div.popular-details div.details h2 {
       font-family: 'Lato', sans-serif;
       font-weight: 200;
       color: #E0E6EA;
       padding-bottom: .5rem;
       font-size: 1.2rem; }
-    div.Popular div.popular-details div.details h3 {
+    div.Upcoming div.popular-details div.details h3 {
       font-family: 'Lato', sans-serif;
       font-weight: 200;
-      color: #99AFBB; }
+      color: #99AFBB;
+      padding-bottom: .3rem; }

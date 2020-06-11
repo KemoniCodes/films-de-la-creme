@@ -3,9 +3,11 @@ import '../css/Movies.css'
 import '../css/Slideshow.css'
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
+import TrendingMovie from '../components/TrendingMovie';
+import TopRatedMovie from '../components/TopRatedMovie';
+import UpcomingMovie from '../components/UpcomingMovie';
+import EditorsPickMovie from '../components/EditorsPickMovie';
 
-
-// 16
 
 class Movies extends React.Component {
     state = {
@@ -21,10 +23,10 @@ class Movies extends React.Component {
         let res = await fetch(config);
         let data = await response.json();
         let image = await res.json();
-        this.setState({ movie: data.results[16], loading: false })
+        this.setState({ movie: data.results[17], loading: false })
         this.setState({ bg: image.images.secure_base_url + image.images.backdrop_sizes[3] })
 
-        console.log(this.state.movie[16])
+        console.log(this.state.movie[15])
     }
 
     render() {
@@ -47,7 +49,20 @@ class Movies extends React.Component {
 
                     </div>
 
+
+                    {/*
+                    #add trending movies# xx
+                    #add top rated movies#xx
+                    #add upcoming movies#xx
+                    #add editor's picks# xx*/}
+
+
                 </div>
+
+                <TrendingMovie />
+                <TopRatedMovie />
+                <UpcomingMovie />
+                <EditorsPickMovie />
 
                 <Footer />
 

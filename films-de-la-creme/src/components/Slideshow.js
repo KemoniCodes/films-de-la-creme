@@ -44,7 +44,7 @@ class Slideshow extends React.Component {
                             <div className="now-playing-details">
 
                                 <div className="details">
-                                    <h2>Latest</h2>
+                                    <h2>Now Playing</h2>
                                     <h1 className="title"> {movie.title} <span className="date"> ({movie.release_date}) </span> </h1>
                                     <h2>{movie.vote_average}/10 <span>{movie.vote_count} reviews </span></h2>
 

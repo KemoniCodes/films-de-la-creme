@@ -2,7 +2,7 @@ $primary-color: #222D33;
 $secondary-color: #E0E6EA;
 $tertiary-color: #99AFBB;
 
-div.Popular {
+div.TopRated {
     margin-top: 0rem;
     padding: 2rem;
 
@@ -18,7 +18,11 @@ div.Popular {
             padding-left: 1rem;
         }
     }
-    
+
+    .BrainhubCarousel {
+        padding:1rem;
+    }
+
     .BrainhubCarousel__arrows {
         background-color: $primary-color;
         

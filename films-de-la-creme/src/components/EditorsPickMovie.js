@@ -1,20 +1,22 @@
 import React, { Component } from 'react'
-import '../css/PopularMovie.css'
+import '../css/TopRatedMovie.css'
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 
-class PopularMovie extends React.Component {
+class EditorsPickMovie extends React.Component {
     state = {
         loading: true,
         movie: [],
-        poster: ''
+        poster: '',
+        external_id: ['tt0118694', 'tt0066921', 'tt0169547', 'tt0117951', 'tt0246578', 'tt0457430', 'tt0103772']
     }
 
     async componentDidMount() {
-        let url = "https://api.themoviedb.org/3/movie/popular?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&page=1";
+        // let id = data.movie_results
+        let url = "https://api.themoviedb.org/3/find/{external_id}?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&external_source=imdb_id";
         let response = await fetch(url);
         let data = await response.json();
-        this.setState({ movie: data.results, loading: false })
+        this.setState({ external_id: data.movie_results, loading: false })
         let config = "https://api.themoviedb.org/3/configuration?api_key=57a856481fc55fc8549e5927b0aaa154"
         let res = await fetch(config);
         let image = await res.json();
@@ -23,8 +25,8 @@ class PopularMovie extends React.Component {
 
     render() {
         return (
-            <div className="Popular">
-                <h1>Popular Movies <span>Explore All</span></h1>
+            <div className="TopRated">
+                <h1>Editor's Picks <span>Explore All</span></h1>
 
                 <Carousel
                     slidesPerPage={5}
@@ -32,18 +34,19 @@ class PopularMovie extends React.Component {
                     infinite
                 >
 
-                    {this.state.movie.map((movie, i) => {
+                    {this.state.external_id.map((id, i) => {
                         return (
                             <div className="popular-details">
                                 <div className="image">
-                                    <img src={this.state.poster + movie.poster_path} alt="" />
+                                    <img src={this.state.poster + id.poster_path} alt="" />
                                 </div>
 
                                 <div className="details">
-                                    <h2>{movie.title}</h2>
+                                    <h2>{id.title}</h2>
                                     <h3>
-                                        <i class="fas fa-star"></i> {movie.vote_average}/10
+                                        <i class="fas fa-star"></i> {id.vote_average}/10
                                     </h3>
+                                    <h3>{id.release_date}</h3>
 
                                 </div>
                             </div>
@@ -59,4 +62,4 @@ class PopularMovie extends React.Component {
     }
 }
 
-export default PopularMovie
+export default EditorsPickMovie

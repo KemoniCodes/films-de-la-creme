@@ -1,31 +1,33 @@
-div.Popular {
+div.TopRated {
   margin-top: 0rem;
   padding: 2rem; }
-  div.Popular h1 {
+  div.TopRated h1 {
     font-family: 'Lato', sans-serif;
     font-weight: 200;
     color: #E0E6EA; }
-    div.Popular h1 span {
+    div.TopRated h1 span {
       font-size: 1rem;
       color: #99AFBB;
       text-decoration: underline;
       padding-left: 1rem; }
-  div.Popular .BrainhubCarousel__arrows {
+  div.TopRated .BrainhubCarousel {
+    padding: 1rem; }
+  div.TopRated .BrainhubCarousel__arrows {
     background-color: #222D33; }
-    div.Popular .BrainhubCarousel__arrows:hover {
+    div.TopRated .BrainhubCarousel__arrows:hover {
       background-color: #222D33; }
-    div.Popular .BrainhubCarousel__arrows span:hover {
+    div.TopRated .BrainhubCarousel__arrows span:hover {
       border-color: #99AFBB;
       background-color: #222D33; }
-  div.Popular div.popular-details div.details {
+  div.TopRated div.popular-details div.details {
     padding-top: 1rem; }
-    div.Popular div.popular-details div.details h2 {
+    div.TopRated div.popular-details div.details h2 {
       font-family: 'Lato', sans-serif;
       font-weight: 200;
       color: #E0E6EA;
       padding-bottom: .5rem;
       font-size: 1.2rem; }
-    div.Popular div.popular-details div.details h3 {
+    div.TopRated div.popular-details div.details h3 {
       font-family: 'Lato', sans-serif;
       font-weight: 200;
       color: #99AFBB; }

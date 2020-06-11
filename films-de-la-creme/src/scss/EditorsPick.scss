@@ -2,7 +2,7 @@ $primary-color: #222D33;
 $secondary-color: #E0E6EA;
 $tertiary-color: #99AFBB;
 
-div.Popular {
+div.Editors {
     margin-top: 0rem;
     padding: 2rem;
 
@@ -17,6 +17,10 @@ div.Popular {
             text-decoration: underline;
             padding-left: 1rem;
         }
+    }
+
+    .BrainhubCarousel {
+        padding:1rem;
     }
     
     .BrainhubCarousel__arrows {
