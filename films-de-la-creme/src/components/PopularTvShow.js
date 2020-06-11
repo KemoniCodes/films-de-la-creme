@@ -18,7 +18,7 @@ class PopularTvShow extends React.Component {
         let config = "https://api.themoviedb.org/3/configuration?api_key=57a856481fc55fc8549e5927b0aaa154"
         let res = await fetch(config);
         let image = await res.json();
-        this.setState({ poster: image.images.base_url + image.images.poster_sizes[2] })
+        this.setState({ poster: image.images.secure_base_url + image.images.poster_sizes[2] })
     }
 
     render() {
