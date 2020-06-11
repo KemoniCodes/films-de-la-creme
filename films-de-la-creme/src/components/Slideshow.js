@@ -19,7 +19,7 @@ class Slideshow extends React.Component {
         let data = await response.json();
         let image = await res.json();
         this.setState({ movie: data.results, loading: false })
-        this.setState({ bg: image.images.base_url + image.images.backdrop_sizes[2] })
+        this.setState({ bg: image.images.base_url + image.images.poster_sizes[1] })
     }
 
 
@@ -46,7 +46,7 @@ class Slideshow extends React.Component {
                                 <div className="details">
                                     <h2>Latest</h2>
                                     <h1 className="title"> {movie.title} <span className="date"> ({movie.release_date}) </span> </h1>
-                                    <h2>{movie.vote_average}/10    <span>{movie.vote_count} reviews </span></h2>
+                                    <h2>{movie.vote_average}/10 <span>{movie.vote_count} reviews </span></h2>
 
                                     <p>{movie.overview}</p>
                                 </div>
@@ -56,11 +56,7 @@ class Slideshow extends React.Component {
 
                                 </div>
 
-
-
                             </div>
-
-
 
                         )
 
@@ -69,16 +65,9 @@ class Slideshow extends React.Component {
                     )
                     }
 
-
                 </Carousel >
             </div >
-
-
-
         )
-
-
-
     }
 
 }

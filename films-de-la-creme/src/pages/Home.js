@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import '../css/App.css'
-import Slideshow from './Slideshow'
-import Footer from './Footer'
+import Slideshow from '../components/Slideshow'
+import Footer from '../components/Footer'
+import PopularMovie from '../components/PopularMovie'
+import PopularTvShow from '../components/PopularTvShow'
 
 
 class Home extends React.Component {
@@ -24,6 +26,8 @@ class Home extends React.Component {
                     </ul>
                 </nav>
                 <Slideshow />
+                <PopularMovie />
+                <PopularTvShow />
                 <Footer />
             </div >
 

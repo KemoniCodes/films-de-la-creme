@@ -9,16 +9,7 @@ $tertiary-color: #99AFBB;
     margin: 0px;
     padding: 0px;
 }
-
-// body#container {
-//   height: 100vh;
-//   width: 100vw;
-//   background-repeat: no-repeat;
-//   background-size: 1440px 750px;
-// }
-
-
-  
+ 
 div.home {
   background-color: #222D33;
     
@@ -29,6 +20,16 @@ div.home {
         list-style: none;
         display: inline-flex;
         padding-left: 0px;
+  
+        li {
+          padding-right: 6rem;
+          padding-top: 2rem;
+          color: $tertiary-color;
+          font-family: 'Lato', sans-serif;
+          font-weight: 400;
+          font-size: 1.4rem;
+          letter-spacing: 1.2px;
+        }
 
         a {
           text-decoration: none;
@@ -42,16 +43,8 @@ div.home {
           text-decoration: none;
         }
 
-
-  
-        li {
-          padding-right: 6rem;
-          padding-top: 2rem;
-          color: $tertiary-color;
-          font-family: 'Lato', sans-serif;
-          font-weight: 400;
-          font-size: 1.4rem;
-          letter-spacing: 1.2px;
+        a:active {
+          color: $secondary-color;
         }
   
         li#logo {

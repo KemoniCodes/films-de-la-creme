@@ -11,12 +11,6 @@ div.home {
       list-style: none;
       display: inline-flex;
       padding-left: 0px; }
-      div.home nav ul a {
-        text-decoration: none; }
-      div.home nav ul li:hover {
-        color: #E0E6EA; }
-      div.home nav ul a:visited {
-        text-decoration: none; }
       div.home nav ul li {
         padding-right: 6rem;
         padding-top: 2rem;
@@ -25,6 +19,14 @@ div.home {
         font-weight: 400;
         font-size: 1.4rem;
         letter-spacing: 1.2px; }
+      div.home nav ul a {
+        text-decoration: none; }
+      div.home nav ul li:hover {
+        color: #E0E6EA; }
+      div.home nav ul a:visited {
+        text-decoration: none; }
+      div.home nav ul a:active {
+        color: #E0E6EA; }
       div.home nav ul li#logo {
         padding-top: 0.5rem; }
       div.home nav ul li#last {

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './css/App.css';
-import Home from './components/Home';
+import Home from './pages/Home';
 
 
 
