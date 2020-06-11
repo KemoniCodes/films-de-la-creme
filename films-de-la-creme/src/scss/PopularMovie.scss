@@ -3,7 +3,7 @@ $secondary-color: #E0E6EA;
 $tertiary-color: #99AFBB;
 
 div.Popular {
-    margin-top: 8rem;
+    margin-top: 0rem;
     padding: 2rem;
 
     h1 {
@@ -41,6 +41,7 @@ div.Popular {
                 font-weight: 200;
                 color: $secondary-color;
                 padding-bottom: .5rem;
+                font-size: 1.3rem;
             }
 
             h3 {

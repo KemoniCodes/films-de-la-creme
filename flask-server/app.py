@@ -13,7 +13,7 @@ if not os.getenv("DATABASE_URL"):
 
 
 @app.route("/", methods = ['POST','GET'])
-def my_index():
+def index():
     #get now playing movies#
     config = requests.get("https://api.themoviedb.org/3/configuration?api_key=57a856481fc55fc8549e5927b0aaa154")
     
@@ -23,6 +23,16 @@ def my_index():
     data= url.json()
     return render_template("index.html", data=data, image=image)
 
+
+@app.route('/movies', methods = ['POST' , 'GET'])
+def movies():
+    #get all movies#
+    return render_template('index.html')
+
+@app.route('/movies/popular', methods = ['POST' , 'GET'])
+def popular_movies():
+    #get popular movies#
+    return render_template('movies.html')
 
 
 

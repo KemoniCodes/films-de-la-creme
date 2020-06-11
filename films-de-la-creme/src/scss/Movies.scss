@@ -1,0 +1,133 @@
+$primary-color: #222D33;
+$secondary-color: #E0E6EA;
+$tertiary-color: #99AFBB;
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+ 
+div.Movies {
+  background-color: #222D33;
+    
+  nav {
+      text-align: center;
+      
+      ul {
+        list-style: none;
+        display: inline-flex;
+        padding-left: 0px;
+  
+        li {
+          padding-right: 6rem;
+          padding-top: 2rem;
+          color: $tertiary-color;
+          font-family: 'Lato', sans-serif;
+          font-weight: 400;
+          font-size: 1.4rem;
+          letter-spacing: 1.2px;
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        li:hover {
+          color: $secondary-color;
+        }
+
+        a:visited {
+          text-decoration: none;
+        }
+
+        a:active {
+          color: $secondary-color;
+        }
+  
+        li#logo {
+          padding-top: 0.5rem;
+        }
+  
+        li#last {
+          padding-right: 0rem;
+        }
+  
+        img {
+          width: 90px;
+          height: 90px;
+          // padding-right: 6rem;
+        }
+      }
+    }
+   
+}
+
+div.now-playing-details {  
+    height: 100vh;
+    margin-top: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #E0E6EA;
+    
+
+    div.details {
+      position: absolute;
+      width: 60vw;
+      right: 28%;
+      top: 40%;
+      bottom: 8%;
+      background-color: rgba(0,0,0,.4);
+      padding: 1rem;
+      border: 2px;
+      border-radius: 2rem;  
+      height: 45vh;
+  
+    }
+      div.image {
+          margin-left: 4.5rem;
+          
+          img {
+          height: 75vh;
+          width: 90vw;
+          border-radius: 1rem;
+          }
+      }
+  }
+   
+    
+    h1.title {
+      font-size: 3.5rem;
+      font-weight: 400;
+      letter-spacing: 1.2px;
+  
+  
+      span.date {
+        font-style: italic;
+      }
+    }
+  
+    h2 {
+      font-weight: 300;
+      font-size: 2.2rem;
+      margin-top: .2rem;
+      text-transform: uppercase;
+      color: #99afbb;
+      letter-spacing: 1.2px;
+      
+      span {
+          padding-left: .2rem;
+      }
+
+  
+    }
+  
+    p {
+      font-family: 'Roboto', sans-serif;
+      margin-top: 1rem;
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+      letter-spacing: 1.2px;  
+    }

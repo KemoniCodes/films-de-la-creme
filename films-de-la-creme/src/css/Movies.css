@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px; }
+
+div.Movies {
+  background-color: #222D33; }
+  div.Movies nav {
+    text-align: center; }
+    div.Movies nav ul {
+      list-style: none;
+      display: inline-flex;
+      padding-left: 0px; }
+      div.Movies nav ul li {
+        padding-right: 6rem;
+        padding-top: 2rem;
+        color: #99AFBB;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 1.4rem;
+        letter-spacing: 1.2px; }
+      div.Movies nav ul a {
+        text-decoration: none; }
+      div.Movies nav ul li:hover {
+        color: #E0E6EA; }
+      div.Movies nav ul a:visited {
+        text-decoration: none; }
+      div.Movies nav ul a:active {
+        color: #E0E6EA; }
+      div.Movies nav ul li#logo {
+        padding-top: 0.5rem; }
+      div.Movies nav ul li#last {
+        padding-right: 0rem; }
+      div.Movies nav ul img {
+        width: 90px;
+        height: 90px; }
+
+div.now-playing-details {
+  height: 100vh;
+  margin-top: 2rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #E0E6EA; }
+  div.now-playing-details div.details {
+    position: absolute;
+    width: 60vw;
+    right: 28%;
+    top: 40%;
+    bottom: 8%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+    border: 2px;
+    border-radius: 2rem;
+    height: 45vh; }
+  div.now-playing-details div.image {
+    margin-left: 4.5rem; }
+    div.now-playing-details div.image img {
+      height: 75vh;
+      width: 90vw;
+      border-radius: 1rem; }
+
+h1.title {
+  font-size: 3.5rem;
+  font-weight: 400;
+  letter-spacing: 1.2px; }
+  h1.title span.date {
+    font-style: italic; }
+
+h2 {
+  font-weight: 300;
+  font-size: 2.2rem;
+  margin-top: .2rem;
+  text-transform: uppercase;
+  color: #99afbb;
+  letter-spacing: 1.2px; }
+  h2 span {
+    padding-left: .2rem; }
+
+p {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  letter-spacing: 1.2px; }

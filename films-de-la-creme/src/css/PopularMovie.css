@@ -1,5 +1,5 @@
 div.Popular {
-  margin-top: 8rem;
+  margin-top: 0rem;
   padding: 2rem; }
   div.Popular h1 {
     font-family: 'Lato', sans-serif;
@@ -23,7 +23,8 @@ div.Popular {
       font-family: 'Lato', sans-serif;
       font-weight: 200;
       color: #E0E6EA;
-      padding-bottom: .5rem; }
+      padding-bottom: .5rem;
+      font-size: 1.3rem; }
     div.Popular div.popular-details div.details h3 {
       font-family: 'Lato', sans-serif;
       font-weight: 200;

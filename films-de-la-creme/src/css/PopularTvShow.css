@@ -25,7 +25,8 @@ div.PopularTv {
       font-family: 'Lato', sans-serif;
       font-weight: 200;
       color: #E0E6EA;
-      padding-bottom: .5rem; }
+      padding-bottom: .5rem;
+      font-size: 1.3rem; }
     div.PopularTv div.popular-details div.details h3 {
       font-family: 'Lato', sans-serif;
       font-weight: 200;

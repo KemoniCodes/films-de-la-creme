@@ -7,7 +7,7 @@ div.Slideshow {
     height: 100vh;
   
     .BrainhubCarousel__track {
-        height: 100vh;
+        height: 75vh;
       }
       .BrainhubCarouselItem {
         height: 100vh;
@@ -38,19 +38,18 @@ div.Slideshow {
         position: absolute;
         width: 60vw;
         right: 28%;
-        top: 30%;
+        top: 20%;
         bottom: 8%;
         background-color: rgba(0,0,0,.4);
         padding: 1rem;
         border: 2px;
         border-radius: 2rem;
-    
-    
+        height: 48vh;
       }
         div.image {
             
             img {
-            height: 100vh;
+            height: 70vh;
             width: 90vw;
             border-radius: 1rem;
             }

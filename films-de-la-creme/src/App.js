@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './css/App.css';
 import Home from './pages/Home';
+import Movies from './pages/Movies';
 
 
 
@@ -9,9 +11,18 @@ function App() {
     fetch('/').then(response => response.json())
 
   }, [])
+
   return (
     <div className="App">
-      <Home />
+      < BrowserRouter >
+        <Switch >
+          {/* <PrivateRoute exact path={['/home', '/']} component={Home} /> */}
+          <Route exact path={['/home', '/']} component={Home} />
+          <Route path="/movies" component={Movies} />
+        </Switch >
+      </BrowserRouter >
+
+      {/* <Home /> */}
     </div>
   );
 }

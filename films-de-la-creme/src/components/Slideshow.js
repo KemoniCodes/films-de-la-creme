@@ -19,7 +19,7 @@ class Slideshow extends React.Component {
         let data = await response.json();
         let image = await res.json();
         this.setState({ movie: data.results, loading: false })
-        this.setState({ bg: image.images.secure_base_url + image.images.poster_sizes[1] })
+        this.setState({ bg: image.images.secure_base_url + image.images.backdrop_sizes[3] })
     }
 
 
