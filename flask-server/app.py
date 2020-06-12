@@ -30,12 +30,17 @@ def home():
 
 @app.route('/movies', methods = ['POST' , 'GET'])
 def movies():
-    #get all movies#
+    #get movie categories#
     return render_template('index.html')
 
 @app.route('/movies/popular')
 def popular_movies():
-    #get popular movies#
+    #get all popular movies#
+    return render_template('index.html')
+
+@app.route('/movies/trending')
+def trending_movies():
+    #get trending movies#
     return render_template('index.html')
 
 

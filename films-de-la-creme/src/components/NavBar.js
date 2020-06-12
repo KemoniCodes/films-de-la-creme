@@ -14,7 +14,7 @@ class NavBar extends React.Component {
                         <a href='/movies'><li>MOVIES</li></a>
                         <li>TV SHOWS</li>
                         <li id="logo">
-                            <a to="/">
+                            <a href="/">
                                 <img src={require("../img/food-and-restaurant.png")} alt="" />
                             </a>
                         </li>

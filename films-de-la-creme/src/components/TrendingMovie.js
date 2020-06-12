@@ -24,7 +24,7 @@ class TrendingMovie extends React.Component {
     render() {
         return (
             <div className="Popular">
-                <h1>Trending Movies <span>Explore All</span></h1>
+                <h1>Trending Movies <a href="/movies/trending"><span>Explore All</span></a></h1>
 
                 <Carousel
                     slidesPerPage={5}
