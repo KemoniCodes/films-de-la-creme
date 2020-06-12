@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 import '../css/PopularMovie.css'
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
@@ -24,7 +25,7 @@ class PopularMovie extends React.Component {
     render() {
         return (
             <div className="Popular">
-                <h1>Popular Movies <span>Explore All</span></h1>
+                <h1>Popular Movies < a href='/movies/popular'><span>Explore All</span></a></h1>
 
                 <Carousel
                     slidesPerPage={5}

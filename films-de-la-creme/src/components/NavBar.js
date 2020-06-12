@@ -10,13 +10,13 @@ class NavBar extends React.Component {
             <div className="home">
                 <nav>
                     <ul>
-                        <Link to="/"><li >HOME</li></Link>
-                        <Link to='/movies'><li>MOVIES</li></Link>
+                        <a href="/"><li >HOME</li></a>
+                        <a href='/movies'><li>MOVIES</li></a>
                         <li>TV SHOWS</li>
                         <li id="logo">
-                            <Link to="/">
+                            <a to="/">
                                 <img src={require("../img/food-and-restaurant.png")} alt="" />
-                            </Link>
+                            </a>
                         </li>
                         <li>SEARCH</li>
                         <li>PROFILE</li>

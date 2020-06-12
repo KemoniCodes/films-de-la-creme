@@ -26,7 +26,6 @@ class Movies extends React.Component {
         this.setState({ movie: data.results[17], loading: false })
         this.setState({ bg: image.images.secure_base_url + image.images.backdrop_sizes[3] })
 
-        console.log(this.state.movie[15])
     }
 
     render() {

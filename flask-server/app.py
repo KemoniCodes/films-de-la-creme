@@ -23,16 +23,20 @@ def index():
     data= url.json()
     return render_template("index.html", data=data, image=image)
 
+@app.route('/home', methods = ['POST' , 'GET'])
+def home():
+    #get all movies#
+    return render_template('index.html')
 
 @app.route('/movies', methods = ['POST' , 'GET'])
 def movies():
     #get all movies#
     return render_template('index.html')
 
-@app.route('/movies/popular', methods = ['POST' , 'GET'])
+@app.route('/movies/popular')
 def popular_movies():
     #get popular movies#
-    return render_template('movies.html')
+    return render_template('index.html')
 
 
 
