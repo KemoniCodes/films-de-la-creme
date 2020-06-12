@@ -36,4 +36,5 @@ div.PopularPage {
       div.PopularPage div.popular-details div.details h3 {
         font-family: 'Lato', sans-serif;
         font-weight: 200;
-        color: #99AFBB; }
+        color: #99AFBB;
+        padding-bottom: .5rem; }

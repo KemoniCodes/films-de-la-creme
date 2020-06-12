@@ -24,7 +24,7 @@ class UpcomingMovie extends React.Component {
     render() {
         return (
             <div className="Upcoming">
-                <h1>Upcoming Movies <span>Explore All</span></h1>
+                <h1>Upcoming Movies <a href="/movies/upcoming"><span>Explore All</span></a></h1>
 
                 <Carousel
                     slidesPerPage={5}

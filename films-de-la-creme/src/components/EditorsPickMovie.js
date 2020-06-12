@@ -65,7 +65,7 @@ class EditorsPickMovie extends React.Component {
     render() {
         return (
             <div className="TopRated">
-                <h1>Editor's Picks <span>Explore All</span></h1>
+                <h1>Editor's Picks </h1>
 
                 <Carousel
                     slidesPerPage={5}

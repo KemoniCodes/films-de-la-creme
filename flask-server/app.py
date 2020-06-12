@@ -43,6 +43,16 @@ def trending_movies():
     #get trending movies#
     return render_template('index.html')
 
+@app.route('/movies/top-rated')
+def top_rated_movies():
+    #get top rated movies#
+    return render_template('index.html')
+
+@app.route('/movies/upcoming')
+def upcoming_movies():
+    #get upcoming movies#
+    return render_template('index.html')
+
 
 
 

@@ -24,7 +24,7 @@ class TopRatedMovie extends React.Component {
     render() {
         return (
             <div className="TopRated">
-                <h1>Top Rated Movies <span>Explore All</span></h1>
+                <h1>Top Rated Movies <a href="/movies/top-rated"><span>Explore All</span></a></h1>
 
                 <Carousel
                     slidesPerPage={5}
