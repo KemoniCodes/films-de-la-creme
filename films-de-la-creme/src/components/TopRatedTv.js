@@ -25,7 +25,6 @@ class TopRatedTv extends React.Component {
         return (
             <div className="Trending">
                 <h1>Top Rated Tv Shows <a href="/tv/top_rated"><span>Explore All</span></a></h1>
-
                 <Carousel
                     slidesPerPage={5}
                     arrows

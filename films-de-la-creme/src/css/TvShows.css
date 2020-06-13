@@ -7,6 +7,8 @@ div.TvShows {
   background-color: #222D33; }
   div.TvShows .BrainhubCarousel__track {
     height: 75vh; }
+  div.TvShows .BrainhubCarouselItem {
+    height: 100vh; }
   div.TvShows .BrainhubCarousel__dots {
     background-color: #222D33;
     padding: 1rem; }
