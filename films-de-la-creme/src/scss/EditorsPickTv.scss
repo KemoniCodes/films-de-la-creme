@@ -1,0 +1,65 @@
+$primary-color: #222D33;
+$secondary-color: #E0E6EA;
+$tertiary-color: #99AFBB;
+
+div.TopRated {
+    margin-top: 0rem;
+    padding: 2rem;
+
+    h1 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 200;
+        color: #E0E6EA; 
+
+        span {
+            font-size: 1rem;
+            color: $tertiary-color;
+            text-decoration: underline;
+            padding-left: 1rem;
+        }
+    }
+
+    .BrainhubCarousel {
+        padding:1.3rem;
+        padding-top: 1.5rem;
+        height: 350px;
+    }
+
+    .BrainhubCarouselItem {
+        padding-top: 4.5rem;
+    }
+    
+    .BrainhubCarousel__arrows {
+        background-color: $primary-color;
+        
+        &:hover {
+            background-color: $primary-color;
+        }
+
+        span:hover {
+            border-color: $tertiary-color;
+            background-color: $primary-color;
+        }
+    }
+
+    div.popular-details {
+        div.details {
+            padding-top: 1rem;
+
+            h2 {
+                font-family: 'Lato', sans-serif;
+                font-weight: 200;
+                color: $secondary-color;
+                padding-bottom: .5rem;
+                font-size: 1.2rem;
+            }
+
+            h3 {
+                font-family: 'Lato', sans-serif;
+                font-weight: 200;
+                color: $tertiary-color; 
+            }
+        }
+        
+    }
+}

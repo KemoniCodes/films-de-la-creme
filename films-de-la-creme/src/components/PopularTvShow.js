@@ -24,7 +24,7 @@ class PopularTvShow extends React.Component {
     render() {
         return (
             <div className="PopularTv">
-                <h1>Popular Tv Shows <span>Explore All</span></h1>
+                <h1>Popular Tv Shows <a href="/tv/popular"><span>Explore All</span></a></h1>
 
                 <Carousel
                     slidesPerPage={5}

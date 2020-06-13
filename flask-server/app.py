@@ -43,7 +43,7 @@ def trending_movies():
     #get trending movies#
     return render_template('index.html')
 
-@app.route('/movies/top-rated')
+@app.route('/movies/top_rated')
 def top_rated_movies():
     #get top rated movies#
     return render_template('index.html')
@@ -51,6 +51,26 @@ def top_rated_movies():
 @app.route('/movies/upcoming')
 def upcoming_movies():
     #get upcoming movies#
+    return render_template('index.html')
+
+@app.route('/tv')
+def tv_shows():
+    #get tv categories#
+    return render_template('index.html')
+
+@app.route('/tv/top_rated')
+def top_rated_tv_shows():
+    #get top rated tv#
+    return render_template('index.html')
+
+@app.route('/tv/popular')
+def popular_tv_shows():
+    #get popular tv#
+    return render_template('index.html')
+
+@app.route('/tv/trending')
+def trending_tv_shows():
+    #get trending tv categories#
     return render_template('index.html')
 
 

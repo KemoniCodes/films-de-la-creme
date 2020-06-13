@@ -2,15 +2,16 @@ $primary-color: #222D33;
 $secondary-color: #E0E6EA;
 $tertiary-color: #99AFBB;
 
-div.Slideshow {
-    margin-top: 2rem;
+html {
+  background-color: $primary-color;
+}
+div.TvShows {
+    margin-top: 0rem;
     height: 100vh;
+    background-color: $primary-color;
   
     .BrainhubCarousel__track {
         height: 75vh;
-      }
-      .BrainhubCarouselItem {
-        height: 100vh;
       }
 
     .BrainhubCarousel__dots {
@@ -33,9 +34,7 @@ div.Slideshow {
       font-weight: 300;
       color: #E0E6EA;
       margin-top: 3.5rem;
-
       
-  
       div.details {
         position: absolute;
         width: 60vw;
@@ -92,4 +91,9 @@ div.Slideshow {
         line-height: 1.5rem;
         letter-spacing: 1.2px;  
       }
-    }
+
+}
+
+div.Footer {
+  padding-top: 15rem;
+}

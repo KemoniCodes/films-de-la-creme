@@ -9,6 +9,9 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import TopRatedMoviePage from './pages/TopRatedMoviePage';
 import UpcomingMoviePage from './pages/UpcomingMoviePage';
+import TvShows from './pages/TvShows';
+import TrendingTvPage from './pages/TrendingTvPage';
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,8 +22,11 @@ ReactDOM.render(
         <Route path="/movies" exact component={Movies} />
         <Route path='/movies/popular' exact component={PopularMoviePage} />
         <Route path='/movies/trending' exact component={TrendingMoviePage} />
-        <Route path='/movies/top-rated' exact component={TopRatedMoviePage} />
+        <Route path='/movies/top_rated' exact component={TopRatedMoviePage} />
         <Route path='/movies/upcoming' exact component={UpcomingMoviePage} />
+        <Route path='/tv' exact component={TvShows} />
+        <Route path='/tv/trending' component={TrendingTvPage} />
+
       </Switch >
     </BrowserRouter >
   </React.StrictMode>,

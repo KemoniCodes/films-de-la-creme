@@ -1,24 +1,26 @@
-div.Slideshow {
-  margin-top: 2rem;
-  height: 100vh; }
-  div.Slideshow .BrainhubCarousel__track {
+html {
+  background-color: #222D33; }
+
+div.TvShows {
+  margin-top: 0rem;
+  height: 100vh;
+  background-color: #222D33; }
+  div.TvShows .BrainhubCarousel__track {
     height: 75vh; }
-  div.Slideshow .BrainhubCarouselItem {
-    height: 100vh; }
-  div.Slideshow .BrainhubCarousel__dots {
+  div.TvShows .BrainhubCarousel__dots {
     background-color: #222D33;
     padding: 1rem; }
-    div.Slideshow .BrainhubCarousel__dots .BrainhubCarousel__dot {
+    div.TvShows .BrainhubCarousel__dots .BrainhubCarousel__dot {
       background-color: #222D33; }
-      div.Slideshow .BrainhubCarousel__dots .BrainhubCarousel__dot::before {
+      div.TvShows .BrainhubCarousel__dots .BrainhubCarousel__dot::before {
         background-color: #99AFBB; }
-  div.Slideshow div.now-playing-details {
+  div.TvShows div.now-playing-details {
     height: 100vh;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     color: #E0E6EA;
     margin-top: 3.5rem; }
-    div.Slideshow div.now-playing-details div.details {
+    div.TvShows div.now-playing-details div.details {
       position: absolute;
       width: 60vw;
       right: 28%;
@@ -29,28 +31,31 @@ div.Slideshow {
       border: 2px;
       border-radius: 2rem;
       height: 48vh; }
-    div.Slideshow div.now-playing-details div.image img {
+    div.TvShows div.now-playing-details div.image img {
       height: 70vh;
       width: 90vw;
       border-radius: 1rem; }
-  div.Slideshow h1.title {
+  div.TvShows h1.title {
     font-size: 3.5rem;
     font-weight: 400;
     letter-spacing: 1.2px; }
-    div.Slideshow h1.title span.date {
+    div.TvShows h1.title span.date {
       font-style: italic; }
-  div.Slideshow h2 {
+  div.TvShows h2 {
     font-weight: 300;
     font-size: 2.2rem;
     margin-top: .2rem;
     text-transform: uppercase;
     color: #99afbb;
     letter-spacing: 1.2px; }
-    div.Slideshow h2 span {
+    div.TvShows h2 span {
       padding-left: .2rem; }
-  div.Slideshow p {
+  div.TvShows p {
     font-family: 'Roboto', sans-serif;
     margin-top: 1rem;
     font-size: 1.3rem;
     line-height: 1.5rem;
     letter-spacing: 1.2px; }
+
+div.Footer {
+  padding-top: 15rem; }

@@ -1,0 +1,37 @@
+div.Trending {
+  margin-top: 0rem;
+  padding: 2rem;
+  height: 350px;
+  margin-bottom: 10rem; }
+  div.Trending h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    color: #E0E6EA; }
+    div.Trending h1 span {
+      font-size: 1rem;
+      color: #99AFBB;
+      text-decoration: underline;
+      padding-left: 1rem; }
+  div.Trending .BrainhubCarouselItem {
+    height: 50vh;
+    padding-top: 1.5rem; }
+  div.Trending .BrainhubCarousel__arrows {
+    background-color: #222D33;
+    margin-bottom: 10rem; }
+    div.Trending .BrainhubCarousel__arrows:hover {
+      background-color: #222D33; }
+    div.Trending .BrainhubCarousel__arrows span:hover {
+      border-color: #99AFBB;
+      background-color: #222D33; }
+  div.Trending div.popular-details div.details {
+    padding-top: 1rem; }
+    div.Trending div.popular-details div.details h2 {
+      font-family: 'Lato', sans-serif;
+      font-weight: 200;
+      color: #E0E6EA;
+      padding-bottom: .5rem;
+      font-size: 1.2rem; }
+    div.Trending div.popular-details div.details h3 {
+      font-family: 'Lato', sans-serif;
+      font-weight: 200;
+      color: #99AFBB; }

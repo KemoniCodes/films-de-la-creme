@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import '../css/TopRatedMovie.css'
+import '../css/TrendingTv.css'
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 
-class TopRatedMovie extends React.Component {
+class TrendingTv extends React.Component {
     state = {
         loading: true,
         movie: [],
@@ -11,7 +11,7 @@ class TopRatedMovie extends React.Component {
     }
 
     async componentDidMount() {
-        let url = "https://api.themoviedb.org/3/movie/top_rated?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&page=1";
+        let url = "https://api.themoviedb.org/3/trending/tv/week?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US";
         let response = await fetch(url);
         let data = await response.json();
         this.setState({ movie: data.results, loading: false })
@@ -23,8 +23,8 @@ class TopRatedMovie extends React.Component {
 
     render() {
         return (
-            <div className="TopRated">
-                <h1>Top Rated Movies <a href="/movies/top_rated"><span>Explore All</span></a></h1>
+            <div className="Trending">
+                <h1>Trending Tv Shows <a href="/tv/trending"><span>Explore All</span></a></h1>
 
                 <Carousel
                     slidesPerPage={5}
@@ -40,7 +40,7 @@ class TopRatedMovie extends React.Component {
                                 </div>
 
                                 <div className="details">
-                                    <h2>{movie.title}</h2>
+                                    <h2>{movie.name}</h2>
                                     <h3>
                                         <i class="fas fa-star"></i> {movie.vote_average}/10
                                     </h3>
@@ -59,4 +59,4 @@ class TopRatedMovie extends React.Component {
     }
 }
 
-export default TopRatedMovie
+export default TrendingTv
