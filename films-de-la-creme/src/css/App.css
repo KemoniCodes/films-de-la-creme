@@ -6,7 +6,8 @@
 div.home {
   background-color: #222D33; }
   div.home nav {
-    text-align: center; }
+    text-align: center;
+    margin-top: 1rem; }
     div.home nav ul {
       list-style: none;
       display: inline-flex;
@@ -22,7 +23,8 @@ div.home {
       div.home nav ul a {
         text-decoration: none; }
       div.home nav ul li:hover {
-        color: #E0E6EA; }
+        color: #E0E6EA;
+        cursor: pointer; }
       div.home nav ul a:visited {
         text-decoration: none; }
       div.home nav ul a:active {

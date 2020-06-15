@@ -12,6 +12,7 @@ import UpcomingMoviePage from './pages/UpcomingMoviePage';
 import TvShows from './pages/TvShows';
 import TrendingTvPage from './pages/TrendingTvPage';
 import TopRatedTvPage from './pages/TopRatedTvPage';
+import PopularTvPage from './pages/PopularTvPage';
 
 
 ReactDOM.render(
@@ -28,6 +29,8 @@ ReactDOM.render(
         <Route path='/tv' exact component={TvShows} />
         <Route path='/tv/trending' exact component={TrendingTvPage} />
         <Route path='/tv/top_rated' exact component={TopRatedTvPage} />
+        <Route path='/tv/popular' exact component={PopularTvPage} />
+
 
 
       </Switch >

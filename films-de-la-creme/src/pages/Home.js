@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 import PopularMovie from '../components/PopularMovie'
 import PopularTvShow from '../components/PopularTvShow'
 import NavBar from '../components/NavBar';
+import SearchBar from '../components/SearchBar';
 
 
 class Home extends React.Component {
