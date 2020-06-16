@@ -16,10 +16,21 @@ h1 {
     text-decoration: underline;
     padding-left: 1rem; }
 
-div.container {
+div.results-container {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
   padding: 1rem; }
+
+.search-loading {
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+.show {
+  display: inline-block; }
+
+.hide {
+  display: none; }
 
 div.popular-details {
   padding: 1rem;

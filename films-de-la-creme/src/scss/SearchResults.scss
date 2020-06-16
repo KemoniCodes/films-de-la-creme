@@ -23,10 +23,24 @@ h1 {
     }
 }
 
-div.container {
+div.results-container {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     padding:1rem
+}
+
+.search-loading {
+    left:0;
+    right:0;
+    margin: auto;
+}
+
+.show {
+    display: inline-block;
+}
+
+.hide {
+    display: none;
 }
 
 // .BrainhubCarousel__arrows {

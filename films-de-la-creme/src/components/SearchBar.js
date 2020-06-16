@@ -1,11 +1,7 @@
 import React, { Link } from 'react';
 import '../css/SearchBar.css'
 import axios from 'axios'
-import SearchResults from '../pages/SearchResults';
-import PopularMovie from './PopularMovie';
-import PopularTvShow from './PopularTvShow';
-import Slideshow from './Slideshow';
-import Home from '../pages/Home';
+import Loader from '../img/loader.gif'
 
 
 class SearchBar extends React.Component {
@@ -122,25 +118,25 @@ class SearchBar extends React.Component {
     }
 
     render() {
-        const { query } = this.state;
+        const { query, loading, message } = this.state;
         const { showHide1 } = this.state;
 
         return (
             <div className="SearchBar">
-                {/* <Link to='/search'> */}
                 <label className="search-label" htmlFor="input-search" method="POST">
                     <input name='query' type="text" className="search" placeholder=" Search for movie,tv show, or a person..." value={query} onChange={this.handleOnInputChange} />
                     <button type="submit"><i className="fas fa-search"></i></button>
                 </label>
-                {/* </Link> */}
+
+                {message && <p className="message">{message}</p>}
+
                 <h1>Displaying Results for '{query}' </h1>
+
+                <img src={Loader} className={`search-loading ${loading ? 'show' : 'hide'}`} alt="loader" />
+
 
                 {this.renderSearchResults()}
             </div>
-            //             {showHide1 && <Slideshow />}
-            // {showHide1 && <PopularMovie />}
-            // {showHide1 && <PopularTvShow />}
-
         )
     }
 }
