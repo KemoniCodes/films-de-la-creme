@@ -1,0 +1,39 @@
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+  color: #E0E6EA;
+  padding: 4rem;
+  font-size: 3.5rem;
+  border-bottom: #99AFBB 2px solid;
+  margin-left: 2rem;
+  margin-right: 12rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 4rem; }
+  h1 span {
+    font-size: 1rem;
+    color: #99AFBB;
+    text-decoration: underline;
+    padding-left: 1rem; }
+
+div.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  padding: 1rem; }
+
+div.popular-details {
+  padding: 1rem;
+  padding-bottom: 3.5rem; }
+  div.popular-details div.details {
+    padding-top: 1rem; }
+    div.popular-details div.details h2 {
+      font-family: 'Lato', sans-serif;
+      font-weight: 200;
+      color: #E0E6EA;
+      padding-bottom: .5rem;
+      font-size: 1.2rem; }
+    div.popular-details div.details h3 {
+      font-family: 'Lato', sans-serif;
+      font-weight: 200;
+      color: #99AFBB;
+      padding-bottom: .5rem; }

@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
-
+import SearchBar from '../components/SearchBar';
+import '../css/SearchResults.css'
 
 class SearchResults extends React.Component {
     constructor(props) {
@@ -28,45 +29,45 @@ class SearchResults extends React.Component {
         this.setState({ poster: image.images.secure_base_url + image.images.poster_sizes[2] });
     }
 
-    // fetchSearchResults = (updatedPageNo = '', query) => {
-    //     const pageNumber = updatedPageNo ? `&page=${updatedPageNo}` : '';
-    //     const searchUrl = `https://api.themoviedb.org/3/search/multi?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&query=${query}${pageNumber}&include_adult=false`;
+    fetchSearchResults = (updatedPageNo = '', query) => {
+        const pageNumber = updatedPageNo ? `&page=${updatedPageNo}` : '';
+        const searchUrl = `https://api.themoviedb.org/3/search/multi?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&query=${query}${pageNumber}&include_adult=false`;
 
-    //     if (this.cancel) {
-    //         this.cancel.cancel();
-    //     }
+        if (this.cancel) {
+            this.cancel.cancel();
+        }
 
-    //     this.cancel = axios.CancelToken.source();
+        this.cancel = axios.CancelToken.source();
 
-    //     axios.get(searchUrl, {
-    //         cancelToken: this.cancel.token
-    //     })
-    //         .then(res => {
-    //             const resultNotFoundMsg = !res.data.results.length
-    //                 ? 'There are no search results. Please try a new search.'
-    //                 : '';
-    //             this.setState({
-    //                 results: res.data.results,
-    //                 message: resultNotFoundMsg,
-    //                 loading: false
-    //             })
-    //         })
-    //         .catch(error => {
-    //             if (axios.isCancel(error) || error) {
-    //                 this.setState({
-    //                     loading: false,
-    //                     message: 'Failed to fetch the data. Please check network'
-    //                 })
-    //             }
-    //         })
-    // }
+        axios.get(searchUrl, {
+            cancelToken: this.cancel.token
+        })
+            .then(res => {
+                const resultNotFoundMsg = !res.data.results.length
+                    ? 'There are no search results. Please try a new search.'
+                    : '';
+                this.setState({
+                    results: res.data.results,
+                    message: resultNotFoundMsg,
+                    loading: false
+                })
+            })
+            .catch(error => {
+                if (axios.isCancel(error) || error) {
+                    this.setState({
+                        loading: false,
+                        message: 'Failed to fetch the data. Please check network'
+                    })
+                }
+            })
+    }
 
-    // handleOnInputChange = (event) => {
-    //     const query = event.target.value;
-    //     this.setState({ query: query, loading: true, message: '' }, () => {
-    //         this.fetchSearchResults(1, query);
-    //     })
-    // }
+    handleOnInputChange = (event) => {
+        const query = event.target.value;
+        this.setState({ query: query, loading: true, message: '' }, () => {
+            this.fetchSearchResults(1, query);
+        })
+    }
 
     renderSearchResults = () => {
         const { results } = this.state;
@@ -81,6 +82,8 @@ class SearchResults extends React.Component {
                                 <div className="popular-details">
                                     <div className="image">
                                         <img src={this.state.poster + result.poster_path} alt="" />
+                                        <img src={this.state.poster + result.profile_path} alt="" />
+
                                     </div>
 
                                     <div className="details">
@@ -105,6 +108,7 @@ class SearchResults extends React.Component {
     render() {
         return (
             <div className="SearchResults">
+                <SearchBar />
                 {this.renderSearchResults()}
             </div>
         )

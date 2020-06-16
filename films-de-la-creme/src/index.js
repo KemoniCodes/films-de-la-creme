@@ -13,6 +13,7 @@ import TrendingTvPage from './pages/TrendingTvPage';
 import TopRatedTvPage from './pages/TopRatedTvPage';
 import PopularTvPage from './pages/PopularTvPage';
 import SearchBar from './components/SearchBar';
+import SearchResults from './pages/SearchResults';
 
 
 ReactDOM.render(
@@ -30,7 +31,7 @@ ReactDOM.render(
         <Route path='/tv/trending' exact component={TrendingTvPage} />
         <Route path='/tv/top_rated' exact component={TopRatedTvPage} />
         <Route path='/tv/popular' exact component={PopularTvPage} />
-        <Route path='/search' exact component={SearchBar} />
+        <Route path='/search' exact component={SearchResults} />
       </Switch >
     </BrowserRouter >
   </React.StrictMode>,

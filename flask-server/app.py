@@ -73,7 +73,7 @@ def trending_tv_shows():
     #get trending tv categories#
     return render_template('index.html')
 
-@app.route('/search', methods = ['POST' , 'GET'])
+@app.route('/search')
 def search_results():
     #get get search results#
     return render_template('index.html')

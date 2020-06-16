@@ -8,8 +8,11 @@ class PopularMovie extends React.Component {
     state = {
         loading: true,
         movie: [],
-        poster: ''
+        poster: '',
+        name: "React"
     }
+
+
 
     async componentDidMount() {
         let url = "https://api.themoviedb.org/3/movie/popular?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&page=1";

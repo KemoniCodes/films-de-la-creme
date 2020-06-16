@@ -4,11 +4,14 @@ import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 
 class PopularTvShow extends React.Component {
+
     state = {
         loading: true,
         tvShow: [],
-        poster: ''
+        poster: '',
+        name: "React"
     }
+
 
     async componentDidMount() {
         let url = "https://api.themoviedb.org/3/tv/popular?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&page=1";

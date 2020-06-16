@@ -8,8 +8,9 @@ class Slideshow extends React.Component {
     state = {
         loading: true,
         movie: [],
-        bg: ''
+        bg: '',
     }
+
 
     async componentDidMount() {
         let url = "https://api.themoviedb.org/3/movie/now_playing?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&page=1";

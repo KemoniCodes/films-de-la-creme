@@ -1,21 +1,32 @@
-div.SearchBar form {
-  text-align: center;
-  margin-top: 1rem; }
-  div.SearchBar form input {
-    width: 50vw;
-    padding: 1rem;
-    background-color: #222D33;
-    border: none;
-    outline: none;
-    color: #E0E6EA; }
-    div.SearchBar form input input::placeholder {
-      font-family: 'Roboto', sans-serif;
-      font-weight: 200;
-      color: #99AFBB; }
-  div.SearchBar form button {
-    font-size: 1.5rem;
-    background: none;
-    outline: none;
-    border: none;
-    color: #99AFBB;
-    cursor: pointer; }
+div.SearchBar {
+  text-align: center; }
+  div.SearchBar h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 3rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px; }
+  div.SearchBar a {
+    text-decoration: none; }
+  div.SearchBar label {
+    text-align: center;
+    margin-top: 1rem; }
+    div.SearchBar label input {
+      width: 50vw;
+      padding: 1rem;
+      background-color: #222D33;
+      border: none;
+      outline: none;
+      color: #E0E6EA; }
+      div.SearchBar label input input::placeholder {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+        color: #99AFBB; }
+    div.SearchBar label button {
+      font-size: 1.5rem;
+      background: none;
+      outline: none;
+      border: none;
+      color: #99AFBB;
+      cursor: pointer; }
