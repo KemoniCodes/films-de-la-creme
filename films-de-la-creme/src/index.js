@@ -5,7 +5,6 @@ import Home from './pages/Home';
 import Movies from './pages/Movies';
 import PopularMoviePage from './pages/PopularMoviePage';
 import TrendingMoviePage from './pages/TrendingMoviePage';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
 import TopRatedMoviePage from './pages/TopRatedMoviePage';
 import UpcomingMoviePage from './pages/UpcomingMoviePage';
@@ -13,6 +12,7 @@ import TvShows from './pages/TvShows';
 import TrendingTvPage from './pages/TrendingTvPage';
 import TopRatedTvPage from './pages/TopRatedTvPage';
 import PopularTvPage from './pages/PopularTvPage';
+import SearchBar from './components/SearchBar';
 
 
 ReactDOM.render(
@@ -30,9 +30,7 @@ ReactDOM.render(
         <Route path='/tv/trending' exact component={TrendingTvPage} />
         <Route path='/tv/top_rated' exact component={TopRatedTvPage} />
         <Route path='/tv/popular' exact component={PopularTvPage} />
-
-
-
+        <Route path='/search' exact component={SearchBar} />
       </Switch >
     </BrowserRouter >
   </React.StrictMode>,

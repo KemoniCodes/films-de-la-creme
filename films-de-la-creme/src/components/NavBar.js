@@ -45,7 +45,7 @@ class NavBar extends React.Component {
                                 <img src={require("../img/food-and-restaurant.png")} alt="" />
                             </a>
                         </li>
-                        <li onMouseDown={() => this.hideComponent("showHide")}>SEARCH</li>
+                        <li onMouseDown={() => this.hideComponent("showHide")}> SEARCH</li>
                         <li>PROFILE</li>
                         <li id="last">LOG OUT</li>
                     </ul>
