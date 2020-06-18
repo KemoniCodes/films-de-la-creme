@@ -8,10 +8,11 @@ div.SearchBar {
     h1 {
         font-family: 'Roboto', sans-serif;
         font-weight: 200;
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin-top: 1rem;
         text-transform: uppercase;
-        letter-spacing: 1.2px;
+        letter-spacing: 2.2px;
+        text-align: left;
     }
     
     a {
@@ -20,16 +21,17 @@ div.SearchBar {
 
     label {
         text-align: center;
-        margin-top: 1rem;
 
 
         input {
-            width: 50vw;
+            width: 40vw;
             padding: 1rem;
             background-color: $primary-color;
             border: none;
             outline: none;
             color: $secondary-color;
+            margin-top: 2rem;
+
 
             input::placeholder {
                 font-family: 'Roboto', sans-serif;

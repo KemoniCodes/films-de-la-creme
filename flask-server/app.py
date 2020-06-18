@@ -1,5 +1,7 @@
 from flask import (Flask, render_template)
 from flask import render_template, request, redirect, flash, url_for, jsonify
+from sqlalchemy import create_engine
+from sqlalchemy.orm import scoped_session, sessionmaker
 import os
 import urllib3
 import requests
@@ -10,6 +12,10 @@ app = Flask(__name__)
 
 if not os.getenv("DATABASE_URL"):
     raise RuntimeError("DATABASE_URL is not set")
+
+# Set up database
+engine = create_engine(os.getenv("DATABASE_URL"))
+db = scoped_session(sessionmaker(bind=engine))
 
 
 @app.route("/", methods = ['POST','GET'])

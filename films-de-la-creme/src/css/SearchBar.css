@@ -3,22 +3,23 @@ div.SearchBar {
   div.SearchBar h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 1rem;
     text-transform: uppercase;
-    letter-spacing: 1.2px; }
+    letter-spacing: 2.2px;
+    text-align: left; }
   div.SearchBar a {
     text-decoration: none; }
   div.SearchBar label {
-    text-align: center;
-    margin-top: 1rem; }
+    text-align: center; }
     div.SearchBar label input {
-      width: 50vw;
+      width: 40vw;
       padding: 1rem;
       background-color: #222D33;
       border: none;
       outline: none;
-      color: #E0E6EA; }
+      color: #E0E6EA;
+      margin-top: 2rem; }
       div.SearchBar label input input::placeholder {
         font-family: 'Roboto', sans-serif;
         font-weight: 200;

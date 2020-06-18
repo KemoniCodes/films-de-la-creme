@@ -1,6 +1,8 @@
 import React from 'react'
 import axios from 'axios'
 import SearchBar from '../components/SearchBar';
+import NavBar from '../components/NavBar';
+
 import '../css/SearchResults.css'
 
 class SearchResults extends React.Component {
@@ -108,6 +110,7 @@ class SearchResults extends React.Component {
     render() {
         return (
             <div className="SearchResults">
+                <NavBar />
                 <SearchBar />
                 {this.renderSearchResults()}
             </div>
