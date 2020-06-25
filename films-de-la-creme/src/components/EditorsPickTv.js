@@ -84,7 +84,14 @@ class EditorsPickTv extends React.Component {
                             <h2>{this.state.movie.name}</h2>
                             <h3>
                                 <i class="fas fa-star"></i> {this.state.movie.vote_average}/10
-                                </h3>
+                            </h3>
+
+                            <ul>
+                                <li>
+                                    <i class="fas fa-plus"></i>
+                                </li>
+                                <li>Add to List</li>
+                            </ul>
 
                         </div>
                     </div>
@@ -98,7 +105,14 @@ class EditorsPickTv extends React.Component {
                             <h2>{this.state.movie1.name}</h2>
                             <h3>
                                 <i class="fas fa-star"></i> {this.state.movie1.vote_average}/10
-                                </h3>
+                            </h3>
+
+                            <ul>
+                                <li>
+                                    <i class="fas fa-plus"></i>
+                                </li>
+                                <li>Add to List</li>
+                            </ul>
 
                         </div>
                     </div>
@@ -112,7 +126,14 @@ class EditorsPickTv extends React.Component {
                             <h2>{this.state.movie2.name}</h2>
                             <h3>
                                 <i class="fas fa-star"></i> {this.state.movie2.vote_average}/10
-                                </h3>
+                            </h3>
+
+                            <ul>
+                                <li>
+                                    <i class="fas fa-plus"></i>
+                                </li>
+                                <li>Add to List</li>
+                            </ul>
 
                         </div>
                     </div>
@@ -126,7 +147,14 @@ class EditorsPickTv extends React.Component {
                             <h2>{this.state.movie3.name}</h2>
                             <h3>
                                 <i class="fas fa-star"></i> {this.state.movie3.vote_average}/10
-                                </h3>
+                            </h3>
+
+                            <ul>
+                                <li>
+                                    <i class="fas fa-plus"></i>
+                                </li>
+                                <li>Add to List</li>
+                            </ul>
 
                         </div>
                     </div>
@@ -140,7 +168,14 @@ class EditorsPickTv extends React.Component {
                             <h2>{this.state.movie4.name}</h2>
                             <h3>
                                 <i class="fas fa-star"></i> {this.state.movie4.vote_average}/10
-                                </h3>
+                            </h3>
+
+                            <ul>
+                                <li>
+                                    <i class="fas fa-plus"></i>
+                                </li>
+                                <li>Add to List</li>
+                            </ul>
 
                         </div>
                     </div>
@@ -154,7 +189,14 @@ class EditorsPickTv extends React.Component {
                             <h2>{this.state.movie5.name}</h2>
                             <h3>
                                 <i class="fas fa-star"></i> {this.state.movie5.vote_average}/10
-                                </h3>
+                            </h3>
+
+                            <ul>
+                                <li>
+                                    <i class="fas fa-plus"></i>
+                                </li>
+                                <li>Add to List</li>
+                            </ul>
 
                         </div>
                     </div>
@@ -168,7 +210,14 @@ class EditorsPickTv extends React.Component {
                             <h2>{this.state.movie6.name}</h2>
                             <h3>
                                 <i class="fas fa-star"></i> {this.state.movie6.vote_average}/10
-                                </h3>
+                            </h3>
+
+                            <ul>
+                                <li>
+                                    <i class="fas fa-plus"></i>
+                                </li>
+                                <li>Add to List</li>
+                            </ul>
 
                         </div>
                     </div>

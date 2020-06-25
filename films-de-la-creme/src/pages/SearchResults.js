@@ -1,8 +1,6 @@
-import React from 'react'
+import React, { Link } from 'react'
 import axios from 'axios'
 import SearchBar from '../components/SearchBar';
-import NavBar from '../components/NavBar';
-
 import '../css/SearchResults.css'
 
 class SearchResults extends React.Component {
@@ -110,7 +108,12 @@ class SearchResults extends React.Component {
     render() {
         return (
             <div className="SearchResults">
-                <NavBar />
+                <a href="/">
+                    <li>
+                        <i class="fas fa-arrow-alt-circle-left"></i>
+                    Back</li>
+                </a>
+
                 <SearchBar />
                 {this.renderSearchResults()}
             </div>

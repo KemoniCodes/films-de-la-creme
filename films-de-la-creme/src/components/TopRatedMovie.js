@@ -11,7 +11,7 @@ class TopRatedMovie extends React.Component {
     }
 
     async componentDidMount() {
-        let url = "https://api.themoviedb.org/3/movie/top_rated?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&page=1";
+        let url = "https://api.themoviedb.org/3/movie/top_rated?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&page=1&include_adult=false";
         let response = await fetch(url);
         let data = await response.json();
         this.setState({ movie: data.results, loading: false })
@@ -44,6 +44,13 @@ class TopRatedMovie extends React.Component {
                                     <h3>
                                         <i class="fas fa-star"></i> {movie.vote_average}/10
                                     </h3>
+
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-plus"></i>
+                                        </li>
+                                        <li>Add to List</li>
+                                    </ul>
 
                                 </div>
                             </div>

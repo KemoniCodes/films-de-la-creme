@@ -84,6 +84,11 @@ def search_results():
     #get get search results#
     return render_template('index.html')
 
+@app.route('/movie/<id>')
+def movie(id):
+    #get get search results#
+    return render_template('index.html')
+
 
 
 

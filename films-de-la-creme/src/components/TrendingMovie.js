@@ -11,7 +11,7 @@ class TrendingMovie extends React.Component {
     }
 
     async componentDidMount() {
-        let url = "https://api.themoviedb.org/3/trending/movie/week?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US";
+        let url = "https://api.themoviedb.org/3/trending/movie/week?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&include_adult=false";
         let response = await fetch(url);
         let data = await response.json();
         this.setState({ movie: data.results, loading: false })
@@ -44,6 +44,13 @@ class TrendingMovie extends React.Component {
                                     <h3>
                                         <i class="fas fa-star"></i> {movie.vote_average}/10
                                     </h3>
+
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-plus"></i>
+                                        </li>
+                                        <li>Add to List</li>
+                                    </ul>
 
                                 </div>
                             </div>

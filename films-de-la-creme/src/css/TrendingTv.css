@@ -2,7 +2,7 @@ div.Trending {
   margin-top: 0rem;
   padding: 2rem;
   height: 350px;
-  margin-bottom: 10rem; }
+  margin-bottom: 18rem; }
   div.Trending h1 {
     font-family: 'Lato', sans-serif;
     font-weight: 200;
@@ -35,3 +35,15 @@ div.Trending {
       font-family: 'Lato', sans-serif;
       font-weight: 200;
       color: #99AFBB; }
+  div.Trending div.popular-details ul {
+    list-style: none;
+    display: flex; }
+    div.Trending div.popular-details ul li {
+      font-family: 'Lato', sans-serif;
+      font-weight: 200;
+      color: #E0E6EA;
+      font-size: 1.2rem;
+      padding-right: 1.3rem;
+      padding-top: .2rem;
+      text-decoration: underline;
+      color: #E0E6EA; }

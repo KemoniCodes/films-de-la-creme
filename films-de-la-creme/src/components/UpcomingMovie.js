@@ -46,6 +46,13 @@ class UpcomingMovie extends React.Component {
                                     </h3>
                                     <h3>{movie.release_date}</h3>
 
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-plus"></i>
+                                        </li>
+                                        <li>Add to List</li>
+                                    </ul>
+
                                 </div>
                             </div>
                         )

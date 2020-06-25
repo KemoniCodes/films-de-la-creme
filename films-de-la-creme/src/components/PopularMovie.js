@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, Switch, Route } from 'react-router-dom';
 import '../css/PopularMovie.css'
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
+import MovieDeets from '../pages/MovieDeets';
+
 
 class PopularMovie extends React.Component {
     state = {
@@ -15,7 +17,7 @@ class PopularMovie extends React.Component {
 
 
     async componentDidMount() {
-        let url = "https://api.themoviedb.org/3/movie/popular?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&page=1";
+        let url = "https://api.themoviedb.org/3/movie/popular?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&page=1&include_adult=false";
         let response = await fetch(url);
         let data = await response.json();
         this.setState({ movie: data.results, loading: false })
@@ -23,9 +25,19 @@ class PopularMovie extends React.Component {
         let res = await fetch(config);
         let image = await res.json();
         this.setState({ poster: image.images.secure_base_url + image.images.poster_sizes[2] })
+
+
+
     }
 
+    renderMovie = (routerProps) => {
+        console.warn(routerProps)
+    }
+
+
     render() {
+
+
         return (
             <div className="Popular">
                 <h1>Popular Movies < a href='/movies/popular'><span>Explore All</span></a></h1>
@@ -36,28 +48,48 @@ class PopularMovie extends React.Component {
                     infinite
                 >
 
+
+
+
                     {this.state.movie.map((movie, i) => {
+                        // const { movie } = this.props.match.params
+
                         return (
-                            <div className="popular-details">
-                                <div className="image">
-                                    <img src={this.state.poster + movie.poster_path} alt="" />
-                                </div>
+                            <Link to={{
+                                pathname: `/movie/${movie.id}`
+                            }}>
+                                <div className="popular-details">
+                                    <div className="image">
+                                        <img src={this.state.poster + movie.poster_path} alt="" />
+                                    </div>
 
-                                <div className="details">
-                                    <h2>{movie.title}</h2>
-                                    <h3>
-                                        <i class="fas fa-star"></i> {movie.vote_average}/10
+                                    <div className="details">
+                                        <h2>{movie.title}</h2>
+                                        <h3>
+                                            <i class="fas fa-star"></i> {movie.vote_average}/10
                                     </h3>
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-plus"></i>
+                                            </li>
+                                            <li>Add to List</li>
+                                        </ul>
 
+                                    </div>
                                 </div>
-                            </div>
+                            </Link >
                         )
                     }
 
                     )
                     }
 
+
                 </Carousel>
+
+                <Switch>
+
+                </Switch>
             </div>
         )
     }

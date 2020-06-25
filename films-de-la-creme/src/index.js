@@ -14,6 +14,7 @@ import TopRatedTvPage from './pages/TopRatedTvPage';
 import PopularTvPage from './pages/PopularTvPage';
 import SearchBar from './components/SearchBar';
 import SearchResults from './pages/SearchResults';
+import MovieDeets from './pages/MovieDeets';
 
 
 ReactDOM.render(
@@ -32,10 +33,12 @@ ReactDOM.render(
         <Route path='/tv/top_rated' exact component={TopRatedTvPage} />
         <Route path='/tv/popular' exact component={PopularTvPage} />
         <Route path='/search' exact component={SearchResults} />
+        <Route exact path='/movie/:id' exact component={MovieDeets} />
       </Switch >
     </BrowserRouter >
   </React.StrictMode>,
   document.getElementById('root')
+
 );
 
 serviceWorker.unregister();
