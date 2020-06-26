@@ -13,6 +13,12 @@ div.PopularTv {
       color: #99AFBB;
       text-decoration: underline;
       padding-left: 1rem; }
+  div.PopularTv a {
+    text-decoration: none; }
+  div.PopularTv a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #99AFBB; }
   div.PopularTv .BrainhubCarousel__arrows {
     background-color: #222D33; }
     div.PopularTv .BrainhubCarousel__arrows:hover {

@@ -8,8 +8,9 @@ div.SearchBar {
     text-transform: uppercase;
     letter-spacing: 2.2px;
     text-align: left; }
-  div.SearchBar a {
-    text-decoration: none; }
+  div.SearchBar a:hover {
+    cursor: pointer;
+    text-decoration: underline; }
   div.SearchBar label {
     text-align: center; }
     div.SearchBar label input {

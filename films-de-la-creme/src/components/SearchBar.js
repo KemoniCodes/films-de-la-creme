@@ -62,8 +62,11 @@ class SearchBar extends React.Component {
                 this.setState({
                     results: res.data.results,
                     message: resultNotFoundMsg,
-                    loading: false
+                    loading: false,
                 })
+
+                console.warn(this.state.results)
+
             })
             .catch(error => {
                 if (axios.isCancel(error) || error) {
@@ -88,10 +91,16 @@ class SearchBar extends React.Component {
 
         if (Object.keys(results).length && results.length) {
             return (
+
+
                 <div className="results-container">
                     {results.map(result => {
+
                         return (
-                            <a key={result.id} href='' className='result-item'>
+                            // <a key={result.id} href='' className='result-item'>
+                            <a href={`/${result.media_type}/${result.id}`}
+                            key={result.id}>
+
                                 <div className="popular-details">
                                     <div className="image">
                                         <img src={this.state.poster + result.poster_path} alt="" />
@@ -105,13 +114,14 @@ class SearchBar extends React.Component {
                                         <h3>
                                             <i class="fas fa-star"></i> {result.vote_average}/10
                                         </h3>
-
                                     </div>
                                 </div>
                             </a>
                         )
-                    })}
+                    })
+                    }
                 </div>
+                // </Link >
             )
         }
 

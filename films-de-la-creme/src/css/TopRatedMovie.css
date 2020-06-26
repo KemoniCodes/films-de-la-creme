@@ -10,6 +10,12 @@ div.TopRated {
       color: #99AFBB;
       text-decoration: underline;
       padding-left: 1rem; }
+  div.TopRated a {
+    text-decoration: none; }
+  div.TopRated a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #99AFBB; }
   div.TopRated .BrainhubCarousel {
     padding: 1rem; }
   div.TopRated .BrainhubCarousel__arrows {

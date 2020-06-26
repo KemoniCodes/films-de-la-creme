@@ -78,7 +78,14 @@ class SearchResults extends React.Component {
                 <div className="results-container">
                     {results.map(result => {
                         return (
-                            <a key={result.id} href='' className='result-item'>
+
+                            // <a
+                            //     key={result.id}
+                            //     href=''
+                            //     className='result-item'>
+                            <Link to={{
+                                pathname: `/movie/${result.id}`
+                            }}>
                                 <div className="popular-details">
                                     <div className="image">
                                         <img src={this.state.poster + result.poster_path} alt="" />
@@ -96,9 +103,11 @@ class SearchResults extends React.Component {
 
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
+                            /* </a> */
                         )
-                    })}
+                    })
+                    }
                 </div>
             )
         }

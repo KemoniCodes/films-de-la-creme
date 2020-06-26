@@ -16,7 +16,12 @@ div.SearchBar {
     }
     
     a {
-        text-decoration: none;
+        // text-decoration: none;
+    }
+
+    a:hover {
+        cursor: pointer;
+        text-decoration: underline;
     }
 
     label {

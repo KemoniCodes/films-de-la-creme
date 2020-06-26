@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Link } from 'react'
 import '../css/EditorsPick.css'
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
@@ -72,153 +72,180 @@ class EditorsPickMovie extends React.Component {
                     arrows
                     infinite
                 >
+                    <a href={
+                        `/movie/${this.state.movie.id}`
+                    }>
+                        <div className="popular-details">
+                            <div className="image">
+                                <img src={this.state.poster + this.state.movie.poster_path} alt="" />
+                            </div>
 
-                    <div className="popular-details">
-                        <div className="image">
-                            <img src={this.state.poster + this.state.movie.poster_path} alt="" />
-                        </div>
-
-                        <div className="details">
-                            <h2>{this.state.movie.title}</h2>
-                            <h3>
-                                <i class="fas fa-star"></i> {this.state.movie.vote_average}/10
+                            <div className="details">
+                                <h2>{this.state.movie.title}</h2>
+                                <h3>
+                                    <i class="fas fa-star"></i> {this.state.movie.vote_average}/10
                             </h3>
 
-                            <ul>
-                                <li>
-                                    <i class="fas fa-plus"></i>
-                                </li>
-                                <li>Add to List</li>
-                            </ul>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-plus"></i>
+                                    </li>
+                                    <li>Add to List</li>
+                                </ul>
 
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div className="popular-details">
-                        <div className="image">
-                            <img src={this.state.poster + this.state.movie1.poster_path} alt="" />
-                        </div>
+                    <a href={
+                        `/movie/${this.state.movie1.id}`
+                    }>
+                        <div className="popular-details">
+                            <div className="image">
+                                <img src={this.state.poster + this.state.movie1.poster_path} alt="" />
+                            </div>
 
-                        <div className="details">
-                            <h2>{this.state.movie1.title}</h2>
-                            <h3>
-                                <i class="fas fa-star"></i> {this.state.movie1.vote_average}/10
+                            <div className="details">
+                                <h2>{this.state.movie1.title}</h2>
+                                <h3>
+                                    <i class="fas fa-star"></i> {this.state.movie1.vote_average}/10
                             </h3>
 
-                            <ul>
-                                <li>
-                                    <i class="fas fa-plus"></i>
-                                </li>
-                                <li>Add to List</li>
-                            </ul>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-plus"></i>
+                                    </li>
+                                    <li>Add to List</li>
+                                </ul>
 
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div className="popular-details">
-                        <div className="image">
-                            <img src={this.state.poster + this.state.movie2.poster_path} alt="" />
-                        </div>
+                    <a href={
+                        `/movie/${this.state.movie2.id}`
+                    }>
+                        <div className="popular-details">
+                            <div className="image">
+                                <img src={this.state.poster + this.state.movie2.poster_path} alt="" />
+                            </div>
 
-                        <div className="details">
-                            <h2>{this.state.movie2.title}</h2>
-                            <h3>
-                                <i class="fas fa-star"></i> {this.state.movie2.vote_average}/10
+                            <div className="details">
+                                <h2>{this.state.movie2.title}</h2>
+                                <h3>
+                                    <i class="fas fa-star"></i> {this.state.movie2.vote_average}/10
                             </h3>
 
-                            <ul>
-                                <li>
-                                    <i class="fas fa-plus"></i>
-                                </li>
-                                <li>Add to List</li>
-                            </ul>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-plus"></i>
+                                    </li>
+                                    <li>Add to List</li>
+                                </ul>
 
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div className="popular-details">
-                        <div className="image">
-                            <img src={this.state.poster + this.state.movie3.poster_path} alt="" />
-                        </div>
+                    <a href={
+                        `/movie/${this.state.movie3.id}`
+                    }>
+                        <div className="popular-details">
+                            <div className="image">
+                                <img src={this.state.poster + this.state.movie3.poster_path} alt="" />
+                            </div>
 
-                        <div className="details">
-                            <h2>{this.state.movie3.title}</h2>
-                            <h3>
-                                <i class="fas fa-star"></i> {this.state.movie3.vote_average}/10
+                            <div className="details">
+                                <h2>{this.state.movie3.title}</h2>
+                                <h3>
+                                    <i class="fas fa-star"></i> {this.state.movie3.vote_average}/10
                                 </h3>
 
-                            <ul>
-                                <li>
-                                    <i class="fas fa-plus"></i>
-                                </li>
-                                <li>Add to List</li>
-                            </ul>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-plus"></i>
+                                    </li>
+                                    <li>Add to List</li>
+                                </ul>
 
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div className="popular-details">
-                        <div className="image">
-                            <img src={this.state.poster + this.state.movie4.poster_path} alt="" />
-                        </div>
+                    <a href={
+                        `/movie/${this.state.movie4.id}`
+                    }>
+                        <div className="popular-details">
+                            <div className="image">
+                                <img src={this.state.poster + this.state.movie4.poster_path} alt="" />
+                            </div>
 
-                        <div className="details">
-                            <h2>{this.state.movie4.title}</h2>
-                            <h3>
-                                <i class="fas fa-star"></i> {this.state.movie4.vote_average}/10
+                            <div className="details">
+                                <h2>{this.state.movie4.title}</h2>
+                                <h3>
+                                    <i class="fas fa-star"></i> {this.state.movie4.vote_average}/10
                                 </h3>
 
-                            <ul>
-                                <li>
-                                    <i class="fas fa-plus"></i>
-                                </li>
-                                <li>Add to List</li>
-                            </ul>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-plus"></i>
+                                    </li>
+                                    <li>Add to List</li>
+                                </ul>
 
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div className="popular-details">
-                        <div className="image">
-                            <img src={this.state.poster + this.state.movie5.poster_path} alt="" />
-                        </div>
+                    <a href={
+                        `/movie/${this.state.movie5.id}`
+                    }>
+                        <div className="popular-details">
+                            <div className="image">
+                                <img src={this.state.poster + this.state.movie5.poster_path} alt="" />
+                            </div>
 
-                        <div className="details">
-                            <h2>{this.state.movie5.title}</h2>
-                            <h3>
-                                <i class="fas fa-star"></i> {this.state.movie5.vote_average}/10
+                            <div className="details">
+                                <h2>{this.state.movie5.title}</h2>
+                                <h3>
+                                    <i class="fas fa-star"></i> {this.state.movie5.vote_average}/10
                             </h3>
 
-                            <ul>
-                                <li>
-                                    <i class="fas fa-plus"></i>
-                                </li>
-                                <li>Add to List</li>
-                            </ul>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-plus"></i>
+                                    </li>
+                                    <li>Add to List</li>
+                                </ul>
 
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div className="popular-details">
-                        <div className="image">
-                            <img src={this.state.poster + this.state.movie6.poster_path} alt="" />
-                        </div>
+                    <a href={
+                        `/movie/${this.state.movie6.id}`
+                    }>
+                        <div className="popular-details">
+                            <div className="image">
+                                <img src={this.state.poster + this.state.movie6.poster_path} alt="" />
+                            </div>
 
-                        <div className="details">
-                            <h2>{this.state.movie6.title}</h2>
-                            <h3>
-                                <i class="fas fa-star"></i> {this.state.movie6.vote_average}/10
+                            <div className="details">
+                                <h2>{this.state.movie6.title}</h2>
+                                <h3>
+                                    <i class="fas fa-star"></i> {this.state.movie6.vote_average}/10
                             </h3>
 
-                            <ul>
-                                <li>
-                                    <i class="fas fa-plus"></i>
-                                </li>
-                                <li>Add to List</li>
-                            </ul>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-plus"></i>
+                                    </li>
+                                    <li>Add to List</li>
+                                </ul>
 
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
 
                 </Carousel>

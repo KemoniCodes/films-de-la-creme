@@ -20,7 +20,18 @@ div.Trending {
             padding-left: 1rem;
         }
     }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: $tertiary-color;
+    }
     
+
   .BrainhubCarouselItem {
       height: 50vh;
       padding-top: 1.5rem;

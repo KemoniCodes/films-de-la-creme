@@ -19,6 +19,16 @@ div.Upcoming {
         }
     }
 
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: $tertiary-color;
+    }
+
     .BrainhubCarousel {
         margin: 1rem;
         padding: 1rem;

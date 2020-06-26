@@ -33,6 +33,16 @@ div.Popular {
         }
     }
 
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: $tertiary-color;
+    }
+
     div.popular-details {
         div.details {
             padding-top: 1rem;

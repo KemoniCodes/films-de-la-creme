@@ -18,6 +18,12 @@ div.PopularPage {
       color: #99AFBB;
       text-decoration: underline;
       padding-left: 1rem; }
+  div.PopularPage a {
+    text-decoration: none; }
+  div.PopularPage a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #99AFBB; }
   div.PopularPage div.container {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;

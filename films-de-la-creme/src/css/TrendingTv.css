@@ -12,6 +12,12 @@ div.Trending {
       color: #99AFBB;
       text-decoration: underline;
       padding-left: 1rem; }
+  div.Trending a {
+    text-decoration: none; }
+  div.Trending a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #99AFBB; }
   div.Trending .BrainhubCarouselItem {
     height: 50vh;
     padding-top: 1.5rem; }

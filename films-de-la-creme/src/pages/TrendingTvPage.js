@@ -79,28 +79,30 @@ class TrendingTvPage extends React.Component {
 
                     {this.state.movie.map((movie, i) => {
                         return (
+                            <a href={
+                                `/tv/${movie.id}`
+                            }>
+                                <div className="popular-details">
+                                    <div className="image">
+                                        <img src={this.state.poster + movie.poster_path} alt="" />
+                                    </div>
 
-                            <div className="popular-details">
-                                <div className="image">
-                                    <img src={this.state.poster + movie.poster_path} alt="" />
-                                </div>
-
-                                <div className="details">
-                                    <h2>{movie.name}</h2>
-                                    <h3>
-                                        <i class="fas fa-star"></i> {movie.vote_average}/10
+                                    <div className="details">
+                                        <h2>{movie.name}</h2>
+                                        <h3>
+                                            <i class="fas fa-star"></i> {movie.vote_average}/10
                                     </h3>
 
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-plus"></i>
-                                        </li>
-                                        <li>Add to List</li>
-                                    </ul>
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-plus"></i>
+                                            </li>
+                                            <li>Add to List</li>
+                                        </ul>
 
+                                    </div>
                                 </div>
-                            </div>
-
+                            </a>
                         )
                     }
 
@@ -109,26 +111,30 @@ class TrendingTvPage extends React.Component {
 
                     {this.state.movie1.map((movie1, i) => {
                         return (
-                            <div className="popular-details">
-                                <div className="image">
-                                    <img src={this.state.poster + movie1.poster_path} alt="" />
-                                </div>
+                            <a href={
+                                `/tv/${movie1.id}`
+                            }>
+                                <div className="popular-details">
+                                    <div className="image">
+                                        <img src={this.state.poster + movie1.poster_path} alt="" />
+                                    </div>
 
-                                <div className="details">
-                                    <h2>{movie1.name}</h2>
-                                    <h3>
-                                        <i class="fas fa-star"></i> {movie1.vote_average}/10
+                                    <div className="details">
+                                        <h2>{movie1.name}</h2>
+                                        <h3>
+                                            <i class="fas fa-star"></i> {movie1.vote_average}/10
                                     </h3>
 
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-plus"></i>
-                                        </li>
-                                        <li>Add to List</li>
-                                    </ul>
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-plus"></i>
+                                            </li>
+                                            <li>Add to List</li>
+                                        </ul>
 
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         )
                     }
 
@@ -137,26 +143,30 @@ class TrendingTvPage extends React.Component {
 
                     {this.state.movie2.map((movie2, i) => {
                         return (
-                            <div className="popular-details">
-                                <div className="image">
-                                    <img src={this.state.poster + movie2.poster_path} alt="" />
-                                </div>
+                            <a href={
+                                `/tv/${movie2.id}`
+                            }>
+                                <div className="popular-details">
+                                    <div className="image">
+                                        <img src={this.state.poster + movie2.poster_path} alt="" />
+                                    </div>
 
-                                <div className="details">
-                                    <h2>{movie2.name}</h2>
-                                    <h3>
-                                        <i class="fas fa-star"></i> {movie2.vote_average}/10
+                                    <div className="details">
+                                        <h2>{movie2.name}</h2>
+                                        <h3>
+                                            <i class="fas fa-star"></i> {movie2.vote_average}/10
                                     </h3>
 
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-plus"></i>
-                                        </li>
-                                        <li>Add to List</li>
-                                    </ul>
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-plus"></i>
+                                            </li>
+                                            <li>Add to List</li>
+                                        </ul>
 
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         )
                     }
 
@@ -165,26 +175,30 @@ class TrendingTvPage extends React.Component {
 
                     {this.state.movie3.map((movie3, i) => {
                         return (
-                            <div className="popular-details">
-                                <div className="image">
-                                    <img src={this.state.poster + movie3.poster_path} alt="" />
-                                </div>
+                            <a href={
+                                `/tv/${movie3.id}`
+                            }>
+                                <div className="popular-details">
+                                    <div className="image">
+                                        <img src={this.state.poster + movie3.poster_path} alt="" />
+                                    </div>
 
-                                <div className="details">
-                                    <h2>{movie3.name}</h2>
-                                    <h3>
-                                        <i class="fas fa-star"></i> {movie3.vote_average}/10
+                                    <div className="details">
+                                        <h2>{movie3.name}</h2>
+                                        <h3>
+                                            <i class="fas fa-star"></i> {movie3.vote_average}/10
                                     </h3>
 
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-plus"></i>
-                                        </li>
-                                        <li>Add to List</li>
-                                    </ul>
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-plus"></i>
+                                            </li>
+                                            <li>Add to List</li>
+                                        </ul>
 
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         )
                     }
 
@@ -193,26 +207,30 @@ class TrendingTvPage extends React.Component {
 
                     {this.state.movie4.map((movie, i) => {
                         return (
-                            <div className="popular-details">
-                                <div className="image">
-                                    <img src={this.state.poster + movie.poster_path} alt="" />
-                                </div>
+                            <a href={
+                                `/tv/${movie.id}`
+                            }>
+                                <div className="popular-details">
+                                    <div className="image">
+                                        <img src={this.state.poster + movie.poster_path} alt="" />
+                                    </div>
 
-                                <div className="details">
-                                    <h2>{movie.name}</h2>
-                                    <h3>
-                                        <i class="fas fa-star"></i> {movie.vote_average}/10
+                                    <div className="details">
+                                        <h2>{movie.name}</h2>
+                                        <h3>
+                                            <i class="fas fa-star"></i> {movie.vote_average}/10
                                     </h3>
 
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-plus"></i>
-                                        </li>
-                                        <li>Add to List</li>
-                                    </ul>
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-plus"></i>
+                                            </li>
+                                            <li>Add to List</li>
+                                        </ul>
 
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         )
                     }
 
@@ -221,26 +239,30 @@ class TrendingTvPage extends React.Component {
 
                     {this.state.movie5.map((movie, i) => {
                         return (
-                            <div className="popular-details">
-                                <div className="image">
-                                    <img src={this.state.poster + movie.poster_path} alt="" />
-                                </div>
+                            <a href={
+                                `/tv/${movie.id}`
+                            }>
+                                <div className="popular-details">
+                                    <div className="image">
+                                        <img src={this.state.poster + movie.poster_path} alt="" />
+                                    </div>
 
-                                <div className="details">
-                                    <h2>{movie.name}</h2>
-                                    <h3>
-                                        <i class="fas fa-star"></i> {movie.vote_average}/10
+                                    <div className="details">
+                                        <h2>{movie.name}</h2>
+                                        <h3>
+                                            <i class="fas fa-star"></i> {movie.vote_average}/10
                                     </h3>
 
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-plus"></i>
-                                        </li>
-                                        <li>Add to List</li>
-                                    </ul>
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-plus"></i>
+                                            </li>
+                                            <li>Add to List</li>
+                                        </ul>
 
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         )
                     }
 
@@ -249,26 +271,30 @@ class TrendingTvPage extends React.Component {
 
                     {this.state.movie6.map((movie, i) => {
                         return (
-                            <div className="popular-details">
-                                <div className="image">
-                                    <img src={this.state.poster + movie.poster_path} alt="" />
-                                </div>
+                            <a href={
+                                `/tv/${movie.id}`
+                            }>
+                                <div className="popular-details">
+                                    <div className="image">
+                                        <img src={this.state.poster + movie.poster_path} alt="" />
+                                    </div>
 
-                                <div className="details">
-                                    <h2>{movie.name}</h2>
-                                    <h3>
-                                        <i class="fas fa-star"></i> {movie.vote_average}/10
+                                    <div className="details">
+                                        <h2>{movie.name}</h2>
+                                        <h3>
+                                            <i class="fas fa-star"></i> {movie.vote_average}/10
                                     </h3>
 
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-plus"></i>
-                                        </li>
-                                        <li>Add to List</li>
-                                    </ul>
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-plus"></i>
+                                            </li>
+                                            <li>Add to List</li>
+                                        </ul>
 
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         )
                     }
 
@@ -277,26 +303,30 @@ class TrendingTvPage extends React.Component {
 
                     {this.state.movie7.map((movie, i) => {
                         return (
-                            <div className="popular-details">
-                                <div className="image">
-                                    <img src={this.state.poster + movie.poster_path} alt="" />
-                                </div>
+                            <a href={
+                                `/tv/${movie.id}`
+                            }>
+                                <div className="popular-details">
+                                    <div className="image">
+                                        <img src={this.state.poster + movie.poster_path} alt="" />
+                                    </div>
 
-                                <div className="details">
-                                    <h2>{movie.name}</h2>
-                                    <h3>
-                                        <i class="fas fa-star"></i> {movie.vote_average}/10
+                                    <div className="details">
+                                        <h2>{movie.name}</h2>
+                                        <h3>
+                                            <i class="fas fa-star"></i> {movie.vote_average}/10
                                     </h3>
 
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-plus"></i>
-                                        </li>
-                                        <li>Add to List</li>
-                                    </ul>
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-plus"></i>
+                                            </li>
+                                            <li>Add to List</li>
+                                        </ul>
 
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         )
                     }
 

@@ -22,6 +22,16 @@ div.PopularTv {
         }
     }
 
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: $tertiary-color;
+    }
+
     .BrainhubCarousel__arrows {
         background-color: $primary-color;
         

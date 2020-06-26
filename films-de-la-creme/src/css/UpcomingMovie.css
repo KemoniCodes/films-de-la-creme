@@ -10,6 +10,12 @@ div.Upcoming {
       color: #99AFBB;
       text-decoration: underline;
       padding-left: 1rem; }
+  div.Upcoming a {
+    text-decoration: none; }
+  div.Upcoming a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #99AFBB; }
   div.Upcoming .BrainhubCarousel {
     margin: 1rem;
     padding: 1rem;

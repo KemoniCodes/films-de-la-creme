@@ -19,6 +19,16 @@ div.Editors {
         }
     }
 
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: $tertiary-color;
+    }
+
     .BrainhubCarousel {
         padding:1.3rem;
     }

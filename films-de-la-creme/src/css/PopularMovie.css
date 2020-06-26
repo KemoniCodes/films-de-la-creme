@@ -18,6 +18,12 @@ div.Popular {
     div.Popular .BrainhubCarousel__arrows span:hover {
       border-color: #99AFBB;
       background-color: #222D33; }
+  div.Popular a {
+    text-decoration: none; }
+  div.Popular a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #99AFBB; }
   div.Popular div.popular-details div.details {
     padding-top: 1rem; }
     div.Popular div.popular-details div.details h2 {

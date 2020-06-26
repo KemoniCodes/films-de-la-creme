@@ -81,12 +81,17 @@ def trending_tv_shows():
 
 @app.route('/search')
 def search_results():
-    #get get search results#
+    #get search results#
     return render_template('index.html')
 
 @app.route('/movie/<id>')
 def movie(id):
-    #get get search results#
+    #get movie search results#
+    return render_template('index.html')
+
+@app.route('/tv/<id>')
+def tv(id):
+    #get tv search results#
     return render_template('index.html')
 
 

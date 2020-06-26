@@ -34,26 +34,30 @@ class TrendingMovie extends React.Component {
 
                     {this.state.movie.map((movie, i) => {
                         return (
-                            <div className="popular-details">
-                                <div className="image">
-                                    <img src={this.state.poster + movie.poster_path} alt="" />
-                                </div>
+                            <a href={
+                                `/movie/${movie.id}`
+                            }>
+                                <div className="popular-details">
+                                    <div className="image">
+                                        <img src={this.state.poster + movie.poster_path} alt="" />
+                                    </div>
 
-                                <div className="details">
-                                    <h2>{movie.title}</h2>
-                                    <h3>
-                                        <i class="fas fa-star"></i> {movie.vote_average}/10
+                                    <div className="details">
+                                        <h2>{movie.title}</h2>
+                                        <h3>
+                                            <i class="fas fa-star"></i> {movie.vote_average}/10
                                     </h3>
 
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-plus"></i>
-                                        </li>
-                                        <li>Add to List</li>
-                                    </ul>
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-plus"></i>
+                                            </li>
+                                            <li>Add to List</li>
+                                        </ul>
 
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         )
                     }
 

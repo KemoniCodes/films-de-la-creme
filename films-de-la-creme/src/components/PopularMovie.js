@@ -14,8 +14,6 @@ class PopularMovie extends React.Component {
         name: "React"
     }
 
-
-
     async componentDidMount() {
         let url = "https://api.themoviedb.org/3/movie/popular?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&page=1&include_adult=false";
         let response = await fetch(url);
@@ -26,18 +24,9 @@ class PopularMovie extends React.Component {
         let image = await res.json();
         this.setState({ poster: image.images.secure_base_url + image.images.poster_sizes[2] })
 
-
-
     }
-
-    renderMovie = (routerProps) => {
-        console.warn(routerProps)
-    }
-
 
     render() {
-
-
         return (
             <div className="Popular">
                 <h1>Popular Movies < a href='/movies/popular'><span>Explore All</span></a></h1>
@@ -48,12 +37,7 @@ class PopularMovie extends React.Component {
                     infinite
                 >
 
-
-
-
                     {this.state.movie.map((movie, i) => {
-                        // const { movie } = this.props.match.params
-
                         return (
                             <Link to={{
                                 pathname: `/movie/${movie.id}`
@@ -84,12 +68,7 @@ class PopularMovie extends React.Component {
                     )
                     }
 
-
                 </Carousel>
-
-                <Switch>
-
-                </Switch>
             </div>
         )
     }

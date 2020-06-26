@@ -34,6 +34,7 @@ ReactDOM.render(
         <Route path='/tv/popular' exact component={PopularTvPage} />
         <Route path='/search' exact component={SearchResults} />
         <Route exact path='/movie/:id' exact component={MovieDeets} />
+        <Route exact path='/tv/:id' exact component={MovieDeets} />
       </Switch >
     </BrowserRouter >
   </React.StrictMode>,

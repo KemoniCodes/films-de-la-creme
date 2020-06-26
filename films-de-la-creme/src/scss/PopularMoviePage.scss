@@ -28,6 +28,16 @@ div.PopularPage {
         }
     }
 
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: $tertiary-color;
+    }
+
     div.container {
         display: grid;
         grid-template-columns: auto auto auto auto auto auto;

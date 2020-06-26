@@ -10,6 +10,12 @@ div.Editors {
       color: #99AFBB;
       text-decoration: underline;
       padding-left: 1rem; }
+  div.Editors a {
+    text-decoration: none; }
+  div.Editors a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #99AFBB; }
   div.Editors .BrainhubCarousel {
     padding: 1.3rem; }
   div.Editors .BrainhubCarousel__arrows {

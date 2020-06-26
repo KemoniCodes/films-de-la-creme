@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Link } from 'react'
 import '../css/PopularTvShow.css'
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
@@ -37,26 +37,29 @@ class PopularTvShow extends React.Component {
 
                     {this.state.tvShow.map((tvShow, poster, i) => {
                         return (
-                            <div className="popular-details">
-                                <div className="image">
-                                    <img src={this.state.poster + tvShow.poster_path} alt="" />
-                                </div>
+                            <a href={`/tv/${tvShow.id}`
+                            }>
+                                <div className="popular-details">
+                                    <div className="image">
+                                        <img src={this.state.poster + tvShow.poster_path} alt="" />
+                                    </div>
 
-                                <div className="details">
-                                    <h2>{tvShow.name}</h2>
-                                    <h3>
-                                        <i class="fas fa-star"></i> {tvShow.vote_average}/10
+                                    <div className="details">
+                                        <h2>{tvShow.name}</h2>
+                                        <h3>
+                                            <i class="fas fa-star"></i> {tvShow.vote_average}/10
                                     </h3>
 
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-plus"></i>
-                                        </li>
-                                        <li>Add to List</li>
-                                    </ul>
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-plus"></i>
+                                            </li>
+                                            <li>Add to List</li>
+                                        </ul>
 
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         )
                     }
 
