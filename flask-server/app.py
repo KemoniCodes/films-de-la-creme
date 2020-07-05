@@ -89,9 +89,14 @@ def movie(id):
     #get movie search results#
     return render_template('index.html')
 
-@app.route('/tv/<id>')
-def tv(id):
+@app.route('/tv/<show_id>')
+def tv(show_id):
     #get tv search results#
+    return render_template('index.html')
+
+@app.route('/person/<id>')
+def person(id):
+    #get person search results#
     return render_template('index.html')
 
 

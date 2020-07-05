@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
-import { Link, Switch, Route } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom';
 import '../css/PopularMovie.css'
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
-import MovieDeets from '../pages/MovieDeets';
 
 
 class PopularMovie extends React.Component {

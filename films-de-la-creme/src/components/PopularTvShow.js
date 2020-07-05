@@ -35,7 +35,7 @@ class PopularTvShow extends React.Component {
                     infinite
                 >
 
-                    {this.state.tvShow.map((tvShow, poster, i) => {
+                    {this.state.tvShow.map((tvShow, i) => {
                         return (
                             <a href={`/tv/${tvShow.id}`
                             }>
