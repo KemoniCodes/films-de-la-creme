@@ -6,4 +6,5 @@ Jinja2==2.11.2
 MarkupSafe==1.1.1
 Werkzeug==0.16.0
 Requests
+sqlalchemy
 
