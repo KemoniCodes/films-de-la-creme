@@ -61,6 +61,7 @@ div.MovieDeets {
                 font-weight: 200;
                 color: $secondary-color;
                 padding-bottom: .5rem;
+                padding-top: 0;
                 font-size: 1rem;
                 display: inline-flex;
                 padding-right: .5rem;
@@ -103,6 +104,7 @@ div.MovieDeets {
         font-size: 2.2rem;
         text-align: center;
         text-decoration: underline;
+        padding-top: 2rem;
     }
 
     div.overview {
@@ -191,7 +193,74 @@ div.MovieDeets {
                     margin-left: auto;
                     margin-right: auto;
                     width: 90%;
-                    height: 75vh;
+                }
+            
+                div.details {
+                    padding: 1rem;               
+            
+                    h1 {
+                        font-family: 'Lato', sans-serif;
+                        font-size: 3.5rem;
+                        font-weight: 200;
+                        color: $secondary-color; 
+                        border: none;
+                        padding-bottom: .5rem;
+                        margin: 0;
+                        padding: 0; 
+                        padding-bottom: .2rem;
+                    }
+            
+                    h2 {
+                        font-family: 'Lato', sans-serif;
+                        font-weight: 200;
+                        color: $secondary-color;
+                        padding-bottom: .5rem;
+                        font-size: 1rem;
+                        padding-right: 0;
+                        padding-top: 0;
+                        text-decoration: none;
+
+                        &#actor {
+                            color: $tertiary-color;
+                            font-size: 1.3rem;
+                        }
+                    }
+            
+                    h3 {
+                        font-family: 'Lato', sans-serif;
+                        font-weight: 200;
+                        color: $tertiary-color; 
+                    }
+                }
+            
+                ul {
+                    list-style: none;
+                    display: flex;
+                    
+                    li {
+                        font-family: 'Lato', sans-serif;
+                        font-weight: 200;
+                        color: $secondary-color;
+                        font-size: 1.2rem;
+                        padding-right: .4rem;
+                        padding-top: .2rem;
+                        text-decoration: none;
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    div.similar {
+        div.PopularTv {
+            div.popular-details {
+                padding: 0;            
+                img {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 90%;
                     // border-radius: 1rem;
                 }
             
@@ -208,21 +277,6 @@ div.MovieDeets {
                         margin: 0;
                         padding: 0; 
                         padding-bottom: .2rem;
-            
-                        // span {
-                        //     opacity: .8;
-                        //     font-family: 'Lato', sans-serif;
-                        //     font-size: 2.5rem;
-                        //     font-weight: 200;
-                        //     color: $secondary-color; 
-                        //     border: none;
-                        //     padding-bottom: .5rem;
-                        //     margin: 0;
-                        //     padding: 0; 
-                        //     font-style: italic;
-                        //     padding-left: .3rem;
-                        //     text-decoration: none;
-                        // }
                     }
             
                     h2 {
@@ -230,14 +284,10 @@ div.MovieDeets {
                         font-weight: 200;
                         color: $secondary-color;
                         padding-bottom: .5rem;
-                        font-size: 1rem;
+                        font-size: 1.2rem;
                         padding-right: 0;
                         text-decoration: none;
-
-                        &#actor {
-                            color: $tertiary-color;
-                            font-size: 1.3rem;
-                        }
+                        text-align: left;
                     }
             
                     h3 {
