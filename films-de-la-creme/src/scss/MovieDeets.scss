@@ -2,76 +2,267 @@ $primary-color: #222D33;
 $secondary-color: #E0E6EA;
 $tertiary-color: #99AFBB;
 
-div.popular-details {
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-    }
+div.MovieDeets {
 
-    div.details {
-        padding-top: 1rem;
-
-        h1 {
-            font-family: 'Lato', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 200;
-            color: $secondary-color; 
-            border: none;
-            padding-bottom: .5rem;
-            margin: 0;
-            padding: 0; 
-
-            span {
-                opacity: .8;
+    div.movie-details {
+        margin-top: 2rem;
+    
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            height: 75vh;
+            border-radius: 1rem;
+        }
+    
+        div.details {
+            padding-top: 1rem;
+            position: absolute;
+            width: 60vw;
+            right: 28%;
+            top: 40%;
+            bottom: 8%;
+            background-color: rgba(0,0,0,.4);
+            padding: 1rem;
+            border: 2px;
+            border-radius: 2rem;  
+            height: 25vh;
+    
+            h1 {
                 font-family: 'Lato', sans-serif;
-                font-size: 2.5rem;
+                font-size: 3.5rem;
                 font-weight: 200;
                 color: $secondary-color; 
                 border: none;
                 padding-bottom: .5rem;
                 margin: 0;
                 padding: 0; 
-                text-transform: italic;
+                padding-bottom: .2rem;
+    
+                span {
+                    opacity: .8;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 2.5rem;
+                    font-weight: 200;
+                    color: $secondary-color; 
+                    border: none;
+                    padding-bottom: .5rem;
+                    margin: 0;
+                    padding: 0; 
+                    font-style: italic;
+                    padding-left: .3rem;
+                    text-decoration: none;
+                }
+            }
+    
+            h2 {
+                font-family: 'Lato', sans-serif;
+                font-weight: 200;
+                color: $secondary-color;
+                padding-bottom: .5rem;
+                font-size: 1rem;
+                display: inline-flex;
+                padding-right: .5rem;
+            }
+    
+            h3 {
+                font-family: 'Lato', sans-serif;
+                font-weight: 200;
+                color: $tertiary-color; 
             }
         }
-
-        h2 {
-            font-family: 'Lato', sans-serif;
-            font-weight: 200;
-            color: $secondary-color;
-            padding-bottom: .5rem;
-            font-size: 1rem;
-            display: inline-flex;
-            padding-right: .5rem;
-        }
-
-        h3 {
-            font-family: 'Lato', sans-serif;
-            font-weight: 200;
-            color: $tertiary-color; 
-        }
-    }
-
-    i.fas.fa-star {
-        padding-right: .3rem;
-    }
-
-    ul {
-        list-style: none;
-        display: flex;
-        
-        li {
-            font-family: 'Lato', sans-serif;
-            font-weight: 200;
-            color: $secondary-color;
-            font-size: 1.2rem;
-            padding-right: .4rem;
-            padding-top: .2rem;
-            text-decoration: underline;
-            color: $secondary-color;
-        }
-    }
     
+        i.fas.fa-star {
+            padding-right: .3rem;
+        }
+    
+        ul {
+            list-style: none;
+            display: flex;
+            
+            li {
+                font-family: 'Lato', sans-serif;
+                font-weight: 200;
+                color: $secondary-color;
+                font-size: 1.2rem;
+                padding-right: .4rem;
+                padding-top: .2rem;
+                text-decoration: underline;
+                color: $secondary-color;
+            }
+        }
+        
+    }
+
+    h2 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 200;
+        color: $secondary-color;
+        padding-bottom: .5rem;
+        font-size: 2.2rem;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    div.overview {
+        display: flex;
+        width: 100wh;
+        width: auto;
+        position: relative;
+        top: 0%;
+        margin-top: 2rem;
+
+        div.image {
+            width: 15%;
+            top: 0%;
+            left: 10%;
+            position: relative;
+
+            img {
+                // left: 10%;
+                position: absolute;
+                margin-top: 2rem;
+            }
+        }
+    
+        div.overview-details {
+            width: 50%;
+            position: relative;
+            top: 0%;
+            left: 25%;
+
+            ul {
+                list-style: none;
+                padding-top: 3rem;
+                column-count: 2;
+
+                li {
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 200;
+                    color: $secondary-color;
+                    padding-bottom: 1.5rem;
+                    font-size: 1.6rem;
+
+                    span {
+                        color: $tertiary-color;
+                        font-size: 1.9rem;
+                    }
+                }
+            }
+           
+            h3 {
+                font-family: 'Roboto', sans-serif;
+                color: $tertiary-color;
+                font-size: 1.6rem;
+                font-weight: 300;
+            }
+
+            h2 {
+                font-family: 'Lato', sans-serif;
+                font-weight: 200;
+                color: $secondary-color;
+                padding-bottom: .5rem;
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            p {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 2rem;
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+                letter-spacing: 1.2px; 
+                color: $secondary-color; 
+                font-weight: 300;
+
+              }
+        }
+    }
+
+    div.cast {
+        padding-top: 5rem;
+        div.PopularTv {
+            div.popular-details {
+                margin-top: 1rem;
+            
+                img {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 90%;
+                    height: 75vh;
+                    // border-radius: 1rem;
+                }
+            
+                div.details {
+                    padding: 1rem;               
+            
+                    h1 {
+                        font-family: 'Lato', sans-serif;
+                        font-size: 3.5rem;
+                        font-weight: 200;
+                        color: $secondary-color; 
+                        border: none;
+                        padding-bottom: .5rem;
+                        margin: 0;
+                        padding: 0; 
+                        padding-bottom: .2rem;
+            
+                        // span {
+                        //     opacity: .8;
+                        //     font-family: 'Lato', sans-serif;
+                        //     font-size: 2.5rem;
+                        //     font-weight: 200;
+                        //     color: $secondary-color; 
+                        //     border: none;
+                        //     padding-bottom: .5rem;
+                        //     margin: 0;
+                        //     padding: 0; 
+                        //     font-style: italic;
+                        //     padding-left: .3rem;
+                        //     text-decoration: none;
+                        // }
+                    }
+            
+                    h2 {
+                        font-family: 'Lato', sans-serif;
+                        font-weight: 200;
+                        color: $secondary-color;
+                        padding-bottom: .5rem;
+                        font-size: 1rem;
+                        padding-right: 0;
+                        text-decoration: none;
+
+                        &#actor {
+                            color: $tertiary-color;
+                            font-size: 1.3rem;
+                        }
+                    }
+            
+                    h3 {
+                        font-family: 'Lato', sans-serif;
+                        font-weight: 200;
+                        color: $tertiary-color; 
+                    }
+                }
+            
+                ul {
+                    list-style: none;
+                    display: flex;
+                    
+                    li {
+                        font-family: 'Lato', sans-serif;
+                        font-weight: 200;
+                        color: $secondary-color;
+                        font-size: 1.2rem;
+                        padding-right: .4rem;
+                        padding-top: .2rem;
+                        text-decoration: none;
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
 }

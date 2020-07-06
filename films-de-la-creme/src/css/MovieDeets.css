@@ -1,56 +1,183 @@
-div.popular-details img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%; }
-
-div.popular-details div.details {
-  padding-top: 1rem; }
-  div.popular-details div.details h1 {
-    font-family: 'Lato', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 200;
-    color: #E0E6EA;
-    border: none;
-    padding-bottom: .5rem;
-    margin: 0;
-    padding: 0; }
-    div.popular-details div.details h1 span {
-      opacity: .8;
+div.MovieDeets div.movie-details {
+  margin-top: 2rem; }
+  div.MovieDeets div.movie-details img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 75vh;
+    border-radius: 1rem; }
+  div.MovieDeets div.movie-details div.details {
+    padding-top: 1rem;
+    position: absolute;
+    width: 60vw;
+    right: 28%;
+    top: 40%;
+    bottom: 8%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+    border: 2px;
+    border-radius: 2rem;
+    height: 25vh; }
+    div.MovieDeets div.movie-details div.details h1 {
       font-family: 'Lato', sans-serif;
-      font-size: 2.5rem;
+      font-size: 3.5rem;
       font-weight: 200;
       color: #E0E6EA;
       border: none;
       padding-bottom: .5rem;
       margin: 0;
       padding: 0;
-      text-transform: italic; }
-  div.popular-details div.details h2 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 200;
-    color: #E0E6EA;
-    padding-bottom: .5rem;
-    font-size: 1rem;
-    display: inline-flex;
-    padding-right: .5rem; }
-  div.popular-details div.details h3 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 200;
-    color: #99AFBB; }
+      padding-bottom: .2rem; }
+      div.MovieDeets div.movie-details div.details h1 span {
+        opacity: .8;
+        font-family: 'Lato', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 200;
+        color: #E0E6EA;
+        border: none;
+        padding-bottom: .5rem;
+        margin: 0;
+        padding: 0;
+        font-style: italic;
+        padding-left: .3rem;
+        text-decoration: none; }
+    div.MovieDeets div.movie-details div.details h2 {
+      font-family: 'Lato', sans-serif;
+      font-weight: 200;
+      color: #E0E6EA;
+      padding-bottom: .5rem;
+      font-size: 1rem;
+      display: inline-flex;
+      padding-right: .5rem; }
+    div.MovieDeets div.movie-details div.details h3 {
+      font-family: 'Lato', sans-serif;
+      font-weight: 200;
+      color: #99AFBB; }
+  div.MovieDeets div.movie-details i.fas.fa-star {
+    padding-right: .3rem; }
+  div.MovieDeets div.movie-details ul {
+    list-style: none;
+    display: flex; }
+    div.MovieDeets div.movie-details ul li {
+      font-family: 'Lato', sans-serif;
+      font-weight: 200;
+      color: #E0E6EA;
+      font-size: 1.2rem;
+      padding-right: .4rem;
+      padding-top: .2rem;
+      text-decoration: underline;
+      color: #E0E6EA; }
 
-div.popular-details i.fas.fa-star {
-  padding-right: .3rem; }
+div.MovieDeets h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+  color: #E0E6EA;
+  padding-bottom: .5rem;
+  font-size: 2.2rem;
+  text-align: center;
+  text-decoration: underline; }
 
-div.popular-details ul {
-  list-style: none;
-  display: flex; }
-  div.popular-details ul li {
-    font-family: 'Lato', sans-serif;
-    font-weight: 200;
-    color: #E0E6EA;
-    font-size: 1.2rem;
-    padding-right: .4rem;
-    padding-top: .2rem;
-    text-decoration: underline;
-    color: #E0E6EA; }
+div.MovieDeets div.overview {
+  display: flex;
+  width: 100wh;
+  width: auto;
+  position: relative;
+  top: 0%;
+  margin-top: 2rem; }
+  div.MovieDeets div.overview div.image {
+    width: 15%;
+    top: 0%;
+    left: 10%;
+    position: relative; }
+    div.MovieDeets div.overview div.image img {
+      position: absolute;
+      margin-top: 2rem; }
+  div.MovieDeets div.overview div.overview-details {
+    width: 50%;
+    position: relative;
+    top: 0%;
+    left: 25%; }
+    div.MovieDeets div.overview div.overview-details ul {
+      list-style: none;
+      padding-top: 3rem;
+      column-count: 2; }
+      div.MovieDeets div.overview div.overview-details ul li {
+        font-family: 'Lato', sans-serif;
+        font-weight: 200;
+        color: #E0E6EA;
+        padding-bottom: 1.5rem;
+        font-size: 1.6rem; }
+        div.MovieDeets div.overview div.overview-details ul li span {
+          color: #99AFBB;
+          font-size: 1.9rem; }
+    div.MovieDeets div.overview div.overview-details h3 {
+      font-family: 'Roboto', sans-serif;
+      color: #99AFBB;
+      font-size: 1.6rem;
+      font-weight: 300; }
+    div.MovieDeets div.overview div.overview-details h2 {
+      font-family: 'Lato', sans-serif;
+      font-weight: 200;
+      color: #E0E6EA;
+      padding-bottom: .5rem;
+      font-size: 2rem;
+      text-align: center; }
+    div.MovieDeets div.overview div.overview-details p {
+      font-family: 'Roboto', sans-serif;
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      letter-spacing: 1.2px;
+      color: #E0E6EA;
+      font-weight: 300; }
+
+div.MovieDeets div.cast {
+  padding-top: 5rem; }
+  div.MovieDeets div.cast div.PopularTv div.popular-details {
+    margin-top: 1rem; }
+    div.MovieDeets div.cast div.PopularTv div.popular-details img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      height: 75vh; }
+    div.MovieDeets div.cast div.PopularTv div.popular-details div.details {
+      padding: 1rem; }
+      div.MovieDeets div.cast div.PopularTv div.popular-details div.details h1 {
+        font-family: 'Lato', sans-serif;
+        font-size: 3.5rem;
+        font-weight: 200;
+        color: #E0E6EA;
+        border: none;
+        padding-bottom: .5rem;
+        margin: 0;
+        padding: 0;
+        padding-bottom: .2rem; }
+      div.MovieDeets div.cast div.PopularTv div.popular-details div.details h2 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 200;
+        color: #E0E6EA;
+        padding-bottom: .5rem;
+        font-size: 1rem;
+        padding-right: 0;
+        text-decoration: none; }
+        div.MovieDeets div.cast div.PopularTv div.popular-details div.details h2#actor {
+          color: #99AFBB;
+          font-size: 1.3rem; }
+      div.MovieDeets div.cast div.PopularTv div.popular-details div.details h3 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 200;
+        color: #99AFBB; }
+    div.MovieDeets div.cast div.PopularTv div.popular-details ul {
+      list-style: none;
+      display: flex; }
+      div.MovieDeets div.cast div.PopularTv div.popular-details ul li {
+        font-family: 'Lato', sans-serif;
+        font-weight: 200;
+        color: #E0E6EA;
+        font-size: 1.2rem;
+        padding-right: .4rem;
+        padding-top: .2rem;
+        text-decoration: none;
+        color: #E0E6EA; }

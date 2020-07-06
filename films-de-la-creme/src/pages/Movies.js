@@ -36,7 +36,6 @@ class Movies extends React.Component {
                 <div className="now-playing-details">
 
                     <div className="details">
-                        {/* <h2>Latest</h2> */}
                         <h1 className="title"> {this.state.movie.title} <span className="date"> ({this.state.movie.release_date}) </span> </h1>
                         <h2>{this.state.movie.vote_average}/10 <span>{this.state.movie.vote_count} reviews </span></h2>
 
@@ -48,14 +47,6 @@ class Movies extends React.Component {
 
                     </div>
 
-
-                    {/*
-                    #add trending movies# xx
-                    #add top rated movies#xx
-                    #add upcoming movies#xx
-                    #add editor's picks# xx*/}
-
-
                 </div>
 
                 <TrendingMovie />
@@ -64,7 +55,6 @@ class Movies extends React.Component {
                 <EditorsPickMovie />
 
                 <Footer />
-
             </div>
         )
     }

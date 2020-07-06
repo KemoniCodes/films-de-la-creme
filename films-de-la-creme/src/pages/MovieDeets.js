@@ -10,6 +10,7 @@ class MovieDeets extends React.Component {
         movie_genre: [],
         match: false,
         poster: '',
+        backdrop: '',
         name: "React",
     }
 
@@ -26,7 +27,8 @@ class MovieDeets extends React.Component {
         let config = "https://api.themoviedb.org/3/configuration?api_key=57a856481fc55fc8549e5927b0aaa154"
         let res = await fetch(config);
         let image = await res.json();
-        this.setState({ poster: image.images.secure_base_url + image.images.backdrop_sizes[2] })
+        this.setState({ poster: image.images.secure_base_url + image.images.poster_sizes[3] })
+        this.setState({ backdrop: image.images.secure_base_url + image.images.backdrop_sizes[3] })
     }
 
     render() {
@@ -34,11 +36,11 @@ class MovieDeets extends React.Component {
             <div className="MovieDeets">
                 <div className="popular-details">
                     <div className="image">
-                        <img src={this.state.poster + this.state.movie.backdrop_path} alt="" />
+                        <img src={this.state.backdrop + this.state.movie.backdrop_path} alt="" />
                     </div>
 
                     <div className="details">
-                        <h1>{this.state.movie.title}<span>({this.state.movie.release_date})</span></h1>
+                        <h1>{this.state.movie.title} <span>({this.state.movie.release_date})</span> </h1>
                         {this.state.movie_genre.map((genre, i) => {
                             return (
                                 <h2>{genre.name}</h2>
@@ -55,6 +57,17 @@ class MovieDeets extends React.Component {
                             </li>
                             <li>Add to List</li>
                         </ul>
+                    </div>
+                </div>
+
+                <h2>Overview</h2>
+                <div className="overview">
+                    <div className="image">
+                        <img src={this.state.poster + this.state.movie.poster_path} alt="" />
+                    </div>
+                    <div className="overview-details">
+                        <h3>{this.state.movie.tagline}</h3>
+                        <p>{this.state.movie.overview}</p>
                     </div>
                 </div>
             </div>
