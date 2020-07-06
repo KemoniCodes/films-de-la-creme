@@ -2,6 +2,8 @@ import React from 'react'
 import '../css/MovieDeets.css'
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
+import NavBar from '../components/NavBar';
+
 
 class TvDeets extends React.Component {
     state = {
@@ -50,6 +52,7 @@ class TvDeets extends React.Component {
         let slides = this.state.cast.length < 5;
         return (
             <div className="MovieDeets">
+                <NavBar />
                 <div className="movie-details">
                     <div className="image">
                         <img src={this.state.backdrop + this.state.tv.backdrop_path} alt="" />
@@ -105,7 +108,6 @@ class TvDeets extends React.Component {
                 </div>
 
                 <div className="cast">
-
                     <div className="PopularTv">
                         <h1>Cast </h1>
 
@@ -181,7 +183,6 @@ class TvDeets extends React.Component {
 
                         </Carousel>
                     </div>
-
                 </div>
             </div>
         )
