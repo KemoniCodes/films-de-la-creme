@@ -15,6 +15,7 @@ import PopularTvPage from './pages/PopularTvPage';
 import SearchBar from './components/SearchBar';
 import SearchResults from './pages/SearchResults';
 import MovieDeets from './pages/MovieDeets';
+import TvDeets from './pages/TvDeets';
 
 
 ReactDOM.render(
@@ -34,7 +35,7 @@ ReactDOM.render(
         <Route path='/tv/popular' exact component={PopularTvPage} />
         <Route path='/search' exact component={SearchResults} />
         <Route exact path='/movie/:id' exact component={MovieDeets} />
-        <Route exact path='/tv/:show_id' exact component={MovieDeets} />
+        <Route exact path='/tv/:show_id' exact component={TvDeets} />
         <Route exact path='/person/:id' exact component={MovieDeets} />
       </Switch >
     </BrowserRouter >
