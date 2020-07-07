@@ -3,7 +3,9 @@ $secondary-color: #E0E6EA;
 $tertiary-color: #99AFBB;
 
 div.MovieDeets {
-
+    // h1 {
+    //     padding-top: 8rem;
+    // }
     div.movie-details {
         margin-top: 2rem;
     
@@ -139,6 +141,10 @@ div.MovieDeets {
                 padding-top: 3rem;
                 column-count: 2;
 
+                 &.people {
+                    padding-left: 3rem;
+                 }
+
                 li {
                     font-family: 'Lato', sans-serif;
                     font-weight: 200;
@@ -185,6 +191,10 @@ div.MovieDeets {
     div.cast {
         padding-top: 8rem;
         div.PopularTv {
+
+            h1#people {
+                padding-top: 20rem;
+            }
             
             div.popular-details {
                 margin-top: 1rem;
@@ -224,6 +234,10 @@ div.MovieDeets {
                         &#actor {
                             color: $tertiary-color;
                             font-size: 1.3rem;
+                        }
+
+                        &#media {
+                            text-decoration: underline;
                         }
                     }
             

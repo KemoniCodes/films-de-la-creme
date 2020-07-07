@@ -3,6 +3,8 @@ import '../css/MovieDeets.css'
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import NavBar from '../components/NavBar';
+import Footer from '../components/Footer'
+
 
 
 class TvDeets extends React.Component {
@@ -121,16 +123,19 @@ class TvDeets extends React.Component {
                                 let img = tvShow.profile_path;
 
                                 return (
-                                    <div className="popular-details">
-                                        <div className="image">
-                                            {img ? <img src={this.state.poster1 + tvShow.profile_path} alt="" /> : <img src={this.state.poster1 + tvShow.profile_path} alt="No Image Was Found" />}
-                                        </div>
+                                    <a href={`/person/${tvShow.id}`
+                                    }>
+                                        <div className="popular-details">
+                                            <div className="image">
+                                                {img ? <img src={this.state.poster1 + tvShow.profile_path} alt="" /> : <img src={this.state.poster1 + tvShow.profile_path} alt="No Image Was Found" />}
+                                            </div>
 
-                                        <div className="details">
-                                            <h2>{tvShow.character}</h2>
-                                            <h2 id="actor">{tvShow.name}</h2>
+                                            <div className="details">
+                                                <h2>{tvShow.character}</h2>
+                                                <h2 id="actor">{tvShow.name}</h2>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 )
                             }
 
@@ -184,6 +189,7 @@ class TvDeets extends React.Component {
                         </Carousel>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }

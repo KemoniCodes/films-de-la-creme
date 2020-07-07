@@ -104,6 +104,8 @@ div.MovieDeets div.overview {
       list-style: none;
       padding-top: 3rem;
       column-count: 2; }
+      div.MovieDeets div.overview div.overview-details ul.people {
+        padding-left: 3rem; }
       div.MovieDeets div.overview div.overview-details ul li {
         font-family: 'Lato', sans-serif;
         font-weight: 200;
@@ -136,6 +138,8 @@ div.MovieDeets div.overview {
 
 div.MovieDeets div.cast {
   padding-top: 8rem; }
+  div.MovieDeets div.cast div.PopularTv h1#people {
+    padding-top: 20rem; }
   div.MovieDeets div.cast div.PopularTv div.popular-details {
     margin-top: 1rem; }
     div.MovieDeets div.cast div.PopularTv div.popular-details img {
@@ -167,6 +171,8 @@ div.MovieDeets div.cast {
         div.MovieDeets div.cast div.PopularTv div.popular-details div.details h2#actor {
           color: #99AFBB;
           font-size: 1.3rem; }
+        div.MovieDeets div.cast div.PopularTv div.popular-details div.details h2#media {
+          text-decoration: underline; }
       div.MovieDeets div.cast div.PopularTv div.popular-details div.details h3 {
         font-family: 'Lato', sans-serif;
         font-weight: 200;

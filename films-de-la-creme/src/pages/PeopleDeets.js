@@ -6,13 +6,11 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer'
 
 
-class MovieDeets extends React.Component {
+class PeopleDeets extends React.Component {
     state = {
         loading: true,
-        movie: [],
-        tv: [],
-        movie_id: this.props.match.params.id,
-        movie_genre: [],
+        people: [],
+        people_id: this.props.match.params.id,
         director: [],
         cast: [],
         rec: [],
@@ -24,19 +22,19 @@ class MovieDeets extends React.Component {
     }
 
     async componentDidMount() {
-        let id = this.state.movie_id
-        let url = `https://api.themoviedb.org/3/movie/${id}?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US`
+        let id = this.state.people_id
+        let url = `https://api.themoviedb.org/3/person/${id}?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US`
         let response = await fetch(url);
         let data = await response.json();
-        this.setState({ movie: data, loading: false })
-        this.setState({ movie_id: data.id, loading: false })
-        this.setState({ movie_genre: data.genres, loading: false })
+        this.setState({ people: data, loading: false })
+        this.setState({ people_id: data.id, loading: false })
+        // this.setState({ movie_genre: data.genres, loading: false })
 
-        let url2 = `https://api.themoviedb.org/3/movie/${id}/credits?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US`
+        let url2 = `https://api.themoviedb.org/3/person/${id}/combined_credits?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US`
         let response2 = await fetch(url2);
         let data2 = await response2.json();
         this.setState({ cast: data2.cast, loading: false })
-        this.setState({ director: data2.crew, loading: false })
+        // this.setState({ director: data2.crew, loading: false })
 
 
         let url3 = `https://api.themoviedb.org/3/movie/${id}/similar?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&page=1`
@@ -60,63 +58,51 @@ class MovieDeets extends React.Component {
             <div className="MovieDeets">
                 <NavBar />
 
-                <div className="movie-details">
-                    <div className="image">
-                        <img src={this.state.backdrop + this.state.movie.backdrop_path} alt="" />
-                    </div>
+                {/* <div className="movie-details">
+                    {/* <div className="image">
+                        <img src={this.state.backdrop + this.state.people.profile_path} alt="" />
+                    </div> */}
 
-                    <div className="details">
-                        <h1>{this.state.movie.title} <span>({this.state.movie.release_date})</span> </h1>
-                        {this.state.movie_genre.map((genre, i) => {
+                {/* <div className="details"> */}
+                {/* {this.state.people_genre.map((genre, i) => {
                             return (
                                 <h2>{genre.name}</h2>
                             )
                         }
-                        )}
+                        )} */}
 
-                        <h3>
-                            <i class="fas fa-star"></i> {this.state.movie.vote_average}/10
-                        </h3>
-                        <ul>
+                {/* <h3>
+                            <i class="fas fa-star"></i> {this.state.people.vote_average}/10
+                        </h3> */}
+                {/* <ul>
                             <li>
                                 <i class="fas fa-plus"></i>
                             </li>
                             <li>Add to List</li>
-                        </ul>
-                    </div>
-                </div>
+                        </ul> */}
+                {/* </div> */}
+                {/* // </div>  */}
 
-                <h2>Overview</h2>
+                <h1 style={{ paddingTop: "20 rem" }}>{this.state.people.name} </h1>
                 <div className="overview">
                     <div className="image">
-                        <img src={this.state.poster + this.state.movie.poster_path} alt="" />
+                        <img src={this.state.poster + this.state.people.profile_path} alt="" />
                     </div>
                     <div className="overview-details">
-                        <h3>{this.state.movie.tagline}</h3>
-                        <p>{this.state.movie.overview}</p>
+                        {/* <h3>{this.state.people.known_for_department}</h3>
+                        <p>{this.state.people.birthday}</p> */}
 
-                        <ul>
-                            {/* <li>Created By:
-                                {this.state.director.map((director, i) => {
-                                return (
-                                    <span> <br />{director.job='Director'.name} </span>
-                                )
-                            }
-                            )}
-                            </li> */}
-
-                            {/* <li>Episodes: <span>{this.state.tv.number_of_episodes}</span></li> */}
-                            <li>Run Time: <span>{this.state.movie.runtime}m</span></li>
-                            {/* <li>Seasons: <span>{this.state.tv.number_of_seasons}</span></li> */}
-                            <li>Original Language: <span>{this.state.movie.original_language}</span></li>
-                            <li>Status: <span>{this.state.movie.status}</span></li>
+                        <ul class="people">
+                            <li>Known For: <span>{this.state.people.known_for_department}</span></li>
+                            <li>Birthday: <span>{this.state.people.birthday}</span></li>
+                            <li>Place of birth: <span>{this.state.people.place_of_birth}</span></li>
                         </ul>
                     </div>
                 </div>
 
                 <div className="cast">
                     <div className="PopularTv">
-                        <h1>Cast </h1>
+                        <h1 id="people">Known For </h1>
 
                         <Carousel
                             slidesPerPage={slides ? this.state.cast.length : 5}
@@ -124,23 +110,21 @@ class MovieDeets extends React.Component {
                             infinite
                         >
 
-                            {this.state.cast.map((movie, i) => {
-                                let img = movie.profile_path;
+                            {this.state.cast.map((people, i) => {
+                                // let img = movie.profile_path;
 
                                 return (
-                                    <a href={`/person/${movie.id}`
-                                    }>
-                                        <div className="popular-details">
-                                            <div className="image">
-                                                {img ? <img src={this.state.poster1 + movie.profile_path} alt="" /> : <img src={this.state.poster1 + movie.profile_path} alt="No Image Was Found" />}
-                                            </div>
-
-                                            <div className="details">
-                                                <h2>{movie.character}</h2>
-                                                <h2 id="actor">{movie.name}</h2>
-                                            </div>
+                                    <div className="popular-details">
+                                        <div className="image">
+                                            <img src={this.state.poster1 + people.poster_path} alt="" />
                                         </div>
-                                    </a>
+
+                                        <div className="details">
+                                            <h2>{people.character}</h2>
+                                            <h2 id="media">{people.media_type}</h2>
+                                            <h2 id="actor">{people.title}</h2>
+                                        </div>
+                                    </div>
                                 )
                             }
 
@@ -152,7 +136,7 @@ class MovieDeets extends React.Component {
                 </div>
 
 
-                <div className="similar">
+                {/* <div className="similar">
                     <div className="PopularTv">
                         <h1>Similar Movies </h1>
 
@@ -194,7 +178,7 @@ class MovieDeets extends React.Component {
 
                         </Carousel>
                     </div>
-                </div>
+                </div> */}
                 <Footer />
             </div>
         )
@@ -202,4 +186,4 @@ class MovieDeets extends React.Component {
 
 }
 
-export default MovieDeets
+export default PeopleDeets
