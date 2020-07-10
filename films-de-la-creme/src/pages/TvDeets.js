@@ -72,12 +72,7 @@ class TvDeets extends React.Component {
                         <h3>
                             <i class="fas fa-star"></i> {this.state.tv.vote_average}/10
                         </h3>
-                        <ul>
-                            <li>
-                                <i class="fas fa-plus"></i>
-                            </li>
-                            <li>Add to List</li>
-                        </ul>
+                      
                     </div>
                 </div>
 
@@ -171,12 +166,6 @@ class TvDeets extends React.Component {
                                                     <i class="fas fa-star"></i> {tvShow.vote_average}/10
                                             </h3>
 
-                                                <ul>
-                                                    <li>
-                                                        <i class="fas fa-plus"></i>
-                                                    </li>
-                                                    <li>Add to List</li>
-                                                </ul>
                                             </div>
                                         </div>
                                     </a>

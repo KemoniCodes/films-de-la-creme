@@ -44,6 +44,7 @@ div.home {
 
         a:visited {
           text-decoration: none;
+          color: $tertiary-color;
         }
 
         a:active {
@@ -53,7 +54,22 @@ div.home {
         li#logo {
           padding-top: 0.5rem;
         }
-  
+        div {
+          padding-top: 1rem;
+          opacity: .5;
+          li.list-item {
+            padding-right: 0rem;
+            padding-top: 0;
+            font-size: 1rem;
+            // border-bottom: 1px solid $tertiary-color;
+            width: 111px;
+            margin-right: 1rem;
+            margin-left: 1rem;
+            letter-spacing: 1.2px;
+          }  
+        }
+   
+
         li#last {
           padding-right: 0rem;
         }

@@ -2,6 +2,8 @@ from flask import (Flask, render_template)
 from flask import render_template, request, redirect, flash, url_for, jsonify
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
+from flask_sqlalchemy import SQLAlchemy
+import psycopg2
 import os
 import urllib3
 import requests
@@ -15,19 +17,23 @@ if not os.getenv("DATABASE_URL"):
 
 # Set up database
 engine = create_engine(os.getenv("DATABASE_URL"))
-db = scoped_session(sessionmaker(bind=engine))
+db = engine
 
+
+
+
+  
 
 @app.route("/", methods = ['POST','GET'])
 def index():
     #get now playing movies#
-    config = requests.get("https://api.themoviedb.org/3/configuration?api_key=57a856481fc55fc8549e5927b0aaa154")
+    # config = requests.get("https://api.themoviedb.org/3/configuration?api_key=57a856481fc55fc8549e5927b0aaa154")
     
-    url = requests.get("https://api.themoviedb.org/3/movie/now_playing?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&page=1")
+    # url = requests.get("https://api.themoviedb.org/3/movie/now_playing?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&page=1")
 
-    image= config.json()
-    data= url.json()
-    return render_template("index.html", data=data, image=image)
+    # image= config.json()
+    # data= url.json()
+    return render_template("index.html")
 
 @app.route('/home', methods = ['POST' , 'GET'])
 def home():
@@ -84,6 +90,16 @@ def search_results():
     #get search results#
     return render_template('index.html')
 
+@app.route('/SignIn')
+def sign_in():
+    #get search results#
+    return render_template('index.html')
+
+@app.route('/Register')
+def Register():
+    #get search results#
+    return render_template('index.html')
+
 @app.route('/movie/<id>')
 def movie(id):
     #get movie search results#
@@ -98,6 +114,7 @@ def tv(show_id):
 def person(id):
     #get person search results#
     return render_template('index.html')
+
 
 
 

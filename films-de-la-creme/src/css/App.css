@@ -26,11 +26,23 @@ div.home {
         color: #E0E6EA;
         cursor: pointer; }
       div.home nav ul a:visited {
-        text-decoration: none; }
+        text-decoration: none;
+        color: #99AFBB; }
       div.home nav ul a:active {
         color: #E0E6EA; }
       div.home nav ul li#logo {
         padding-top: 0.5rem; }
+      div.home nav ul div {
+        padding-top: 1rem;
+        opacity: .5; }
+        div.home nav ul div li.list-item {
+          padding-right: 0rem;
+          padding-top: 0;
+          font-size: 1rem;
+          width: 111px;
+          margin-right: 1rem;
+          margin-left: 1rem;
+          letter-spacing: 1.2px; }
       div.home nav ul li#last {
         padding-right: 0rem; }
       div.home nav ul img {

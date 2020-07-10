@@ -1,0 +1,82 @@
+
+$primary-color: #222D33;
+$secondary-color: #E0E6EA;
+$tertiary-color: #99AFBB;
+
+div.login {
+    text-align: center;
+    padding: 24px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 3px solid $secondary-color;
+    border-radius: 16px;
+    padding: 40px;
+    width: 80vw;
+    height: 90vh;
+    
+
+        h1 {
+            margin-top: 24px;
+            margin-right: 0;
+        }
+
+        form {
+            padding: 24px;
+            display: grid;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 1.4rem;
+            letter-spacing: 1.2px;
+            color: $secondary-color;
+        }
+
+        label {
+            padding: 8px;
+        }
+
+        input {
+            margin: 8px;
+            width: 20vw;
+            outline: none;
+            border-radius: 5px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            letter-spacing: 1.2px;
+            color: $secondary-color;
+        }
+        
+
+        button {
+            padding: 3px;
+            border-radius: 10px;
+            width: 16vw;
+            margin-top: 8px;
+            text-align: center;
+            justify-self: center;
+            outline: none;
+            font-size: 12px;
+            font-weight: 500;
+            background-color: $tertiary-color;
+            color: $secondary-color;
+        }
+
+        a {
+            text-decoration: underline;
+            text-decoration-line: 3px;
+            text-decoration-color: $tertiary-color;
+            color: $secondary-color;
+        }
+
+        p {
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            letter-spacing: 1.2px;
+            color: $secondary-color;
+        }
+
+
+}

@@ -92,12 +92,7 @@ class TopRatedTvPage extends React.Component {
                                             <i class="fas fa-star"></i> {movie.vote_average}/10
                                     </h3>
 
-                                        <ul>
-                                            <li>
-                                                <i class="fas fa-plus"></i>
-                                            </li>
-                                            <li>Add to List</li>
-                                        </ul>
+                                  
 
                                     </div>
                                 </div>
@@ -124,12 +119,7 @@ class TopRatedTvPage extends React.Component {
                                             <i class="fas fa-star"></i> {movie1.vote_average}/10
                                     </h3>
 
-                                        <ul>
-                                            <li>
-                                                <i class="fas fa-plus"></i>
-                                            </li>
-                                            <li>Add to List</li>
-                                        </ul>
+                                      
 
                                     </div>
                                 </div>
@@ -156,12 +146,7 @@ class TopRatedTvPage extends React.Component {
                                             <i class="fas fa-star"></i> {movie2.vote_average}/10
                                     </h3>
 
-                                        <ul>
-                                            <li>
-                                                <i class="fas fa-plus"></i>
-                                            </li>
-                                            <li>Add to List</li>
-                                        </ul>
+                                    
 
                                     </div>
                                 </div>
@@ -188,12 +173,7 @@ class TopRatedTvPage extends React.Component {
                                             <i class="fas fa-star"></i> {movie3.vote_average}/10
                                     </h3>
 
-                                        <ul>
-                                            <li>
-                                                <i class="fas fa-plus"></i>
-                                            </li>
-                                            <li>Add to List</li>
-                                        </ul>
+                                     
 
                                     </div>
                                 </div>
@@ -220,12 +200,7 @@ class TopRatedTvPage extends React.Component {
                                             <i class="fas fa-star"></i> {movie.vote_average}/10
                                     </h3>
 
-                                        <ul>
-                                            <li>
-                                                <i class="fas fa-plus"></i>
-                                            </li>
-                                            <li>Add to List</li>
-                                        </ul>
+                                    
 
                                     </div>
                                 </div>
@@ -252,12 +227,7 @@ class TopRatedTvPage extends React.Component {
                                             <i class="fas fa-star"></i> {movie.vote_average}/10
                                     </h3>
 
-                                        <ul>
-                                            <li>
-                                                <i class="fas fa-plus"></i>
-                                            </li>
-                                            <li>Add to List</li>
-                                        </ul>
+                                
 
                                     </div>
                                 </div>
@@ -284,12 +254,7 @@ class TopRatedTvPage extends React.Component {
                                             <i class="fas fa-star"></i> {movie.vote_average}/10
                                     </h3>
 
-                                        <ul>
-                                            <li>
-                                                <i class="fas fa-plus"></i>
-                                            </li>
-                                            <li>Add to List</li>
-                                        </ul>
+                     
 
                                     </div>
                                 </div>
@@ -316,12 +281,7 @@ class TopRatedTvPage extends React.Component {
                                             <i class="fas fa-star"></i> {movie.vote_average}/10
                                     </h3>
 
-                                        <ul>
-                                            <li>
-                                                <i class="fas fa-plus"></i>
-                                            </li>
-                                            <li>Add to List</li>
-                                        </ul>
+                                 
 
                                     </div>
                                 </div>

@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
+import app from "../firebase.js";
 import '../css/App.css'
-import SearchBar from './SearchBar';
+
 
 
 
@@ -10,7 +11,7 @@ class NavBar extends React.Component {
         super();
         this.state = {
             name: "React",
-            showHide: false,
+            showHide: true,
         };
         this.hideComponent = this.hideComponent.bind(this);
     }
@@ -28,12 +29,13 @@ class NavBar extends React.Component {
 
     render() {
         const { showHide } = this.state;
+        const options = ["PROFILE", "watchlist's"]
         return (
-            <div className="home">
-                <div>
+            < div className="home" >
+                {/* <div>
                     {showHide && <SearchBar />}
                     <hr />
-                </div>
+                </div> */}
 
                 <nav>
                     <ul>
@@ -47,7 +49,7 @@ class NavBar extends React.Component {
                         </li>
                         <Link to='/search'><li > SEARCH</li></Link>
                         <li>PROFILE</li>
-                        <li id="last">LOG OUT</li>
+                        <li id="last"><Link to='/SignIn' onClick={() => app.auth().signOut()}>LOG OUT</Link></li>
                     </ul>
                 </nav>
             </div >

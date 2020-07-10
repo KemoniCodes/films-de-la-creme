@@ -59,12 +59,6 @@ class TvShows extends React.Component {
                                 </div>
 
 
-                                {/*
-                    #add trending movies# xx
-                    #add top rated movies#xx
-                    #add upcoming movies#xx
-                    #add editor's picks# xx*/}
-
 
                             </div>
 
@@ -76,11 +70,6 @@ class TvShows extends React.Component {
                     }
 
                 </Carousel >
-
-                {/* <TrendingMovie />
-                <TopRatedMovie />
-                <UpcomingMovie />
-                <EditorsPickMovie /> */}
 
                 <TrendingTv />
                 <TopRatedTv />
