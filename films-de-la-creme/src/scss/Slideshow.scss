@@ -70,6 +70,9 @@ div.Slideshow {
     
         span.date {
           font-style: italic;
+          padding-left: .8rem;
+          text-decoration: none;
+          font-size: 1.8rem;
         }
       }
     
@@ -94,5 +97,146 @@ div.Slideshow {
         font-size: 1.3rem;
         line-height: 1.5rem;
         letter-spacing: 1.2px;  
+      }
+    }
+
+
+    @media (min-width:1024px) {
+      div.Slideshow {
+        height:85vh
+      }
+      div.now-playing-details {
+        margin-right: 4rem;
+        margin-top:4.5rem;
+      }
+
+      div.image {
+        img {
+          height: 13rem;
+        }
+      }
+
+      div.home {
+        nav {
+          ul {
+            li {
+              padding-right: 2.5rem;
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+
+      div.Popular {
+        h1 {
+          margin-right:4rem;
+        }
+      }
+
+      div.PopularTv {
+        h1 {
+          margin-right:4rem;
+        }
+      }
+
+    }
+
+    @media (max-width:768px) {
+      div.home {
+        nav {
+          ul {
+            li {
+              padding-right: 1.2rem;
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+  
+      div.Slideshow {
+        height:85vh
+      }
+
+       div.now-playing-details {
+         margin-right: 4rem;
+       }
+
+      div.image {
+        img {
+          height: 10rem;
+        }
+      }
+
+      div.Popular {
+        h1 {
+          margin-right:4rem;
+        }
+
+        div.popular-details {
+          div.details {
+            h2 {
+              font-size: 1rem !important;
+            }
+            h3 {
+              font-size: 1rem !important;
+            }
+          }
+        }
+      }
+
+      div.PopularTv {
+        h1 {
+          margin-right:4rem;
+        }
+
+        div.popular-details {
+          div.details {
+            h2 {
+              font-size: 1rem !important;
+            }
+            h3 {
+              font-size: 1rem !important;
+            }
+          }
+        }
+      }
+    }
+
+
+    @media (min-width:375px) {
+      div.PopularTv {
+        h1 {
+          margin-right:4rem;
+        }
+
+        div.popular-details {
+          div.details {
+            h2 {
+              font-size: .8rem ;
+            }
+
+            h3 {
+              font-size: .8rem ;
+            }
+          }
+        }
+      }
+
+      div.Popular {
+        h1 {
+          margin-right:4rem;
+        }
+
+        div.popular-details {
+          div.details {
+            h2 {
+              font-size: .8rem ;
+            }
+
+            h3 {
+              font-size: .8rem ;
+            }
+          }
+        }
       }
     }

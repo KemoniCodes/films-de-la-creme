@@ -32,6 +32,9 @@ const SignIn = ({ history }) => {
         <div className="login">
             <h1>Sign In</h1>
 
+            <p>*To demo: Email: demo@gmail.com    Password: demo4u* </p>
+
+
             <form onSubmit={handleLogin}>
                 <label>
                     Email

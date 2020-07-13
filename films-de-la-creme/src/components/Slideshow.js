@@ -38,6 +38,7 @@ class Slideshow extends React.Component {
                     animationSpeed={2000}
                 >
 
+
                     {this.state.movie.map((movie, bg, i) => {
 
                         return (

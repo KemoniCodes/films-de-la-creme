@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/react/css/main.5074c9bc.chunk.css",
-    "main.js": "/static/react/js/main.f61eef0d.chunk.js",
-    "main.js.map": "/static/react/js/main.f61eef0d.chunk.js.map",
+    "main.css": "/static/react/css/main.4831d167.chunk.css",
+    "main.js": "/static/react/js/main.b51e05eb.chunk.js",
+    "main.js.map": "/static/react/js/main.b51e05eb.chunk.js.map",
     "runtime-main.js": "/static/react/js/runtime-main.c2b06628.js",
     "runtime-main.js.map": "/static/react/js/runtime-main.c2b06628.js.map",
     "css/2.0fa7cd23.chunk.css": "/static/react/css/2.0fa7cd23.chunk.css",
@@ -10,17 +10,17 @@
     "js/2.d0774fd9.chunk.js.map": "/static/react/js/2.d0774fd9.chunk.js.map",
     "../../templates/index.html": "/static/react/../../templates/index.html",
     "css/2.0fa7cd23.chunk.css.map": "/static/react/css/2.0fa7cd23.chunk.css.map",
-    "css/main.5074c9bc.chunk.css.map": "/static/react/css/main.5074c9bc.chunk.css.map",
+    "css/main.4831d167.chunk.css.map": "/static/react/css/main.4831d167.chunk.css.map",
     "js/2.d0774fd9.chunk.js.LICENSE.txt": "/static/react/js/2.d0774fd9.chunk.js.LICENSE.txt",
     "media/food-and-restaurant.png": "/static/react/media/food-and-restaurant.aa9501df.png",
-    "precache-manifest.354e7dfb2148ab9555275e0e9b1fb49c.js": "/static/react/precache-manifest.354e7dfb2148ab9555275e0e9b1fb49c.js",
+    "precache-manifest.9694ac2d5150c14a8429b3e80a52ad73.js": "/static/react/precache-manifest.9694ac2d5150c14a8429b3e80a52ad73.js",
     "service-worker.js": "/static/react/service-worker.js"
   },
   "entrypoints": [
     "js/runtime-main.c2b06628.js",
     "css/2.0fa7cd23.chunk.css",
     "js/2.d0774fd9.chunk.js",
-    "css/main.5074c9bc.chunk.css",
-    "js/main.f61eef0d.chunk.js"
+    "css/main.4831d167.chunk.css",
+    "js/main.b51e05eb.chunk.js"
   ]
 }
