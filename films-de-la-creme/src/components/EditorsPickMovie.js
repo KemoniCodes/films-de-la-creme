@@ -71,6 +71,17 @@ class EditorsPickMovie extends React.Component {
                     slidesPerPage={5}
                     arrows
                     infinite
+                    breakpoints={{
+                        640: {
+                            slidesPerPage: 2,
+                            arrows: true
+                        },
+                        900: {
+                            slidesPerPage: 4,
+                            arrows: true
+                        }
+
+                    }}
                 >
                     <a href={
                         `/movie/${this.state.movie.id}`
@@ -86,7 +97,7 @@ class EditorsPickMovie extends React.Component {
                                     <i class="fas fa-star"></i> {this.state.movie.vote_average}/10
                             </h3>
 
-                          
+
 
                             </div>
                         </div>
@@ -106,7 +117,7 @@ class EditorsPickMovie extends React.Component {
                                     <i class="fas fa-star"></i> {this.state.movie1.vote_average}/10
                             </h3>
 
-                             
+
 
                             </div>
                         </div>
@@ -126,7 +137,7 @@ class EditorsPickMovie extends React.Component {
                                     <i class="fas fa-star"></i> {this.state.movie2.vote_average}/10
                             </h3>
 
-                             
+
 
                             </div>
                         </div>
@@ -146,7 +157,7 @@ class EditorsPickMovie extends React.Component {
                                     <i class="fas fa-star"></i> {this.state.movie3.vote_average}/10
                                 </h3>
 
-                            
+
 
                             </div>
                         </div>
@@ -204,7 +215,7 @@ class EditorsPickMovie extends React.Component {
                                     <i class="fas fa-star"></i> {this.state.movie6.vote_average}/10
                             </h3>
 
-                               
+
 
                             </div>
                         </div>

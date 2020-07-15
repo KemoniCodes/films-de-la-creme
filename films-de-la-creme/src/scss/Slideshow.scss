@@ -204,39 +204,255 @@ div.Slideshow {
 
 
     @media (min-width:375px) {
+      
+      div.Slideshow {
+        h1.title {
+          font-size: 2.2rem;
+
+          span.date {
+            font-size: 1.2rem;
+          }
+        }
+
+        h2 {
+          font-size: 1.2rem;
+        }
+
+       
+
+        div.now-playing-details {
+          div.details {
+            width:85vw;
+            right: 6%;
+            top: 7%;
+            height: 64vh;
+
+             p {
+              font-size: .9rem;
+              line-height: 1.3rem;
+            }
+          }
+          div.image {
+            img {
+              height: 70vh;
+              width: 90vw;
+            }
+          }
+        }
+
+        .BrainhubCarousel__dots {
+          width: 80vw;
+          justify-content: center;
+          margin-left: auto;
+          margin-right: auto;
+          overflow: hidden;
+        }
+      }
+      
       div.PopularTv {
+        padding-top: 0rem;
+
         h1 {
           margin-right:4rem;
+          font-size: 2rem;
         }
+
 
         div.popular-details {
           div.details {
             h2 {
-              font-size: .8rem ;
+              font-size: .8rem !important;
             }
 
             h3 {
-              font-size: .8rem ;
+              font-size: .8rem !important;
             }
           }
         }
       }
 
       div.Popular {
+        padding-bottom: 0rem;
+
         h1 {
           margin-right:4rem;
+          font-size: 2rem;
         }
 
         div.popular-details {
           div.details {
             h2 {
-              font-size: .8rem ;
+              font-size: .8rem !important;
             }
 
             h3 {
-              font-size: .8rem ;
+              font-size: .8rem !important;
             }
           }
         }
       }
+
+      div.Footer {
+        li {
+          font-size: .8rem;
+          
+          img {
+            height: 95px;
+            width: 160px;
+          }
+        }
+      }
+
+      div.Movies {
+        h1.title {
+          font-size: 2.2rem;
+          margin-top: 0rem;
+          padding-top: 0rem;
+          margin-left: 0rem;
+          padding-right: 0rem;
+          padding-left: 0rem;
+          margin-right: 0rem;
+          border-bottom: none !important;
+
+          span.date {
+            font-size: 1.2rem;
+          }
+        }
+
+        div.Popular {
+          padding-bottom: 0rem !important;
+  
+          h1 {
+            margin-right:4rem;
+            font-size: 2rem;
+          }
+  
+          div.popular-details {
+            div.details {
+              h2 {
+                font-size: .8rem !important;
+              }
+  
+              h3 {
+                font-size: .8rem !important;
+              }
+            }
+          }
+        }
+
+        h2 {
+          font-size: 1.2rem;
+        }
+
+        div.now-playing-details {
+          right: 14%;
+          position: relative;
+          margin-right: 0rem !important;
+          height: 80vh;
+          
+
+          div.details {
+            width:85vw;
+            left: 22%;
+            top: 7%;
+            height: 64vh;
+
+            p {
+              font-size: .9rem;
+              line-height: 1.3rem;
+            }
+          }
+       }
+
+
+       div.TopRated {
+         padding-bottom: 0rem !important;
+
+         h1 {
+          margin-right:4rem;
+          font-size: 2rem;
+        }
+
+        div.popular-details {
+          div.details {
+            h2 {
+              font-size: .8rem !important;
+            }
+
+            h3 {
+              font-size: .8rem !important;
+            }
+          }
+        }
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      div.now-playing-details {
+        right: 14%;
+        position: relative;
+        margin-right: 0rem !important;
+        height: 80vh;
+        
+
+        div.details {
+          width:85vw;
+          left: 22%;
+          top: 7%;
+          height: 64vh;
+
+          p {
+            font-size: .9rem;
+            line-height: 1.3rem;
+          }
+        }
+       }
+
+       div.Upcoming {
+        padding-bottom: 0rem !important;
+
+        h1 {
+          margin-right:4rem;
+          font-size: 2rem;
+        }
+
+        div.popular-details {
+          div.details {
+            h2 {
+              font-size: .8rem !important;
+            }
+
+            h3 {
+              font-size: .8rem !important;
+            }
+          }
+        }
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      div.now-playing-details {
+        right: 14%;
+        position: relative;
+        margin-right: 0rem !important;
+        height: 80vh;
+        
+
+        div.details {
+          width:85vw;
+          left: 22%;
+          top: 7%;
+          height: 64vh;
+
+          p {
+            font-size: .9rem;
+            line-height: 1.3rem;
+          }
+        }
+      }
     }
+}

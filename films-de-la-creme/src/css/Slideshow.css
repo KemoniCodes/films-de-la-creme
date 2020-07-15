@@ -101,15 +101,132 @@ div.Slideshow {
     font-size: 1rem !important; } }
 
 @media (min-width: 375px) {
-  div.PopularTv h1 {
-    margin-right: 4rem; }
-  div.PopularTv div.popular-details div.details h2 {
+  div.Slideshow h1.title {
+    font-size: 2.2rem; }
+    div.Slideshow h1.title span.date {
+      font-size: 1.2rem; }
+  div.Slideshow h2 {
+    font-size: 1.2rem; }
+  div.Slideshow div.now-playing-details div.details {
+    width: 85vw;
+    right: 6%;
+    top: 7%;
+    height: 64vh; }
+    div.Slideshow div.now-playing-details div.details p {
+      font-size: .9rem;
+      line-height: 1.3rem; }
+  div.Slideshow div.now-playing-details div.image img {
+    height: 70vh;
+    width: 90vw; }
+  div.Slideshow .BrainhubCarousel__dots {
+    width: 80vw;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden; }
+  div.PopularTv {
+    padding-top: 0rem; }
+    div.PopularTv h1 {
+      margin-right: 4rem;
+      font-size: 2rem; }
+    div.PopularTv div.popular-details div.details h2 {
+      font-size: .8rem !important; }
+    div.PopularTv div.popular-details div.details h3 {
+      font-size: .8rem !important; }
+  div.Popular {
+    padding-bottom: 0rem; }
+    div.Popular h1 {
+      margin-right: 4rem;
+      font-size: 2rem; }
+    div.Popular div.popular-details div.details h2 {
+      font-size: .8rem !important; }
+    div.Popular div.popular-details div.details h3 {
+      font-size: .8rem !important; }
+  div.Footer li {
     font-size: .8rem; }
-  div.PopularTv div.popular-details div.details h3 {
-    font-size: .8rem; }
-  div.Popular h1 {
-    margin-right: 4rem; }
-  div.Popular div.popular-details div.details h2 {
-    font-size: .8rem; }
-  div.Popular div.popular-details div.details h3 {
-    font-size: .8rem; } }
+    div.Footer li img {
+      height: 95px;
+      width: 160px; }
+  div.Movies h1.title {
+    font-size: 2.2rem;
+    margin-top: 0rem;
+    padding-top: 0rem;
+    margin-left: 0rem;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    margin-right: 0rem;
+    border-bottom: none !important; }
+    div.Movies h1.title span.date {
+      font-size: 1.2rem; }
+  div.Movies div.Popular {
+    padding-bottom: 0rem !important; }
+    div.Movies div.Popular h1 {
+      margin-right: 4rem;
+      font-size: 2rem; }
+    div.Movies div.Popular div.popular-details div.details h2 {
+      font-size: .8rem !important; }
+    div.Movies div.Popular div.popular-details div.details h3 {
+      font-size: .8rem !important; }
+  div.Movies h2 {
+    font-size: 1.2rem; }
+  div.Movies div.now-playing-details {
+    right: 14%;
+    position: relative;
+    margin-right: 0rem !important;
+    height: 80vh; }
+    div.Movies div.now-playing-details div.details {
+      width: 85vw;
+      left: 22%;
+      top: 7%;
+      height: 64vh; }
+      div.Movies div.now-playing-details div.details p {
+        font-size: .9rem;
+        line-height: 1.3rem; }
+  div.Movies div.TopRated {
+    padding-bottom: 0rem !important; }
+    div.Movies div.TopRated h1 {
+      margin-right: 4rem;
+      font-size: 2rem; }
+    div.Movies div.TopRated div.popular-details div.details h2 {
+      font-size: .8rem !important; }
+    div.Movies div.TopRated div.popular-details div.details h3 {
+      font-size: .8rem !important; }
+  div.Movies h2 {
+    font-size: 1.2rem; }
+  div.Movies div.now-playing-details {
+    right: 14%;
+    position: relative;
+    margin-right: 0rem !important;
+    height: 80vh; }
+    div.Movies div.now-playing-details div.details {
+      width: 85vw;
+      left: 22%;
+      top: 7%;
+      height: 64vh; }
+      div.Movies div.now-playing-details div.details p {
+        font-size: .9rem;
+        line-height: 1.3rem; }
+  div.Movies div.Upcoming {
+    padding-bottom: 0rem !important; }
+    div.Movies div.Upcoming h1 {
+      margin-right: 4rem;
+      font-size: 2rem; }
+    div.Movies div.Upcoming div.popular-details div.details h2 {
+      font-size: .8rem !important; }
+    div.Movies div.Upcoming div.popular-details div.details h3 {
+      font-size: .8rem !important; }
+  div.Movies h2 {
+    font-size: 1.2rem; }
+  div.Movies div.now-playing-details {
+    right: 14%;
+    position: relative;
+    margin-right: 0rem !important;
+    height: 80vh; }
+    div.Movies div.now-playing-details div.details {
+      width: 85vw;
+      left: 22%;
+      top: 7%;
+      height: 64vh; }
+      div.Movies div.now-playing-details div.details p {
+        font-size: .9rem;
+        line-height: 1.3rem; } }

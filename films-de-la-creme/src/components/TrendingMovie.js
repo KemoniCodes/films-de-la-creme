@@ -30,6 +30,17 @@ class TrendingMovie extends React.Component {
                     slidesPerPage={5}
                     arrows
                     infinite
+                    breakpoints={{
+                        640: {
+                            slidesPerPage: 2,
+                            arrows: true
+                        },
+                        900: {
+                            slidesPerPage: 4,
+                            arrows: true
+                        }
+
+                    }}
                 >
 
                     {this.state.movie.map((movie, i) => {
@@ -48,7 +59,7 @@ class TrendingMovie extends React.Component {
                                             <i class="fas fa-star"></i> {movie.vote_average}/10
                                     </h3>
 
-                                     
+
 
                                     </div>
                                 </div>
