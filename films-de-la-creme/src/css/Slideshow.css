@@ -75,7 +75,14 @@ div.Slideshow {
   div.Popular h1 {
     margin-right: 4rem; }
   div.PopularTv h1 {
-    margin-right: 4rem; } }
+    margin-right: 4rem; }
+  div.Movies div.now-playing-details {
+    right: 0 !important; }
+    div.Movies div.now-playing-details div.details {
+      left: 8% !important; }
+  div.Movies div.home nav ul li {
+    padding-right: 2.5rem;
+    font-size: 1.5rem; } }
 
 @media (max-width: 768px) {
   div.home nav ul li {
@@ -311,4 +318,9 @@ div.Slideshow {
     width: 46vw;
     font-size: 1.2rem; }
   div.SearchResults div.SearchBar div.results-container {
-    grid-template-columns: auto auto; } }
+    grid-template-columns: auto auto; }
+  div.PopularPage h1 {
+    margin-right: 4rem !important;
+    font-size: 2rem !important; }
+  div.PopularPage div.container {
+    grid-template-columns: auto auto !important; } }

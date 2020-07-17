@@ -139,6 +139,26 @@ div.Slideshow {
         }
       }
 
+      div.Movies {
+        div.now-playing-details {
+          right: 0 !important;
+
+          div.details {
+            left: 8% !important;
+          }
+        }
+        div.home {
+          nav {
+            ul {
+              li {
+                padding-right: 2.5rem;
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+
     }
 
     @media (max-width:768px) {
@@ -612,4 +632,15 @@ div.Slideshow {
      }
    }
  }
+
+ div.PopularPage {
+  h1 {
+    margin-right: 4rem !important;
+    font-size: 2rem !important;
+  }
+   div.container {
+    grid-template-columns: auto auto !important;
+   }
+ }
+
 }
