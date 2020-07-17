@@ -304,5 +304,11 @@ div.Slideshow {
       font-size: .8rem !important; }
     div.Trending div.popular-details div.details h3 {
       font-size: .8rem !important; }
+  div.SearchResults div.SearchBar h1 {
+    margin-right: 4rem;
+    font-size: 2rem; }
+  div.SearchResults div.SearchBar label.search-label input.search {
+    width: 46vw;
+    font-size: 1.2rem; }
   div.SearchResults div.SearchBar div.results-container {
     grid-template-columns: auto auto; } }

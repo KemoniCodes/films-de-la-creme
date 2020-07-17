@@ -597,6 +597,16 @@ div.Slideshow {
 
  div.SearchResults {
    div.SearchBar {
+     h1 {
+       margin-right: 4rem;
+       font-size: 2rem;
+     }
+     label.search-label {
+       input.search {
+         width: 46vw;
+         font-size: 1.2rem;
+       }
+     }
      div.results-container {
        grid-template-columns: auto auto;
      }
