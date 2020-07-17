@@ -472,6 +472,15 @@ div.Slideshow {
           left: 1% !important;
           padding:1.5rem !important;
 
+          ul {
+            li {
+              font-size: 1.4rem !important;
+              span {
+                font-size: 1.6rem !important;
+              }
+            }
+          }
+
           h3 {
             text-align: center;
           }
@@ -582,6 +591,14 @@ div.Slideshow {
        h3 {
          font-size: .8rem !important;
        }
+     }
+   }
+ }
+
+ div.SearchResults {
+   div.SearchBar {
+     div.results-container {
+       grid-template-columns: auto auto;
      }
    }
  }

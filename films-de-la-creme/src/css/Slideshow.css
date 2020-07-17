@@ -242,6 +242,10 @@ div.Slideshow {
     top: 26rem !important;
     left: 1% !important;
     padding: 1.5rem !important; }
+    div.MovieDeets div.overview div.overview-details ul li {
+      font-size: 1.4rem !important; }
+      div.MovieDeets div.overview div.overview-details ul li span {
+        font-size: 1.6rem !important; }
     div.MovieDeets div.overview div.overview-details h3 {
       text-align: center; }
     div.MovieDeets div.overview div.overview-details p {
@@ -299,4 +303,6 @@ div.Slideshow {
     div.Trending div.popular-details div.details h2 {
       font-size: .8rem !important; }
     div.Trending div.popular-details div.details h3 {
-      font-size: .8rem !important; } }
+      font-size: .8rem !important; }
+  div.SearchResults div.SearchBar div.results-container {
+    grid-template-columns: auto auto; } }

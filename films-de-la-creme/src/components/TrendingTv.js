@@ -59,7 +59,7 @@ class TrendingTv extends React.Component {
                                             <i class="fas fa-star"></i> {movie.vote_average}/10
                                     </h3>
 
-                               
+
 
                                     </div>
                                 </div>
