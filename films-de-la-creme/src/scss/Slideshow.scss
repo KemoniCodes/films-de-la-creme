@@ -455,4 +455,55 @@ div.Slideshow {
         }
       }
     }
+
+    div.MovieDeets {
+      div.overview {
+        div.image {
+          width: 0 !important;
+          left: 16% !important;
+          img {
+            height: 24rem !important;
+          }
+        }
+        div.overview-details {
+          width: 100% !important;
+          top: 26rem !important;
+          left: 1% !important;
+          padding:1.5rem !important;
+
+          h3 {
+            text-align: center;
+          }
+          p {
+            text-align: center;
+            line-height: 1.8rem;
+          }
+
+          ul {
+            padding: 2.5rem;
+          }
+        }
+      }
+      div.movie-details {
+        position: relative;
+        margin-right: 0rem !important;
+        height: 80vh;
+
+        div.details {
+          width:85vw !important;
+          left: 7%;
+          top: 7% !important;
+          height: 64vh !important;
+
+          p {
+            font-size: .9rem;
+            line-height: 1.3rem;
+          }
+        }
+      }
+
+      div.cast {
+        padding-top: 22rem !important;
+      }
+    }
 }

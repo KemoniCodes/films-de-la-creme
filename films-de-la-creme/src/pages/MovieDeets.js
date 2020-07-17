@@ -48,7 +48,7 @@ class MovieDeets extends React.Component {
         let config = "https://api.themoviedb.org/3/configuration?api_key=57a856481fc55fc8549e5927b0aaa154"
         let res = await fetch(config);
         let image = await res.json();
-        this.setState({ poster: image.images.secure_base_url + image.images.poster_sizes[3] })
+        this.setState({ poster: image.images.secure_base_url + image.images.poster_sizes[4] })
         this.setState({ poster1: image.images.secure_base_url + image.images.poster_sizes[2] })
         this.setState({ backdrop: image.images.secure_base_url + image.images.backdrop_sizes[3] })
     }
@@ -91,18 +91,7 @@ class MovieDeets extends React.Component {
                         <p>{this.state.movie.overview}</p>
 
                         <ul>
-                            {/* <li>Created By:
-                                {this.state.director.map((director, i) => {
-                                return (
-                                    <span> <br />{director.job='Director'.name} </span>
-                                )
-                            }
-                            )}
-                            </li> */}
-
-                            {/* <li>Episodes: <span>{this.state.tv.number_of_episodes}</span></li> */}
                             <li>Run Time: <span>{this.state.movie.runtime}m</span></li>
-                            {/* <li>Seasons: <span>{this.state.tv.number_of_seasons}</span></li> */}
                             <li>Original Language: <span>{this.state.movie.original_language}</span></li>
                             <li>Status: <span>{this.state.movie.status}</span></li>
                         </ul>
@@ -117,6 +106,19 @@ class MovieDeets extends React.Component {
                             slidesPerPage={slides ? this.state.cast.length : 5}
                             arrows
                             infinite
+                            breakpoints={{
+                                640: {
+                                    slidesPerPage: 2,
+                                    arrows: true
+                                },
+                                900: {
+                                    slidesPerPage: 4,
+                                    arrows: true
+                                }
+
+                            }}
+
+
                         >
 
                             {this.state.cast.map((movie, i) => {
@@ -155,6 +157,17 @@ class MovieDeets extends React.Component {
                             slidesPerPage={5}
                             arrows
                             infinite
+                            breakpoints={{
+                                640: {
+                                    slidesPerPage: 2,
+                                    arrows: true
+                                },
+                                900: {
+                                    slidesPerPage: 4,
+                                    arrows: true
+                                }
+        
+                            }}
                         >
 
                             {this.state.rec.map((movie, i) => {
