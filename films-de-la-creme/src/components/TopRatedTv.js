@@ -29,6 +29,17 @@ class TopRatedTv extends React.Component {
                     slidesPerPage={5}
                     arrows
                     infinite
+                    breakpoints={{
+                        640: {
+                            slidesPerPage: 2,
+                            arrows: true
+                        },
+                        900: {
+                            slidesPerPage: 4,
+                            arrows: true
+                        }
+
+                    }}
                 >
 
                     {this.state.movie.map((movie, i) => {

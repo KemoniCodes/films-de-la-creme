@@ -57,15 +57,9 @@ class TvShows extends React.Component {
                                     <img src={this.state.bg + movie.poster_path} alt="" />
 
                                 </div>
-
-
-
                             </div>
-
                         )
-
                     }
-
                     )
                     }
 
@@ -74,8 +68,6 @@ class TvShows extends React.Component {
                 <TrendingTv />
                 <TopRatedTv />
                 <EditorsPickTv />
-
-
 
                 <Footer />
 

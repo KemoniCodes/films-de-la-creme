@@ -218,8 +218,6 @@ div.Slideshow {
           font-size: 1.2rem;
         }
 
-       
-
         div.now-playing-details {
           div.details {
             width:85vw;
@@ -457,6 +455,9 @@ div.Slideshow {
     }
 
     div.MovieDeets {
+      h1 {
+        margin-right: 4rem;
+      }
       div.overview {
         div.image {
           width: 0 !important;
@@ -504,6 +505,84 @@ div.Slideshow {
 
       div.cast {
         padding-top: 22rem !important;
+
+        div.PopularTv {
+          h1#people {
+            padding-top: 8rem !important;
+          }
+        }
       }
     }
+
+    div.TvShows {
+      div.now-playing-details {
+        div.details {
+          width:85vw;
+          right: 6%;
+          top: 7%;
+          height: 64vh;
+
+           p {
+            font-size: .9rem;
+            line-height: 1.3rem;
+          }
+        }
+        div.image {
+          img {
+            height: 70vh;
+            width: 90vw;
+          }
+        }
+      }
+
+      .BrainhubCarousel__dots {
+        width: 80vw;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+      }
+    }
+
+    div.TopRated {
+      padding-bottom: 0rem !important;
+
+      h1 {
+       margin-right:4rem;
+       font-size: 2rem;
+     }
+
+     div.popular-details {
+       div.details {
+         h2 {
+           font-size: .8rem !important;
+         }
+
+         h3 {
+           font-size: .8rem !important;
+         }
+       }
+     }
+   }
+
+   div.Trending {
+    padding-bottom: 0rem !important;
+
+    h1 {
+     margin-right:4rem;
+     font-size: 2rem;
+   }
+
+   div.popular-details {
+     div.details {
+       h2 {
+         font-size: .8rem !important;
+       }
+
+       h3 {
+         font-size: .8rem !important;
+       }
+     }
+   }
+ }
 }

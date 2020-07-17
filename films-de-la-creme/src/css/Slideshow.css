@@ -230,6 +230,8 @@ div.Slideshow {
       div.Movies div.now-playing-details div.details p {
         font-size: .9rem;
         line-height: 1.3rem; }
+  div.MovieDeets h1 {
+    margin-right: 4rem; }
   div.MovieDeets div.overview div.image {
     width: 0 !important;
     left: 16% !important; }
@@ -260,4 +262,41 @@ div.Slideshow {
         font-size: .9rem;
         line-height: 1.3rem; }
   div.MovieDeets div.cast {
-    padding-top: 22rem !important; } }
+    padding-top: 22rem !important; }
+    div.MovieDeets div.cast div.PopularTv h1#people {
+      padding-top: 8rem !important; }
+  div.TvShows div.now-playing-details div.details {
+    width: 85vw;
+    right: 6%;
+    top: 7%;
+    height: 64vh; }
+    div.TvShows div.now-playing-details div.details p {
+      font-size: .9rem;
+      line-height: 1.3rem; }
+  div.TvShows div.now-playing-details div.image img {
+    height: 70vh;
+    width: 90vw; }
+  div.TvShows .BrainhubCarousel__dots {
+    width: 80vw;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden; }
+  div.TopRated {
+    padding-bottom: 0rem !important; }
+    div.TopRated h1 {
+      margin-right: 4rem;
+      font-size: 2rem; }
+    div.TopRated div.popular-details div.details h2 {
+      font-size: .8rem !important; }
+    div.TopRated div.popular-details div.details h3 {
+      font-size: .8rem !important; }
+  div.Trending {
+    padding-bottom: 0rem !important; }
+    div.Trending h1 {
+      margin-right: 4rem;
+      font-size: 2rem; }
+    div.Trending div.popular-details div.details h2 {
+      font-size: .8rem !important; }
+    div.Trending div.popular-details div.details h3 {
+      font-size: .8rem !important; } }
