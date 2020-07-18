@@ -7,13 +7,21 @@ import '../css/App.css'
 
 
 class NavBar extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             name: "React",
             showHide: true,
+            isExpanded: false
         };
         this.hideComponent = this.hideComponent.bind(this);
+    }
+
+    handleToggle(e) {
+        e.preventDefault();
+        this.setState({
+            isExpanded: !this.state.isExpanded
+        });
     }
 
     hideComponent(name) {
@@ -29,27 +37,31 @@ class NavBar extends React.Component {
 
     render() {
         const { showHide } = this.state;
-        const options = ["PROFILE", "watchlist's"]
+        const { isExpanded } = this.state;
         return (
             < div className="home" >
                 {/* <div>
                     {showHide && <SearchBar />}
                     <hr />
                 </div> */}
-
-                <nav>
-                    <ul>
-                        <a href="/"><li >HOME</li></a>
-                        <a href='/movies'><li>MOVIES</li></a>
-                        <a href="/tv"><li>TV SHOWS</li></a>
+                <nav className="nav">
+                    <i
+                        className="fa fa-bars"
+                        aria-hidden="true"
+                        onClick={e => this.handleToggle(e)}
+                    />
+                    <ul className={`collapsed ${isExpanded ? "is-expanded" : ""}`}>
+                        <a href="/" className="active"><li >HOME</li></a>
+                        <a href='/movies' className="active"><li>MOVIES</li></a>
+                        <a href="/tv" className="active"><li>TV SHOWS</li></a>
                         <li id="logo">
                             <a href="/">
                                 <img src={require("../img/food-and-restaurant.png")} alt="" />
                             </a>
                         </li>
-                        <Link to='/search'><li > SEARCH</li></Link>
-                        <li>PROFILE</li>
-                        <li id="last"><Link to='/SignIn' onClick={() => app.auth().signOut()}>LOG OUT</Link></li>
+                        <Link to='/search' className="active"><li > SEARCH</li></Link>
+                        <li className="active">PROFILE</li>
+                        <li id="last" className="active"><Link to='/SignIn' onClick={() => app.auth().signOut()}>LOG OUT</Link></li>
                     </ul>
                 </nav>
             </div >
@@ -58,3 +70,5 @@ class NavBar extends React.Component {
 }
 
 export default NavBar
+
+
