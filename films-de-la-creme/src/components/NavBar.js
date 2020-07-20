@@ -45,11 +45,11 @@ class NavBar extends React.Component {
                     <hr />
                 </div> */}
                 <nav className="nav">
-                    <i
+                    {showHide && <i
                         className="fa fa-bars"
                         aria-hidden="true"
                         onClick={e => this.handleToggle(e)}
-                    />
+                    />}
                     <ul className={`collapsed ${isExpanded ? "is-expanded" : ""}`}>
                         <a href="/" className="active"><li >HOME</li></a>
                         <a href='/movies' className="active"><li>MOVIES</li></a>
