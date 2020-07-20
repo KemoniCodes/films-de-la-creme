@@ -4,28 +4,29 @@ import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 
 class EditorsPickMovie extends React.Component {
+    
     state = {
         loading: true,
-        movie: [],
+        movie: [], //initializing state for multiple movies based on id 
         movie1: [],
         movie2: [],
         movie3: [],
         movie4: [],
         movie5: [],
         movie6: [],
-        poster: ''
+        poster: '' 
     }
 
     async componentDidMount() {
-        // let url = "https://api.themoviedb.org/3/movie/tt0066921?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&page=1";
-        // let response = await fetch(url);
-        // let data = await response.json();
-        // this.setState({ movie: data, loading: false })
+
+        //to fetch images
         let config = "https://api.themoviedb.org/3/configuration?api_key=57a856481fc55fc8549e5927b0aaa154"
         let res = await fetch(config);
         let image = await res.json();
         this.setState({ poster: image.images.secure_base_url + image.images.poster_sizes[2] })
 
+
+        //to fetch first movie based on id
         let url = 'https://api.themoviedb.org/3/movie/tt0066921?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&page=1;'
         let response = await fetch(url);
         let data = await response.json();
@@ -87,17 +88,18 @@ class EditorsPickMovie extends React.Component {
                         `/movie/${this.state.movie.id}`
                     }>
                         <div className="popular-details">
+                            
+                            {/* poster container */}
                             <div className="image">
                                 <img src={this.state.poster + this.state.movie.poster_path} alt="" />
                             </div>
 
+                            {/* movie details container */}
                             <div className="details">
                                 <h2>{this.state.movie.title}</h2>
                                 <h3>
                                     <i class="fas fa-star"></i> {this.state.movie.vote_average}/10
                             </h3>
-
-
 
                             </div>
                         </div>

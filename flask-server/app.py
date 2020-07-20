@@ -8,7 +8,6 @@ import os
 import urllib3
 import requests
 
-# tmdb.API_KEY = '57a856481fc55fc8549e5927b0aaa154'
 
 app = Flask(__name__)
 
@@ -20,24 +19,14 @@ engine = create_engine(os.getenv("DATABASE_URL"))
 db = engine
 
 
-
-
-  
-
 @app.route("/", methods = ['POST','GET'])
 def index():
-    #get now playing movies#
-    # config = requests.get("https://api.themoviedb.org/3/configuration?api_key=57a856481fc55fc8549e5927b0aaa154")
-    
-    # url = requests.get("https://api.themoviedb.org/3/movie/now_playing?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&page=1")
-
-    # image= config.json()
-    # data= url.json()
+    #homepage#
     return render_template("index.html")
 
 @app.route('/home', methods = ['POST' , 'GET'])
 def home():
-    #get all movies#
+    #homepage#
     return render_template('index.html')
 
 @app.route('/movies', methods = ['POST' , 'GET'])
@@ -52,17 +41,17 @@ def popular_movies():
 
 @app.route('/movies/trending')
 def trending_movies():
-    #get trending movies#
+    #get all trending movies#
     return render_template('index.html')
 
 @app.route('/movies/top_rated')
 def top_rated_movies():
-    #get top rated movies#
+    #get all top rated movies#
     return render_template('index.html')
 
 @app.route('/movies/upcoming')
 def upcoming_movies():
-    #get upcoming movies#
+    #get all upcoming movies#
     return render_template('index.html')
 
 @app.route('/tv')
@@ -72,17 +61,17 @@ def tv_shows():
 
 @app.route('/tv/top_rated')
 def top_rated_tv_shows():
-    #get top rated tv#
+    #get all top rated tv#
     return render_template('index.html')
 
 @app.route('/tv/popular')
 def popular_tv_shows():
-    #get popular tv#
+    #get all popular tv#
     return render_template('index.html')
 
 @app.route('/tv/trending')
 def trending_tv_shows():
-    #get trending tv categories#
+    #get all trending tv #
     return render_template('index.html')
 
 @app.route('/search')
@@ -92,32 +81,28 @@ def search_results():
 
 @app.route('/SignIn')
 def sign_in():
-    #get search results#
+    #sign in#
     return render_template('index.html')
 
 @app.route('/Register')
-def Register():
-    #get search results#
+def register():
+    #register#
     return render_template('index.html')
 
 @app.route('/movie/<id>')
 def movie(id):
-    #get movie search results#
+    #get movie by id#
     return render_template('index.html')
 
 @app.route('/tv/<show_id>')
 def tv(show_id):
-    #get tv search results#
+    #get tv by id#
     return render_template('index.html')
 
 @app.route('/person/<id>')
 def person(id):
-    #get person search results#
+    #get person by id#
     return render_template('index.html')
-
-
-
-
 
 
 if __name__ == "__main__":

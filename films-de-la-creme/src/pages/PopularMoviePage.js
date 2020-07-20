@@ -9,7 +9,7 @@ import NavBar from '../components/NavBar';
 class PopularMoviePage extends React.Component {
     state = {
         loading: true,
-        movie: [],
+        movie: [], //initialzing state for multiple movie pages 0-7 8 pages
         movie1: [],
         movie2: [],
         movie3: [],

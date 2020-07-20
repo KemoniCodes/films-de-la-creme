@@ -6,7 +6,7 @@ import '@brainhubeu/react-carousel/lib/style.css';
 class EditorsPickTv extends React.Component {
     state = {
         loading: true,
-        movie: [],
+        movie: [], //initializing state for multiple movies based on id 
         movie1: [],
         movie2: [],
         movie3: [],
@@ -17,15 +17,14 @@ class EditorsPickTv extends React.Component {
     }
 
     async componentDidMount() {
-        // let url = "https://api.themoviedb.org/3/movie/tt0066921?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&page=1";
-        // let response = await fetch(url);
-        // let data = await response.json();
-        // this.setState({ movie: data, loading: false })
+
+        //to fetch images
         let config = "https://api.themoviedb.org/3/configuration?api_key=57a856481fc55fc8549e5927b0aaa154"
         let res = await fetch(config);
         let image = await res.json();
         this.setState({ poster: image.images.secure_base_url + image.images.poster_sizes[2] })
 
+        //to fetch first movie based on id
         let url = 'https://api.themoviedb.org/3/find/tt0434706?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&external_source=imdb_id'
         let response = await fetch(url);
         let data = await response.json();
@@ -89,11 +88,15 @@ class EditorsPickTv extends React.Component {
                         `/tv/${this.state.movie.id}`
                     }>
                         <div className="popular-details">
+
+                            {/* poster container */}
                             <div className="image">
                                 <img src={this.state.poster + this.state.movie.poster_path} alt="" />
                             </div>
 
                             <div className="details">
+
+                                {/* movie details container */}
                                 <h2>{this.state.movie.name}</h2>
                                 <h3>
                                     <i class="fas fa-star"></i> {this.state.movie.vote_average}/10

@@ -7,30 +7,29 @@ import '@brainhubeu/react-carousel/lib/style.css';
 class Slideshow extends React.Component {
     state = {
         loading: true,
-        movie: [],
+        movie: [], //initializing state for movies
         bg: '',
     }
 
 
     async componentDidMount() {
+        //to fetch now playing movies
         let url = "https://api.themoviedb.org/3/movie/now_playing?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&page=1";
-        let config = "https://api.themoviedb.org/3/configuration?api_key=57a856481fc55fc8549e5927b0aaa154"
         let response = await fetch(url);
-        let res = await fetch(config);
         let data = await response.json();
-        let image = await res.json();
         this.setState({ movie: data.results, loading: false })
+
+        //tp fetch images
+        let config = "https://api.themoviedb.org/3/configuration?api_key=57a856481fc55fc8549e5927b0aaa154"
+        let res = await fetch(config);
+        let image = await res.json();
         this.setState({ bg: image.images.secure_base_url + image.images.backdrop_sizes[3] })
     }
 
 
-
     render() {
-
         return (
-
             <div className="Slideshow" >
-
                 <Carousel
                     infinite
                     dots
@@ -38,8 +37,8 @@ class Slideshow extends React.Component {
                     animationSpeed={2000}
                 >
 
-
-                    {this.state.movie.map((movie, bg, i) => {
+                    {/* iterating through the 'movie' state's array retreiving the now playing movies */}
+                    {this.state.movie.map((movie, i) => {
 
                         return (
 
@@ -57,11 +56,8 @@ class Slideshow extends React.Component {
                                     <img src={this.state.bg + movie.poster_path} alt="" />
 
                                 </div>
-
                             </div>
-
                         )
-
                     }
 
                     )

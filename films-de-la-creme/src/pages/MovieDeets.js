@@ -54,7 +54,7 @@ class MovieDeets extends React.Component {
     }
 
     render() {
-
+        
         let slides = this.state.cast.length < 5;
         return (
             <div className="MovieDeets">
@@ -103,7 +103,8 @@ class MovieDeets extends React.Component {
                         <h1>Cast </h1>
 
                         <Carousel
-                            slidesPerPage={slides ? this.state.cast.length : 5}
+                        //if there are less than 5 cast members then make slides per page however many cast members there are. If not less than 5 make it 4 slides per page
+                            slidesPerPage={slides ? this.state.cast.length : 4}
                             arrows
                             infinite
                             breakpoints={{

@@ -6,15 +6,18 @@ import '@brainhubeu/react-carousel/lib/style.css';
 class TopRatedMovie extends React.Component {
     state = {
         loading: true,
-        movie: [],
+        movie: [], //initializing movie's state
         poster: ''
     }
 
     async componentDidMount() {
+        //to fetch top rated movies
         let url = "https://api.themoviedb.org/3/movie/top_rated?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&page=1&include_adult=false";
         let response = await fetch(url);
         let data = await response.json();
         this.setState({ movie: data.results, loading: false })
+
+        //to fetch images
         let config = "https://api.themoviedb.org/3/configuration?api_key=57a856481fc55fc8549e5927b0aaa154"
         let res = await fetch(config);
         let image = await res.json();
@@ -43,6 +46,7 @@ class TopRatedMovie extends React.Component {
                     }}
                 >
 
+                    {/* iterating through the 'movie' state's array retreiving the now playing movies */}
                     {this.state.movie.map((movie, i) => {
                         return (
                             <a href={
@@ -58,9 +62,6 @@ class TopRatedMovie extends React.Component {
                                         <h3>
                                             <i class="fas fa-star"></i> {movie.vote_average}/10
                                     </h3>
-
-
-
                                     </div>
                                 </div>
                             </a>

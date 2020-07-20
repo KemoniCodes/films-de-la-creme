@@ -1,9 +1,7 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import React from 'react';
 import './css/App.css';
 import Home from './pages/Home';
-import Movies from './pages/Movies';
-import PopularMoviePage from './pages/PopularMoviePage';
+
 
 
 
@@ -12,7 +10,6 @@ function App() {
     <div className="App">
       <Home />
       <p>{window.token}</p>
-
     </div>
   );
 }

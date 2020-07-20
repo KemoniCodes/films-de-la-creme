@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import app from "./firebase.js";
-import Loader from './img/loader.gif'
 
 export const AuthContext = React.createContext();
 
@@ -16,7 +15,7 @@ export const AuthProvider = ({ children }) => {
     }, []);
 
     if (pending) {
-        // return <> <img src={<Loader/>} alt=""/> </>
+        return <>Loading...</>
     }
 
     return (

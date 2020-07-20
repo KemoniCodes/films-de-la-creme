@@ -10,12 +10,12 @@ class SearchBar extends React.Component {
 
         this.state = {
             name: "React",
-            query: '',
-            results: {},
+            query: '', //initializing empty string for search query
+            results: {}, //initializing empty array for results 
             loading: false,
             message: '',
-            totalResutls: 0,
-            totalPages: 0,
+            totalResutls: 0, //initializing results count
+            totalPages: 0, //initializing results page count
             currentPageNo: 0,
             poster: '',
             showHide1: false,
@@ -36,12 +36,14 @@ class SearchBar extends React.Component {
     }
 
     async componentDidMount() {
+        //to fetch images
         let config = "https://api.themoviedb.org/3/configuration?api_key=57a856481fc55fc8549e5927b0aaa154"
         const response = await fetch(config);
         const image = await response.json();
         this.setState({ poster: image.images.secure_base_url + image.images.poster_sizes[2] });
     }
 
+    //function to get search results
     fetchSearchResults = (updatedPageNo = '', query) => {
         const pageNumber = updatedPageNo ? `&page=${updatedPageNo}` : '';
         const searchUrl = `https://api.themoviedb.org/3/search/multi?api_key=57a856481fc55fc8549e5927b0aaa154&language=en-US&query=${query}${pageNumber}&include_adult=false`;
@@ -78,6 +80,7 @@ class SearchBar extends React.Component {
             })
     }
 
+    //function to change qiery based on the variable query
     handleOnInputChange = (event) => {
         const query = event.target.value;
         this.setState({ query: query, loading: true, message: '' }, () => {
@@ -85,19 +88,19 @@ class SearchBar extends React.Component {
         })
     }
 
+    //function to get search results
     renderSearchResults = () => {
         const { results } = this.state;
 
-
         if (Object.keys(results).length && results.length) {
             return (
-
-
                 <div className="results-container">
-                    {results.map(result => {
 
+                    {/* iterates through the results array */}
+                    {results.map(result => {
                         return (
-                            // <a key={result.id} href='' className='result-item'>
+
+                            //links to movie deets page based on the media type and id
                             <a href={`/${result.media_type}/${result.id}`}
                             key={result.id}>
 
@@ -121,7 +124,6 @@ class SearchBar extends React.Component {
                     })
                     }
                 </div>
-                // </Link >
             )
         }
 
@@ -134,7 +136,7 @@ class SearchBar extends React.Component {
         return (
             <div className="SearchBar">
                 <label className="search-label" htmlFor="input-search" method="POST">
-                    <input name='query' type="text" className="search" placeholder=" Search for movie,tv show, or a person..." value={query} onChange={this.handleOnInputChange} />
+                    <input name='query' type="text" className="search" placeholder=" Search for movie,tv show, or a person..." value={query} onChange={this.handleOnInputChange} /> {/* query will update anytime you type */}
                     <button type="submit"><i className="fas fa-search"></i></button>
                 </label>
 
@@ -142,9 +144,10 @@ class SearchBar extends React.Component {
 
                 <h1>Displaying Results for '{query}' </h1>
 
+                {/* if image loading show loader gif if not hide loader gif */}
                 <img src={Loader} className={`search-loading ${loading ? 'show' : 'hide'}`} alt="loader" />
 
-
+                {/* loads results using funtion */}
                 {this.renderSearchResults()}
             </div>
         )

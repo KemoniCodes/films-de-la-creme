@@ -84,7 +84,14 @@ div.Slideshow {
       left: 8% !important; }
   div.Movies div.home nav ul li {
     padding-right: 2.5rem;
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  div.SearchResults div.SearchBar div.results-container {
+    grid-template-columns: auto auto auto auto auto auto !important; }
+  div.MovieDeets div.overview div.overview-details {
+    width: 50% !important;
+    position: relative !important;
+    top: 0 !important;
+    left: 25% !important; } }
 
 @media (max-width: 768px) {
   div.home nav ul li {

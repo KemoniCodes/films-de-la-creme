@@ -24,6 +24,9 @@ import Register from './pages/Register';
 
 
 ReactDOM.render(
+  
+  // page routing
+
   <React.StrictMode>
     <AuthProvider>
       < BrowserRouter >

@@ -11,8 +11,8 @@ class NavBar extends React.Component {
         super(props);
         this.state = {
             name: "React",
-            showHide: false,
-            isExpanded: false
+            // showHide: false,
+            isExpanded: false //initializing state for mobile hamburger nav
         };
         this.hideComponent = this.hideComponent.bind(this);
     }
@@ -40,7 +40,6 @@ class NavBar extends React.Component {
         const { isExpanded } = this.state;
         return (
             < div className="home" >
-
                 <nav className="nav">
                     <i
                         className="fa fa-bars"
