@@ -69,9 +69,9 @@ div.Slideshow {
     margin-top: 4.5rem; }
   div.image img {
     height: 13rem; }
-  div.home nav nav i.fa.fa-bars {
+  div.home nav.nav i.fa.fa-bars {
     display: none; }
-  div.home nav ul li {
+  div.home nav.nav ul li {
     padding-right: 2.5rem;
     font-size: 1.5rem; }
   div.Popular h1 {

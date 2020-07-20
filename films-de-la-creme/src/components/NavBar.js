@@ -40,10 +40,7 @@ class NavBar extends React.Component {
         const { isExpanded } = this.state;
         return (
             < div className="home" >
-                {/* <div>
-                    {showHide && <SearchBar />}
-                    <hr />
-                </div> */}
+
                 <nav className="nav">
                     <i
                         className="fa fa-bars"
