@@ -87,11 +87,19 @@ div.Slideshow {
     font-size: 1.5rem; }
   div.SearchResults div.SearchBar div.results-container {
     grid-template-columns: auto auto auto auto auto auto !important; }
+  div.MovieDeets div.cast {
+    padding-top: 8rem !important; }
+  div.MovieDeets div.overview div.image {
+    left: 41%; }
   div.MovieDeets div.overview div.overview-details {
     width: 50% !important;
     position: relative !important;
     top: 0 !important;
-    left: 25% !important; } }
+    left: 36% !important; }
+    div.MovieDeets div.overview div.overview-details p {
+      width: 45rem;
+      margin: auto;
+      padding-top: 2rem; } }
 
 @media (max-width: 768px) {
   div.home nav ul li {
@@ -146,7 +154,8 @@ div.Slideshow {
       margin-right: 4rem;
       font-size: 2rem; }
     div.PopularTv div.popular-details div.details h2 {
-      font-size: .8rem !important; }
+      font-size: .8rem !important;
+      padding-top: 0rem; }
     div.PopularTv div.popular-details div.details h3 {
       font-size: .8rem !important; }
   div.Popular {

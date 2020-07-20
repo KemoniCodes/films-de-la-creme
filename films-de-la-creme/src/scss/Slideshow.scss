@@ -170,12 +170,24 @@ div.Slideshow {
         }
       }
       div.MovieDeets {
+        div.cast {
+          padding-top: 8rem !important;
+        }
         div.overview {
+          div.image {
+            left: 41%;
+          }
           div.overview-details {
             width: 50% !important;
             position: relative !important;
             top: 0 !important;
-            left: 25% !important;
+            left: 36% !important;
+
+            p {
+              width: 45rem;
+              margin: auto;
+              padding-top: 2rem;
+            }
           }
         }
       }
@@ -300,6 +312,7 @@ div.Slideshow {
           div.details {
             h2 {
               font-size: .8rem !important;
+              padding-top: 0rem;
             }
 
             h3 {

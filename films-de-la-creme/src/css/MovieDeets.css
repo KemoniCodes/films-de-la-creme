@@ -191,7 +191,8 @@ div.MovieDeets div.cast {
         color: #E0E6EA; }
 
 div.MovieDeets div.similar div.PopularTv div.popular-details {
-  padding: 0; }
+  padding: 0;
+  padding-top: 1rem; }
   div.MovieDeets div.similar div.PopularTv div.popular-details img {
     display: block;
     margin-left: auto;
