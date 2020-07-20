@@ -11,7 +11,7 @@ class NavBar extends React.Component {
         super(props);
         this.state = {
             name: "React",
-            showHide: true,
+            showHide: false,
             isExpanded: false
         };
         this.hideComponent = this.hideComponent.bind(this);
@@ -45,11 +45,11 @@ class NavBar extends React.Component {
                     <hr />
                 </div> */}
                 <nav className="nav">
-                    {showHide && <i
+                    <i
                         className="fa fa-bars"
                         aria-hidden="true"
                         onClick={e => this.handleToggle(e)}
-                    />}
+                    />
                     <ul className={`collapsed ${isExpanded ? "is-expanded" : ""}`}>
                         <a href="/" className="active"><li >HOME</li></a>
                         <a href='/movies' className="active"><li>MOVIES</li></a>
